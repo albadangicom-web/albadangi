@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+  <style>
+    /* Reset */
+    body, table, td, p, a { margin: 0; padding: 0; }
+    body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    
+    /* Main styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+    }
+    
+    .email-wrapper { 
+      max-width: 600px; 
+      margin: 0 auto; 
+      background-color: #111111; 
+    }
+    
+    .header-section {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 32px 24px;
+      text-align: center;
+      border-bottom: 2px solid #3b82f6;
+    }
+    
+    .posting-item {
+      padding: 20px 24px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    
+    .posting-item:hover { background-color: #1a1a1a; }
+    
+    .type-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    
+    .type-fgd { background: rgba(59,130,246,0.15); color: #3b82f6; }
+    .type-online { background: rgba(34,197,94,0.15); color: #22c55e; }
+    .type-taste { background: rgba(245,158,11,0.15); color: #f59e0b; }
+    .type-interview { background: rgba(168,85,247,0.15); color: #a855f7; }
+    .type-other { background: rgba(160,160,160,0.1); color: #a0a0a0; }
+    
+    .view-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 14px;
+      background: rgba(59,130,246,0.1);
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 6px;
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    
+    .footer-section {
+      padding: 24px;
+      text-align: center;
+      background-color: #0a0a0a;
+      font-size: 12px;
+      color: #666;
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .email-wrapper { width: 100% !important; }
+      .posting-item { padding: 16px !important; }
+      .header-section { padding: 24px 16px !important; }
+    }
+  </style>
+</head>
+<body style="background-color: #0a0a0a; margin: 0; padding: 0;">
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #0a0a0a;">
+    <tr>
+      <td align="center" style="padding: 20px 0;">
+        <!-- Main Email Container -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-wrapper" style="background-color: #111111; border-radius: 12px; overflow: hidden;">
+          
+          <!-- Header -->
+          <tr>
+            <td class="header-section" style="background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 32px 24px; text-align: center; border-bottom: 2px solid #3b82f6;">
+              <h1 style="font-size: 24px; font-weight: 800; color: #ffffff; margin: 0 0 8px 0;">
+                <span style="color: #3b82f6;">MR</span> Newsletter
+              </h1>
+              <p style="font-size: 14px; color: #a0a0a0; margin: 0;">{{ date_display }}</p>
+              <p style="font-size: 20px; color: #ffffff; margin: 16px 0 0 0; font-weight: 600;">
+                Today: {{ posting_count }} postings
+              </p>
+            </td>
+          </tr>
+          
+          <!-- Postings -->
+          {{ postings_html }}
+          
+          <!-- Website Link -->
+          <tr>
+            <td style="padding: 24px; text-align: center; background-color: #1a1a1a;">
+              <a href="{{ site_url }}" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 14px; font-weight: 600;">
+                View All Postings
+              </a>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td class="footer-section" style="padding: 24px; text-align: center; background-color: #0a0a0a; font-size: 12px; color: #666;">
+              <p>&copy; 2026 MR Newsletter</p>
+              <p style="margin-top: 8px;">
+                <a href="{{ unsubscribe_url }}" style="color: #666; text-decoration: underline;">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

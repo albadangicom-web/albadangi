@@ -1,0 +1,26 @@
+# 환경 변수
+.env
+
+# 임시 데이터
+.tmp/
+
+# DB
+data/*.db
+
+# 출력물 (이메일 HTML)
+output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
