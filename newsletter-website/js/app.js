@@ -248,7 +248,7 @@ function initSubscribeForm() {
       })
       .then(response => {
         emailInput.value = '';
-        alert('구독해 주셔서 감사합니다! 봇이 시트에 안전하게 저장했습니다.');
+        alert('구독 신청이 완료되었습니다! 매일 아침 최신 알바 정보를 보내드릴게요.');
         if (submitBtn) {
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
@@ -257,7 +257,7 @@ function initSubscribeForm() {
       .catch(err => {
         // Apps Script sometimes triggers fake CORS errors on success, so we fallback
         emailInput.value = '';
-        alert('구독이 성공적으로 신청되었습니다.');
+        alert('구독 신청이 완료되었습니다! 매일 아침 최신 알바 정보를 보내드릴게요.');
         if (submitBtn) {
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
