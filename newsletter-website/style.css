@@ -2,8 +2,9 @@
    MR Newsletter — Modern Design System (Light + Dark)
    ============================================================= */
 
-/* ---- Google Fonts ---- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+/* ---- Fonts ---- */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v3.2.1/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 /* ---- Light Theme (Default) ---- */
 :root {
@@ -35,8 +36,9 @@
   --header-bg: rgba(255, 255, 255, 0.85);
   
   /* Typography */
-  --font-body: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'Inter', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   
   /* Spacing */
   --space-xs: 0.25rem;
@@ -52,6 +54,7 @@
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+  --radius-full: 9999px;
   
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
@@ -249,6 +252,8 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   min-height: 100vh;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -339,6 +344,8 @@ img {
   border: none;
   border-radius: var(--radius-xl);
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
@@ -348,41 +355,150 @@ img {
   color: #fff;
 }
 
+.header__cta--secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+}
+
+.header__cta--secondary:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--text-accent);
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* ---- Nav Subscribe Form ---- */
+.nav-subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: var(--space-sm);
+}
+
+.nav-subscribe-input {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: inherit;
+  width: 180px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-subscribe-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  width: 220px;
+}
+
 /* ---- Hero Section ---- */
 .hero {
-  padding: var(--space-3xl) 0 var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-xl) 0;
   text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  margin-top: -var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.hero__glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: var(--accent-blue);
+  opacity: 0.08;
+  filter: blur(100px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero__glow--1 {
+  top: -200px;
+  left: -200px;
+}
+
+.hero__glow--2 {
+  bottom: -200px;
+  right: -200px;
+  background: var(--accent-purple);
+  opacity: 0.06;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 10;
 }
 
 .hero__badge {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-md);
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: var(--radius-xl);
-  font-size: 0.8rem;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--accent-blue);
   margin-bottom: var(--space-lg);
-  animation: fadeInUp 0.6s ease;
+  animation: fadeInDown 0.5s ease both;
+  backdrop-filter: blur(10px);
 }
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4.5vw, 2.25rem);
   font-weight: 800;
+  letter-spacing: -0.04em;
   line-height: 1.2;
-  letter-spacing: -1px;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
+  color: var(--text-heading);
   animation: fadeInUp 0.6s ease 0.1s both;
 }
 
 .hero__subtitle {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
   animation: fadeInUp 0.6s ease 0.2s both;
+  line-height: 1.5;
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.3) inset;
+}
+
+[data-theme="dark"] .glass-panel {
+  background: rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05) inset;
+}
+
+.hero__subscribe {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  animation: fadeInUp 0.6s ease 0.3s both;
+}
+
+.hero__subscribe-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
 }
 
 /* ---- Date Header ---- */
@@ -427,27 +543,68 @@ img {
 }
 
 .filter-btn {
-  padding: var(--space-xs) var(--space-md);
+  padding: 8px 18px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-full);
   color: var(--text-secondary);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* bouncy */
   font-family: var(--font-body);
+  box-shadow: 0 2px 5px -1px rgba(0,0,0,0.03);
 }
 
-.filter-btn:hover,
+.filter-btn:hover {
+  background: var(--bg-primary);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.filter-btn {
+  position: relative;
+}
+
+.filter-btn .filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  margin-left: 4px;
+  border-radius: 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  background: var(--border-color);
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.filter-btn.active .filter-count {
+  background: var(--accent-blue);
+  color: #fff;
+  opacity: 1;
+}
+
 .filter-btn.active {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(37, 99, 235, 0.05); /* light blue semi-transparent bg */
   border-color: var(--accent-blue);
   color: var(--accent-blue);
+  font-weight: 600;
+  box-shadow: none;
+  transform: scale(1.02);
 }
 
 /* ---- Posting Card ---- */
 .posting-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: var(--gradient-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -459,9 +616,9 @@ img {
 
 .posting-card:hover {
   background: var(--bg-card-hover);
-  border-color: var(--border-light);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  border-color: var(--accent-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
 }
 
 .posting-card__header {
@@ -723,6 +880,7 @@ img {
 .footer__links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--space-lg);
   margin-top: var(--space-sm);
 }
@@ -789,8 +947,26 @@ img {
     font-size: 1.5rem;
   }
 
-  .subscribe-form {
-    flex-direction: column;
+  /* Keep nav subscribe form horizontal but squish it */
+  .nav-subscribe-form {
+    flex-direction: row;
+    gap: 4px;
+    margin-left: auto;
+  }
+
+  .nav-subscribe-input {
+    width: 110px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .nav-subscribe-input:focus {
+    width: 130px;
+  }
+
+  .header__cta {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
 
   .posting-card__header {

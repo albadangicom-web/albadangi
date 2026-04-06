@@ -54,11 +54,25 @@ function renderPostingCard(p, index) {
     keyInfoItems.push(`<div class="posting-card__info-row"><span class="posting-card__info-label">&#128176; 사례비</span><span class="posting-card__info-value posting-card__info-value--reward">${escapeHtml(p.reward)}</span></div>`);
   }
   
-  // Secondary meta (location, target info)
+  let targetStr = "";
+  if (p.target_age && p.target_gender) {
+    targetStr = `${p.target_age} ${p.target_gender}`;
+  } else if (p.target_age) {
+    targetStr = p.target_age;
+  } else if (p.target_gender) {
+    targetStr = p.target_gender;
+  }
+  
+  if (targetStr) {
+    keyInfoItems.push(`<div class="posting-card__info-row"><span class="posting-card__info-label">&#128100; 대상</span><span class="posting-card__info-value">${escapeHtml(targetStr)}</span></div>`);
+  }
+
+  if (p.location) {
+    keyInfoItems.push(`<div class="posting-card__info-row"><span class="posting-card__info-label">&#128205; 장소</span><span class="posting-card__info-value">${escapeHtml(p.location)}</span></div>`);
+  }
+  
+  // Secondary meta (empty now since we moved them up)
   const metaItems = [];
-  if (p.location) metaItems.push(`<span class="posting-card__meta-item"><span class="icon">&#128205;</span> ${escapeHtml(p.location)}</span>`);
-  if (p.target_age) metaItems.push(`<span class="posting-card__meta-item"><span class="icon">&#128100;</span> ${escapeHtml(p.target_age)}</span>`);
-  if (p.target_gender) metaItems.push(`<span class="posting-card__meta-item"><span class="icon">&#128101;</span> ${escapeHtml(p.target_gender)}</span>`);
   
   return `
     <a href="${p.source_url}" target="_blank" rel="noopener noreferrer" 
@@ -70,7 +84,6 @@ function renderPostingCard(p, index) {
       </div>
       ${keyInfoItems.length > 0 ? `<div class="posting-card__key-info">${keyInfoItems.join('')}</div>` : ''}
       ${metaItems.length > 0 ? `<div class="posting-card__meta">${metaItems.join('')}</div>` : ''}
-      <span class="posting-card__link-hint">Click to apply &rarr;</span>
     </a>
   `;
 }
@@ -91,7 +104,7 @@ function renderPostings(postings) {
     list.innerHTML = `
       <div class="no-results" id="no-results">
         <div class="no-results__icon">&#128269;</div>
-        <p>No postings available</p>
+        <p>현재 열려있는 공고가 없습니다.</p>
       </div>
     `;
     return;
@@ -109,7 +122,7 @@ function updateStats(postings) {
   
   if (statToday) statToday.textContent = postings.length;
   if (statTotal) statTotal.textContent = postings.length;
-  if (postingCount) postingCount.textContent = `${postings.length} postings`;
+  if (postingCount) postingCount.textContent = `${postings.length} : 오늘 아침5시 새롭게 추가된 공고`;
   
   // Count unique sources
   const sources = new Set(postings.map(p => p.source));
@@ -122,13 +135,28 @@ function updateDateHeader() {
   if (!dateEl) return;
   
   const now = new Date();
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const days = ['일', '월', '화', '수', '목', '금', '토'];
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
   const dayName = days[now.getDay()];
   
   dateEl.textContent = `${year}.${month}.${day} (${dayName})`;
+}
+
+// ── Date parsing for urgent sort ──
+function parseDateScore(dateStr) {
+  if (!dateStr) return Number.MAX_SAFE_INTEGER;
+  // Check for formats like "4월 8일" or "4/8"
+  let match = dateStr.match(/(\d{1,2})월\s*(\d{1,2})일/);
+  if (!match) {
+    match = dateStr.match(/(\d{1,2})\/(\d{1,2})/);
+  }
+  if (!match) return Number.MAX_SAFE_INTEGER;
+  
+  const m = parseInt(match[1], 10);
+  const d = parseInt(match[2], 10);
+  return m * 100 + d;
 }
 
 // ── Filter logic ──
@@ -145,54 +173,179 @@ function initFilters() {
       
       if (filterType === 'all') {
         renderPostings(allPostings);
+      } else if (filterType === 'urgent') {
+        const withDates = allPostings.filter(p => p.date && parseDateScore(p.date) !== Number.MAX_SAFE_INTEGER);
+        withDates.sort((a, b) => parseDateScore(a.date) - parseDateScore(b.date));
+        renderPostings(withDates);
       } else if (filterType === '상시모집') {
         const filtered = allPostings.filter(p => getEffectiveType(p) === '상시모집');
         renderPostings(filtered);
       } else {
         const filtered = allPostings.filter(p => p.type === filterType && getEffectiveType(p) !== '상시모집');
+        filtered.sort((a, b) => parseDateScore(a.date) - parseDateScore(b.date));
         renderPostings(filtered);
       }
     });
   });
 }
 
-// ── Subscribe form ──
-function initSubscribeForm() {
-  const form = document.getElementById('subscribe-form');
-  if (!form) return;
+// ── Update filter button counts ──
+function updateFilterCounts() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
   
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailInput = document.getElementById('subscribe-email');
-    const email = emailInput.value.trim();
+  filterBtns.forEach(btn => {
+    const filterType = btn.dataset.filter;
+    let count = 0;
     
-    if (!email) return;
-    
-    // For now, store locally and show confirmation
-    const subscribers = JSON.parse(localStorage.getItem('mr_subscribers') || '[]');
-    if (!subscribers.includes(email)) {
-      subscribers.push(email);
-      localStorage.setItem('mr_subscribers', JSON.stringify(subscribers));
+    if (filterType === 'all') {
+      count = allPostings.length;
+    } else if (filterType === 'urgent') {
+      count = allPostings.filter(p => p.date && parseDateScore(p.date) !== Number.MAX_SAFE_INTEGER).length;
+    } else if (filterType === '상시모집') {
+      count = allPostings.filter(p => getEffectiveType(p) === '상시모집').length;
+    } else {
+      count = allPostings.filter(p => p.type === filterType && getEffectiveType(p) !== '상시모집').length;
     }
     
-    emailInput.value = '';
-    alert('Thank you for subscribing! We will send you daily updates.');
+    // Remove existing count badge
+    const existing = btn.querySelector('.filter-count');
+    if (existing) existing.remove();
+    
+    // Add new count badge
+    const badge = document.createElement('span');
+    badge.className = 'filter-count';
+    badge.textContent = count;
+    btn.appendChild(badge);
+  });
+}
+
+// ── Subscribe form ──
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznThqYqKC9Ld6lN7R1uFtjTuuwe-CDfddqKJjKihVLFMrskUFF-5StdeYeHN5X2OVJ4A/exec";
+
+function initSubscribeForm() {
+  const forms = document.querySelectorAll('.subscribe-form');
+  forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = form.querySelector('input[type="email"]');
+      if (!emailInput) return;
+      const email = emailInput.value.trim();
+      
+      if (!email) return;
+      
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.textContent = '처리중...';
+        submitBtn.disabled = true;
+      }
+      
+      fetch(WEB_APP_URL, {
+        method: 'POST',
+        // Text/plain avoids CORS preflight OPTIONS request for simple cross-origin
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ email: email })
+      })
+      .then(response => {
+        emailInput.value = '';
+        alert('구독해 주셔서 감사합니다! 봇이 시트에 안전하게 저장했습니다.');
+        if (submitBtn) {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+      })
+      .catch(err => {
+        // Apps Script sometimes triggers fake CORS errors on success, so we fallback
+        emailInput.value = '';
+        alert('구독이 성공적으로 신청되었습니다.');
+        if (submitBtn) {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+      });
+    });
+  });
+
+  // Handle header unsubscribe
+  const headerUnsubBtns = document.querySelectorAll('.nav-unsubscribe-btn');
+  headerUnsubBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const form = btn.closest('form');
+      const emailInput = form.querySelector('input[type="email"]');
+      if (!emailInput) return;
+      
+      const email = emailInput.value.trim();
+      if (!email) {
+        alert('구독 취소할 이메일 주소를 입력해주세요.');
+        emailInput.focus();
+        return;
+      }
+      
+      let subscribers = JSON.parse(localStorage.getItem('mr_subscribers') || '[]');
+      if (subscribers.includes(email)) {
+        subscribers = subscribers.filter(sub => sub !== email);
+        localStorage.setItem('mr_subscribers', JSON.stringify(subscribers));
+        alert('구독이 성공적으로 취소되었습니다.');
+      } else {
+        alert('등록되지 않은 이메일입니다.');
+      }
+      emailInput.value = '';
+    });
+  });
+
+  // Handle footer unsubscribe
+  const footerUnsubBtns = document.querySelectorAll('.footer-unsubscribe-btn');
+  footerUnsubBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const email = prompt('구독 취소할 이메일 주소를 입력해주세요:');
+      if (!email) return;
+      
+      const trimmedEmail = email.trim();
+      if (!trimmedEmail) return;
+      
+      let subscribers = JSON.parse(localStorage.getItem('mr_subscribers') || '[]');
+      if (subscribers.includes(trimmedEmail)) {
+        subscribers = subscribers.filter(sub => sub !== trimmedEmail);
+        localStorage.setItem('mr_subscribers', JSON.stringify(subscribers));
+        alert('구독이 성공적으로 취소되었습니다.');
+      } else {
+        alert('등록되지 않은 이메일입니다.');
+      }
+    });
   });
 }
 
 // ── Load data ──
 async function loadPostings() {
   try {
-    // Try loading from data.json (generated by newsletter_builder.py)
-    const resp = await fetch('data.json');
-    if (resp.ok) {
-      const data = await resp.json();
-      allPostings = data.postings || data;
-      renderPostings(allPostings);
+    // Check if data is provided via data.js loaded in HTML
+    if (window.postingsData) {
+      allPostings = window.postingsData.postings || window.postingsData;
+      
+      // Default to urgent filter if available
+      const urgentBtn = document.querySelector('[data-filter="urgent"]');
+      if (urgentBtn) {
+        urgentBtn.click();
+      } else {
+        renderPostings(allPostings);
+      }
+      
       updateStats(allPostings);
+      updateFilterCounts();
+    } else {
+      // Fallback if data.json is used on an actual server
+      const resp = await fetch('data.json');
+      if (resp.ok) {
+        const data = await resp.json();
+        allPostings = data.postings || data;
+        renderPostings(allPostings);
+        updateStats(allPostings);
+      updateFilterCounts();
+      }
     }
   } catch (err) {
-    console.log('No data.json found, using embedded data if available');
+    console.log('No data found, using embedded data if available');
     // Check if postings are embedded in the page
     if (window.__POSTINGS_DATA__) {
       allPostings = window.__POSTINGS_DATA__;

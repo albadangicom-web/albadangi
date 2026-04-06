@@ -83,11 +83,12 @@ def build_website_data(postings: list[dict], date_str: str = None):
         "postings": postings,
     }
 
-    data_path = os.path.join(WEBSITE_DIR, "data.json")
+    data_path = os.path.join(WEBSITE_DIR, "data.js")
     with open(data_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        js_content = f"window.postingsData = {json.dumps(output, ensure_ascii=False, indent=2)};"
+        f.write(js_content)
 
-    print(f"[Website] data.json generated: {len(postings)} postings")
+    print(f"[Website] data.js generated: {len(postings)} postings")
     return data_path
 
 
@@ -97,38 +98,117 @@ def build_email_posting_html(posting: dict) -> str:
     color = TYPE_COLOR.get(p_type, "#a0a0a0")
     type_label = posting.get("type", "Other")
 
-    meta_parts = []
-    if posting.get("location"):
-        meta_parts.append(f"&#128205; {posting['location']}")
-    if posting.get("reward"):
-        meta_parts.append(f"&#128176; {posting['reward']}")
+    type_icons = {
+        "좌담회": "&#128172;", "온라인": "&#128187;", "설문조사": "&#128187;",
+        "맛테스트": "&#127860;", "인터뷰": "&#127908;", "유치조사": "&#128230;",
+        "패널모집": "&#128101;", "기타": "&#128196;", "상시모집": "&#128260;"
+    }
+    t_icon = type_icons.get(p_type, "&#128196;")
+    
+    info_rows = []
+    
     if posting.get("date"):
-        meta_parts.append(f"&#128197; {posting['date']}")
-    if posting.get("target_age"):
-        meta_parts.append(f"&#128100; {posting['target_age']}")
-    if posting.get("target_gender"):
-        meta_parts.append(f"&#128101; {posting['target_gender']}")
+        info_rows.append(f"""
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; width: 75px; vertical-align: top;">
+              <span style="color: #94A3B8; font-size: 13px;">&#128197; 일정</span>
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #1E293B; font-size: 13px; line-height: 1.4;">{posting['date']}</span>
+            </td>
+          </tr>""")
+    if posting.get("duration"):
+        info_rows.append(f"""
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #94A3B8; font-size: 13px;">&#9202; 소요시간</span>
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #1E293B; font-size: 13px; line-height: 1.4;">{posting['duration']}</span>
+            </td>
+          </tr>""")
+    if posting.get("reward"):
+        info_rows.append(f"""
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #94A3B8; font-size: 13px;">&#128176; 사례비</span>
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #2563EB; font-size: 13px; font-weight: 700; line-height: 1.4;">{posting['reward']}</span>
+            </td>
+          </tr>""")
+          
+    target_str = ""
+    if posting.get("target_age") and posting.get("target_gender"):
+        target_str = f"{posting['target_age']} {posting['target_gender']}"
+    elif posting.get("target_age"):
+        target_str = posting['target_age']
+    elif posting.get("target_gender"):
+        target_str = posting['target_gender']
+        
+    if target_str:
+        info_rows.append(f"""
+          <tr>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #94A3B8; font-size: 13px;">&#128100; 대상</span>
+            </td>
+            <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; vertical-align: top;">
+              <span style="color: #1E293B; font-size: 13px; line-height: 1.4;">{target_str}</span>
+            </td>
+          </tr>""")
+          
+    if posting.get("location"):
+        info_rows.append(f"""
+          <tr>
+            <td style="padding: 10px 0; border-bottom: none; vertical-align: top;">
+              <span style="color: #94A3B8; font-size: 13px;">&#128205; 장소</span>
+            </td>
+            <td style="padding: 10px 0; border-bottom: none; vertical-align: top;">
+              <span style="color: #1E293B; font-size: 13px; line-height: 1.4;">{posting['location']}</span>
+            </td>
+          </tr>""")
+          
+    if info_rows and not posting.get("location"):
+        info_rows[-1] = info_rows[-1].replace('border-bottom: 1px solid #E2E8F0;', 'border-bottom: none;')
 
     meta_html = ""
-    if meta_parts:
-        meta_items = " &nbsp;&middot;&nbsp; ".join(meta_parts)
-        meta_html = f'<p style="font-size: 13px; color: #a0a0a0; margin: 8px 0 0 0;">{meta_items}</p>'
+    if info_rows:
+        rows_str = "".join(info_rows)
+        meta_html = f'''
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F8FAFC; border-radius: 8px; margin-top: 16px; margin-bottom: 4px;">
+            <tr>
+              <td style="padding: 4px 16px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  {rows_str}
+                </table>
+              </td>
+            </tr>
+          </table>
+        '''
 
     return f"""
           <tr>
-            <td class="posting-item" style="padding: 20px 24px; border-bottom: 1px solid #2a2a2a;">
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <td style="padding-bottom: 16px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); overflow: hidden; border-collapse: separate;">
                 <tr>
-                  <td>
-                    <span class="type-badge" style="display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; background: rgba({_hex_to_rgb(color)}, 0.15); color: {color};">
-                      {type_label}
-                    </span>
-                    <h3 style="font-size: 16px; font-weight: 600; color: #f5f5f5; margin: 8px 0 0 0; line-height: 1.4;">
-                      {posting.get('title', '')}
-                    </h3>
-                    {meta_html}
-                    <a href="{posting.get('source_url', '#')}" class="view-link" style="display: inline-block; margin-top: 12px; padding: 6px 14px; background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); border-radius: 6px; color: #3b82f6; text-decoration: none; font-size: 13px; font-weight: 500;">
-                      View Original &rarr;
+                  <td style="padding: 0;">
+                    <a href="{posting.get('source_url', '#')}" style="display: block; padding: 24px; text-decoration: none; color: inherit;" target="_blank">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="vertical-align: top;">
+                            <h3 style="font-size: 17px; font-weight: 700; color: #1E293B; margin: 0; line-height: 1.4; word-break: keep-all; text-decoration: none;">
+                              {posting.get('title', '')}
+                            </h3>
+                          </td>
+                          <td style="vertical-align: top; text-align: right; width: 85px; padding-left: 12px;">
+                            <span class="type-badge" style="display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; background: rgba({_hex_to_rgb(color)}, 0.12); color: {color}; white-space: nowrap; border: 1px solid rgba({_hex_to_rgb(color)}, 0.2); text-decoration: none;">
+                              {t_icon} {type_label}
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+                      
+                      {meta_html}
                     </a>
                   </td>
                 </tr>
@@ -150,7 +230,7 @@ def build_email_html(postings: list[dict], date_str: str = None) -> str:
 
     # 날짜 표시 형식
     dt = datetime.strptime(date_str, "%Y-%m-%d")
-    days_ko = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    days_ko = ["월", "화", "수", "목", "금", "토", "일"]
     date_display = f"{dt.year}.{dt.month:02d}.{dt.day:02d} ({days_ko[dt.weekday()]})"
 
     # 공고별 HTML 생성
@@ -162,12 +242,12 @@ def build_email_html(postings: list[dict], date_str: str = None) -> str:
         template = f.read()
 
     # 변수 치환
-    html = template.replace("{{ title }}", f"MR Newsletter - {date_display}")
+    html = template.replace("{{ title }}", f"알바단지 - {date_display}")
     html = html.replace("{{ date_display }}", date_display)
     html = html.replace("{{ posting_count }}", str(len(postings)))
     html = html.replace("{{ postings_html }}", postings_html)
     html = html.replace("{{ site_url }}", "https://yourdomain.com")
-    html = html.replace("{{ unsubscribe_url }}", "#unsubscribe")
+    html = html.replace("{{ unsubscribe_url }}", "{UNSUBSCRIBE_LINK}")
 
     return html
 
@@ -202,6 +282,32 @@ def log_newsletter(date_str: str, total: int, web_path: str, email_path: str):
         print(f"[DB WARN] Newsletter log failed: {e}")
 
 
+def build_website_archive():
+    """웹사이트 아카이브용 데이터 JS 생성 및 파일 복사"""
+    import shutil
+    archives_dir = os.path.join(WEBSITE_DIR, "archives")
+    os.makedirs(archives_dir, exist_ok=True)
+    
+    email_files = []
+    if os.path.exists(OUTPUT_EMAIL_DIR):
+        email_files = [f for f in os.listdir(OUTPUT_EMAIL_DIR) if f.endswith('.html')]
+        
+    dates = []
+    for f in email_files:
+        src = os.path.join(OUTPUT_EMAIL_DIR, f)
+        dst = os.path.join(archives_dir, f)
+        shutil.copy2(src, dst)
+        dates.append(f.replace(".html", ""))
+        
+    dates.sort(reverse=True)
+    
+    js_path = os.path.join(WEBSITE_DIR, "js", "archives-data.js")
+    with open(js_path, "w", encoding="utf-8") as f:
+        import json
+        f.write(f"const archiveDates = {json.dumps(dates)};\n")
+    print(f"[Archive] data.js generated: {len(dates)} past newsletters")
+
+
 def build_all(date_str: str = None):
     """전체 빌드 실행"""
     if not date_str:
@@ -219,14 +325,17 @@ def build_all(date_str: str = None):
 
     print(f"[Data] {len(postings)} postings loaded")
 
-    # 2. 웹사이트 data.json 생성
+    # 2. 웹사이트 data.js 생성
     web_path = build_website_data(postings, date_str)
 
     # 3. 이메일 HTML 생성
     email_html = build_email_html(postings, date_str)
     email_path = save_email_html(email_html, date_str)
 
-    # 4. 로그
+    # 4. 아카이브 업데이트
+    build_website_archive()
+
+    # 5. 로그
     log_newsletter(date_str, len(postings), web_path, email_path)
 
     print(f"\n[DONE] Newsletter built successfully!")

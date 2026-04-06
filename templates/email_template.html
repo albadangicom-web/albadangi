@@ -7,124 +7,136 @@
   <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <style>
     /* Reset */
-    body, table, td, p, a { margin: 0; padding: 0; }
+    body, table, td, p, a, h1, h2, h3 { margin: 0; padding: 0; }
     body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
     table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     
     /* Main styles */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', 'Pretendard', sans-serif;
+      background-color: #F8FAFC;
+      color: #1E293B;
     }
     
     .email-wrapper { 
       max-width: 600px; 
       margin: 0 auto; 
-      background-color: #111111; 
+      background-color: #FFFFFF; 
     }
     
     .header-section {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      padding: 32px 24px;
+      background: linear-gradient(135deg, #2563EB, #3B82F6);
+      padding: 40px 24px;
       text-align: center;
-      border-bottom: 2px solid #3b82f6;
     }
     
+    .posting-wrap {
+      padding: 24px;
+      background-color: #F8FAFC;
+    }
+
     .posting-item {
-      padding: 20px 24px;
-      border-bottom: 1px solid #2a2a2a;
+      background: #FFFFFF;
+      padding: 24px;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      margin-bottom: 16px;
     }
-    
-    .posting-item:hover { background-color: #1a1a1a; }
-    
-    .type-badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    
-    .type-fgd { background: rgba(59,130,246,0.15); color: #3b82f6; }
-    .type-online { background: rgba(34,197,94,0.15); color: #22c55e; }
-    .type-taste { background: rgba(245,158,11,0.15); color: #f59e0b; }
-    .type-interview { background: rgba(168,85,247,0.15); color: #a855f7; }
-    .type-other { background: rgba(160,160,160,0.1); color: #a0a0a0; }
     
     .view-link {
       display: inline-block;
-      margin-top: 12px;
-      padding: 6px 14px;
-      background: rgba(59,130,246,0.1);
-      border: 1px solid rgba(59,130,246,0.2);
-      border-radius: 6px;
-      color: #3b82f6;
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 8px;
+      color: #2563EB;
       text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
+      font-size: 14px;
+      font-weight: 600;
     }
     
     .footer-section {
-      padding: 24px;
+      padding: 32px 24px;
       text-align: center;
-      background-color: #0a0a0a;
+      background-color: #FFFFFF;
+      border-top: 1px solid #E2E8F0;
       font-size: 12px;
-      color: #666;
+      color: #64748B;
     }
     
     @media only screen and (max-width: 480px) {
       .email-wrapper { width: 100% !important; }
+      .posting-wrap { padding: 16px !important; }
       .posting-item { padding: 16px !important; }
-      .header-section { padding: 24px 16px !important; }
+      .header-section { padding: 32px 16px !important; }
     }
   </style>
 </head>
-<body style="background-color: #0a0a0a; margin: 0; padding: 0;">
-  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #0a0a0a;">
+<body style="background-color: #F8FAFC; margin: 0; padding: 0;">
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F8FAFC;">
     <tr>
       <td align="center" style="padding: 20px 0;">
-        <!-- Main Email Container -->
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-wrapper" style="background-color: #111111; border-radius: 12px; overflow: hidden;">
+        <!--[if mso]><table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="600"><tr><td><![endif]-->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="email-wrapper" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
           
           <!-- Header -->
           <tr>
-            <td class="header-section" style="background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 32px 24px; text-align: center; border-bottom: 2px solid #3b82f6;">
-              <h1 style="font-size: 24px; font-weight: 800; color: #ffffff; margin: 0 0 8px 0;">
-                <span style="color: #3b82f6;">MR</span> Newsletter
+            <td class="header-section" style="background: #ffffff; padding: 40px 24px 20px 24px; text-align: center;">
+              <h1 style="font-size: 26px; font-weight: 800; color: #1E293B; margin: 0 0 16px 0; letter-spacing: -0.5px;">
+                알바단지를 매일 아침 배달합니다!
               </h1>
-              <p style="font-size: 14px; color: #a0a0a0; margin: 0;">{{ date_display }}</p>
-              <p style="font-size: 20px; color: #ffffff; margin: 16px 0 0 0; font-weight: 600;">
-                Today: {{ posting_count }} postings
-              </p>
+              <div style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 8px;">
+                 <span style="font-size: 15px; color: #64748B;">{{ date_display }}</span>
+                 <span style="display: inline-block; padding: 4px 12px; background: #F1F5F9; border-radius: 20px; font-size: 13px; color: #475569; font-weight: 600;">오늘 신규 공고: {{ posting_count }}건</span>
+              </div>
+              <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 8px;">
+                <!-- Home Button -->
+                <a href="{{ site_url }}" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">🏠 홈</a>
+                <!-- Fake Input & Subscribe Button -->
+                <div style="display: flex; align-items: center; background: #ffffff; border-radius: 22px; padding: 3px 3px 3px 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border: 1px solid #E2E8F0; height: 32px; box-sizing: border-box;">
+                  <span style="font-size: 12px; color: #94A3B8; margin-right: 14px;">이메일 주소</span>
+                  <a href="{{ site_url }}#subscribe" style="display: inline-block; padding: 6px 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700;">무료 구독하기</a>
+                </div>
+                <!-- Unsubscribe Button -->
+                <a href="{{ unsubscribe_url }}" style="display: inline-flex; align-items: center; padding: 5px 16px; background: #ffffff; color: #64748B; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">구독취소</a>
+              </div>
             </td>
           </tr>
           
-          <!-- Postings -->
-          {{ postings_html }}
+          <!-- Postings Background Wrap -->
+          <tr>
+            <td class="posting-wrap" style="padding: 24px; background-color: #F8FAFC;">
+              <!-- Container for all postings -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                {{ postings_html }}
+              </table>
+            </td>
+          </tr>
           
           <!-- Website Link -->
           <tr>
-            <td style="padding: 24px; text-align: center; background-color: #1a1a1a;">
-              <a href="{{ site_url }}" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 14px; font-weight: 600;">
-                View All Postings
+            <td style="padding: 32px 24px; text-align: center; background-color: #FFFFFF; border-top: 1px solid #E2E8F0;">
+              <a href="{{ site_url }}" style="display: inline-block; padding: 14px 32px; background: #2563EB; color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 15px; font-weight: 600; box-shadow: 0 4px 6px rgba(37,99,235,0.2);">
+                모든 공고 웹사이트에서 보기
               </a>
             </td>
           </tr>
           
           <!-- Footer -->
           <tr>
-            <td class="footer-section" style="padding: 24px; text-align: center; background-color: #0a0a0a; font-size: 12px; color: #666;">
-              <p>&copy; 2026 MR Newsletter</p>
+            <td class="footer-section" style="padding: 32px 24px; text-align: center; background-color: #F1F5F9; font-size: 12px; color: #64748B;">
+              <p>&copy; 2026 Albadanji. All rights reserved.</p>
               <p style="margin-top: 8px;">
-                <a href="{{ unsubscribe_url }}" style="color: #666; text-decoration: underline;">Unsubscribe</a>
+                이 메일은 알바단지 구독자에게 발송되었습니다.<br>
+                더 이상 수신을 원치 않으시면 <a href="{{ unsubscribe_url }}" style="color: #64748B; text-decoration: underline;">수신 거부</a>를 클릭하세요.
               </p>
             </td>
           </tr>
           
         </table>
+        <!--[if mso]></td></tr></table><![endif]-->
       </td>
     </tr>
   </table>

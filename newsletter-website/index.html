@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MR Newsletter - 시장조사 좌담회 모집 정보</title>
+  <title>알바단지 - 시장조사 좌담회 모집 정보</title>
   <meta name="description" content="매일 업데이트되는 시장조사 좌담회, 설문조사, 인터뷰, 맛테스트 모집 정보를 한눈에 확인하세요.">
   <meta property="og:title" content="MR Newsletter - 시장조사 좌담회 모집 정보">
   <meta property="og:description" content="매일 업데이트되는 좌담회, 설문조사 모집 공고를 받아보세요.">
@@ -22,65 +22,49 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="index.html" class="header__logo">
-        <span>MR</span> Newsletter
+        <span>알바</span>단지
       </a>
       <nav class="header__nav">
-        <a href="index.html" class="header__link">Home</a>
-        <a href="archive.html" class="header__link">Archive</a>
-        <div class="theme-toggle" id="theme-toggle" title="Toggle theme" role="button" tabindex="0">
-          <div class="theme-toggle__icons">
-            <span>&#9728;&#65039;</span>
-            <span>&#127769;</span>
-          </div>
-          <div class="theme-toggle__thumb"></div>
-        </div>
-        <a href="subscribe.html" class="header__cta" id="nav-subscribe-btn">Subscribe</a>
+        <a href="index.html" class="header__link">홈</a>
+        <a href="archive.html" class="header__link">지난 뉴스레터</a>
+        <form class="subscribe-form nav-subscribe-form">
+          <input type="email" class="nav-subscribe-input" placeholder="이메일 주소" required autocomplete="email">
+          <button type="submit" class="header__cta">무료 구독하기</button>
+          <button type="button" class="header__cta header__cta--secondary nav-unsubscribe-btn">구독취소</button>
+        </form>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__badge" id="hero-badge">Market Research Newsletter</div>
-      <h1 class="hero__title">
-        시장조사 참여 기회를<br>매일 전해드립니다
-      </h1>
-      <p class="hero__subtitle">
-        좌담회 · 설문조사 · 인터뷰 · 맛테스트<br>
-        최신 모집 공고를 한눈에 확인하세요
-      </p>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          시장조사 참여 기회를<br>매일 아침 배달해 드립니다
+        </h1>
+        <p class="hero__subtitle">
+          좌담회 · 설문조사 · 인터뷰 · 맛테스트 등 흩어져 있는<br>
+          돈 버는 알바 정보를 가장 빠르게 한눈에 확인하세요.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="container" id="stats-section">
-    <div class="stats-bar" id="stats-bar">
-      <div class="stat-item">
-        <div class="stat-item__value" id="stat-today">-</div>
-        <div class="stat-item__label">Today's Postings</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-item__value" id="stat-total">-</div>
-        <div class="stat-item__label">Total Collected</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-item__value" id="stat-sources">-</div>
-        <div class="stat-item__label">Sources</div>
-      </div>
-    </div>
-  </section>
 
   <!-- Date Header + Filters -->
   <section class="container">
     <div class="date-header" id="date-header">
       <span class="date-header__date" id="current-date">Loading...</span>
-      <span class="date-header__count" id="posting-count">- postings</span>
+      <span class="date-header__count" id="posting-count">- : 오늘 아침5시 새롭게 추가된 공고</span>
       <div class="date-header__line"></div>
     </div>
 
     <div class="filters" id="filters">
-      <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+      <button class="filter-btn" data-filter="all" id="filter-all">All</button>
+      <button class="filter-btn active" data-filter="urgent" id="filter-urgent">임박</button>
       <button class="filter-btn" data-filter="좌담회" id="filter-fgd">좌담회</button>
       <button class="filter-btn" data-filter="온라인" id="filter-online">온라인</button>
       <button class="filter-btn" data-filter="맛테스트" id="filter-taste">맛테스트</button>
@@ -102,40 +86,27 @@
     </div>
   </main>
 
-  <!-- Subscribe -->
-  <section class="container" id="subscribe-section">
-    <div class="subscribe-section">
-      <h2 class="subscribe-section__title" id="subscribe-title">
-        매일 새로운 조사 정보를 받아보세요
-      </h2>
-      <p class="subscribe-section__desc">
-        이메일 주소를 입력하시면 매일 아침 최신 좌담회/설문조사 모집 정보를 보내드립니다.
-      </p>
-      <form class="subscribe-form" id="subscribe-form">
-        <input 
-          type="email" 
-          class="subscribe-form__input" 
-          id="subscribe-email"
-          placeholder="your@email.com" 
-          required 
-          autocomplete="email"
-        >
-        <button type="submit" class="subscribe-form__btn" id="subscribe-btn">Subscribe</button>
-      </form>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="container">
-      <p class="footer__text">&copy; 2026 MR Newsletter. All rights reserved.</p>
+      <p class="footer__text">&copy; 2026 Albadanji. All rights reserved.</p>
       <div class="footer__links">
-        <a href="archive.html" class="footer__link">Archive</a>
-        <a href="subscribe.html" class="footer__link">Subscribe</a>
+        <a href="archive.html" class="footer__link">지난 뉴스레터</a>
+        <a href="subscribe.html" class="footer__link">구독하기</a>
+        <a href="#" class="footer__link footer-unsubscribe-btn">구독취소</a>
+        <div class="theme-toggle" id="theme-toggle" title="테마 변경" role="button" tabindex="0">
+          <div class="theme-toggle__icons">
+            <span>&#9728;&#65039;</span>
+            <span>&#127769;</span>
+          </div>
+          <div class="theme-toggle__thumb"></div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
