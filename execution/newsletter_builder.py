@@ -11,7 +11,7 @@ from datetime import datetime
 # 프로젝트 루트
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(PROJECT_ROOT, "data", "newsletter.db")
-WEBSITE_DIR = os.path.join(PROJECT_ROOT, "docs")
+WEBSITE_DIR = os.path.join(PROJECT_ROOT, "newsletter-website")
 OUTPUT_EMAIL_DIR = os.path.join(PROJECT_ROOT, "output", "email")
 TEMPLATE_DIR = os.path.join(PROJECT_ROOT, "templates")
 SCRAPED_DATA_DIR = os.path.join(PROJECT_ROOT, ".tmp", "scraped_data")
