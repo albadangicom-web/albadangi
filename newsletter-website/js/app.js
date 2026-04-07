@@ -239,7 +239,43 @@ function updateFilterCounts() {
 // ── Subscribe form ──
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznThqYqKC9Ld6lN7R1uFtjTuuwe-CDfddqKJjKihVLFMrskUFF-5StdeYeHN5X2OVJ4A/exec";
 
+// Toast notification helper
+function showToast(message, type = 'success') {
+  const existing = document.getElementById('mr-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.id = 'mr-toast';
+  toast.textContent = message;
+  const bg = type === 'success' ? '#22c55e' : type === 'error' ? '#ef4444' : '#3b82f6';
+  toast.style.cssText = `
+    position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    background: ${bg}; color: #fff; padding: 0.85rem 1.75rem;
+    border-radius: 999px; font-size: 0.95rem; font-weight: 600;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18); z-index: 9999;
+    animation: fadeInUp 0.3s ease; white-space: nowrap;
+  `;
+  document.body.appendChild(toast);
+  setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = 'opacity 0.4s'; setTimeout(() => toast.remove(), 400); }, 3000);
+}
+
+// Generic API call to Google Apps Script
+function callAppsScript(payload, onDone) {
+  fetch(WEB_APP_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  })
+  .then(res => res.json().catch(() => ({ status: 'success' })))
+  .then(data => onDone(null, data))
+  .catch(() => {
+    // Apps Script often triggers CORS errors even on success
+    onDone(null, { status: 'success' });
+  });
+}
+
 function initSubscribeForm() {
+  // ── 구독하기 (모든 subscribe-form) ──
   const forms = document.querySelectorAll('.subscribe-form');
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
@@ -247,88 +283,57 @@ function initSubscribeForm() {
       const emailInput = form.querySelector('input[type="email"]');
       if (!emailInput) return;
       const email = emailInput.value.trim();
-      
       if (!email) return;
-      
+
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.textContent : '';
-      if (submitBtn) {
-        submitBtn.textContent = '처리중...';
-        submitBtn.disabled = true;
-      }
-      
-      fetch(WEB_APP_URL, {
-        method: 'POST',
-        // Text/plain avoids CORS preflight OPTIONS request for simple cross-origin
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify({ email: email })
-      })
-      .then(response => {
+      if (submitBtn) { submitBtn.textContent = '처리중...'; submitBtn.disabled = true; }
+
+      callAppsScript({ action: 'subscribe', email }, (err, data) => {
         emailInput.value = '';
-        alert('구독 신청이 완료되었습니다! 매일 아침 최신 알바 정보를 보내드릴게요.');
-        if (submitBtn) {
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        }
-      })
-      .catch(err => {
-        // Apps Script sometimes triggers fake CORS errors on success, so we fallback
-        emailInput.value = '';
-        alert('구독 신청이 완료되었습니다! 매일 아침 최신 알바 정보를 보내드릴게요.');
-        if (submitBtn) {
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        }
+        if (submitBtn) { submitBtn.textContent = originalText; submitBtn.disabled = false; }
+        showToast('✅ 구독 완료! 매일 아침 최신 정보를 보내드릴게요.', 'success');
       });
     });
   });
 
-  // Handle header unsubscribe
+  // ── 헤더 구독취소 버튼 ──
   const headerUnsubBtns = document.querySelectorAll('.nav-unsubscribe-btn');
   headerUnsubBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const form = btn.closest('form');
-      const emailInput = form.querySelector('input[type="email"]');
-      if (!emailInput) return;
-      
-      const email = emailInput.value.trim();
+      const emailInput = form ? form.querySelector('input[type="email"]') : null;
+      const email = emailInput ? emailInput.value.trim() : '';
+
       if (!email) {
-        alert('구독 취소할 이메일 주소를 입력해주세요.');
-        emailInput.focus();
+        showToast('취소할 이메일 주소를 먼저 입력해주세요.', 'error');
+        if (emailInput) emailInput.focus();
         return;
       }
-      
-      let subscribers = JSON.parse(localStorage.getItem('mr_subscribers') || '[]');
-      if (subscribers.includes(email)) {
-        subscribers = subscribers.filter(sub => sub !== email);
-        localStorage.setItem('mr_subscribers', JSON.stringify(subscribers));
-        alert('구독이 성공적으로 취소되었습니다.');
-      } else {
-        alert('등록되지 않은 이메일입니다.');
-      }
-      emailInput.value = '';
+
+      btn.textContent = '처리중...';
+      btn.disabled = true;
+
+      callAppsScript({ action: 'unsubscribe', email }, (err, data) => {
+        btn.textContent = '구독취소';
+        btn.disabled = false;
+        if (emailInput) emailInput.value = '';
+        showToast('구독이 취소되었습니다.', 'info');
+      });
     });
   });
 
-  // Handle footer unsubscribe
+  // ── 푸터 구독취소 버튼 ──
   const footerUnsubBtns = document.querySelectorAll('.footer-unsubscribe-btn');
   footerUnsubBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const email = prompt('구독 취소할 이메일 주소를 입력해주세요:');
-      if (!email) return;
-      
-      const trimmedEmail = email.trim();
-      if (!trimmedEmail) return;
-      
-      let subscribers = JSON.parse(localStorage.getItem('mr_subscribers') || '[]');
-      if (subscribers.includes(trimmedEmail)) {
-        subscribers = subscribers.filter(sub => sub !== trimmedEmail);
-        localStorage.setItem('mr_subscribers', JSON.stringify(subscribers));
-        alert('구독이 성공적으로 취소되었습니다.');
-      } else {
-        alert('등록되지 않은 이메일입니다.');
-      }
+      if (!email || !email.trim()) return;
+
+      callAppsScript({ action: 'unsubscribe', email: email.trim() }, (err, data) => {
+        showToast('구독이 취소되었습니다.', 'info');
+      });
     });
   });
 }
