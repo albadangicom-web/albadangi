@@ -244,6 +244,9 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* 스크롤바 유무에 따른 레이아웃 흔들림 방지 */
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 body {
