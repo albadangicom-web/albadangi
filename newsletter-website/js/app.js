@@ -30,9 +30,26 @@ const TYPE_ICON_MAP = {
 
 let allPostings = [];
 
-// ── Determine effective type (상시모집 if no date) ──
+// ── Determine effective type (상시모집 if no date or '상시' keyword) ──
 function getEffectiveType(p) {
-  if (!p.date && !p.time) return '상시모집';
+  const title = (p.title || '').toLowerCase();
+  const raw = (p.raw_content || '').toLowerCase();
+  
+  // 1. 제목이나 본문에 '상시'가 명시적으로 있으면 상시모집
+  if (title.includes('상시') || raw.includes('상시모집')) {
+    return '상시모집';
+  }
+  
+  // 2. 이미 유형이 명확히 추출되었다면(기타 제외) 해당 유형 유지
+  if (p.type && p.type !== '기타') {
+    return p.type;
+  }
+  
+  // 3. 날짜 정보가 아예 없는 경우에만 상시모집으로 취급
+  if (!p.date && !p.time) {
+    return '상시모집';
+  }
+  
   return p.type || '기타';
 }
 

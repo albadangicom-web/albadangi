@@ -608,10 +608,13 @@ class ResearchiScraper(BaseScraper):
                         href = url + href
 
                     detail = self._parse_detail(href)
+                    # 유형 추측 시 제목과 본문을 함께 참고
+                    combined_text = f"{title} {detail.get('raw_content', '')}"
+                    
                     posting = self.make_posting(
                         title=title,
                         source_url=href,
-                        type=self._guess_type(title),
+                        type=self._guess_type(combined_text),
                         raw_content=detail.get("raw_content", ""),
                         **{k: v for k, v in detail.items() if k != "raw_content"},
                     )
@@ -642,32 +645,36 @@ class ResearchiScraper(BaseScraper):
 
             raw = content_el.get_text(separator="\n", strip=True)
             info = {"raw_content": raw[:2000]}
-            normalized = raw.replace("*", "\n").replace("-", "\n")
+            # *는 줄바꿈으로 보되, -는 날짜 형식을 위해 유지. 특수 공백 처리.
+            normalized = raw.replace("*", "\n").replace("\u200b", "").replace("\xa0", " ")
 
-            reward_match = re.search(r"(사례비|참석비|참여비|보상)\s*[:：]\s*(.+)", normalized)
-            if reward_match: info["reward"] = reward_match.group(2).strip()
+            # 정규표현식 보강: 콜론 주변 다양한 공백 처리 및 키워드 확장
+            sep = r"[\s:：\-]*"
+            
+            reward_match = re.search(fr"(사례비|참석비|참여비|보상|사례금){sep}(.+)", normalized)
+            if reward_match: info["reward"] = reward_match.group(2).strip().split('\n')[0]
 
-            duration_match = re.search(r"소요\s*시간\s*[:：]\s*(.+)", normalized)
-            if duration_match: info["duration"] = duration_match.group(1).strip()
+            duration_match = re.search(fr"(소요\s*시간|진행\s*시간|소요){sep}(.+)", normalized)
+            if duration_match: info["duration"] = duration_match.group(2).strip().split('\n')[0]
 
-            loc_match = re.search(r"(장소|위치|진행장소)\s*[:：]\s*(.+)", normalized)
-            if loc_match: info["location"] = loc_match.group(2).strip()
+            loc_match = re.search(fr"(장소|위치|진행장소){sep}(.+)", normalized)
+            if loc_match: info["location"] = loc_match.group(2).strip().split('\n')[0]
 
-            target_match = re.search(r"(대상\s*조건|대상|조건)\s*[:：]\s*(.+)", normalized)
+            target_match = re.search(fr"(대상\s*조건|대상|조건|참여\s*대상){sep}(.+)", normalized)
             if target_match:
-                target_text = target_match.group(2).strip()
+                target_text = target_match.group(2).strip().split('\n')[0]
                 info["target_condition"] = target_text
                 if "여성" in target_text and "남" not in target_text: info["target_gender"] = "여성"
                 elif "남성" in target_text and "여" not in target_text: info["target_gender"] = "남성"
                 elif "남녀" in target_text or "남여" in target_text: info["target_gender"] = "남녀"
-                age_match = re.search(r"(만?\s*\d+[~\-]\s*\d+세|\d+세)", target_text)
+                age_match = re.search(r"(만?\s*\d+[~\-]\s*\d+세|\d+세|\d+대)", target_text)
                 if age_match: info["target_age"] = age_match.group(1)
 
-            date_match = re.search(r"(일정|날짜|일시|조사\s*기간|조사\s*일자)\s*[:：]\s*(.+)", normalized)
-            if date_match: info["date"] = date_match.group(2).strip()
+            date_match = re.search(fr"(일정|날짜|일시|조사\s*기간|조사\s*일자|진행\s*일){sep}(.+)", normalized)
+            if date_match: info["date"] = date_match.group(2).strip().split('\n')[0]
 
-            time_match = re.search(r"(시간|진행\s*시간)\s*[:：]\s*(.+)", normalized)
-            if time_match and "소요" not in time_match.group(0): info["time"] = time_match.group(2).strip()
+            time_match = re.search(fr"(시간|진행\s*시간){sep}(.+)", normalized)
+            if time_match and "소요" not in time_match.group(0): info["time"] = time_match.group(2).strip().split('\n')[0]
 
             time.sleep(0.5)
             return info
@@ -675,13 +682,16 @@ class ResearchiScraper(BaseScraper):
             return {}
 
 
-    def _guess_type(self, title: str) -> str:
-        if "좌담회" in title:
+    def _guess_type(self, text: str) -> str:
+        text_lower = text.lower()
+        if "좌담회" in text_lower or "fgd" in text_lower:
             return "좌담회"
-        if "맛테스트" in title or "갱조사" in title:
+        if "맛테스트" in text_lower or "갱조사" in text_lower or "hut" in text_lower or "테스트" in text_lower:
             return "맛테스트"
-        if "인터뷰" in title:
+        if "인터뷰" in text_lower:
             return "인터뷰"
+        if "설문" in text_lower or "온라인" in text_lower:
+            return "온라인"
         return "기타"
 
 
@@ -1039,11 +1049,12 @@ class HankookResearchScraper(BaseScraper):
 # =============================================================================
 #  DB 저장 · 중복 제거 · 실행
 # =============================================================================
-def save_to_db(postings: list[dict]) -> tuple[int, int]:
-    """크롤링 결과를 DB에 저장. (새로 추가된 건수, 전체 건수) 반환."""
+def save_to_db(postings: list[dict]) -> tuple[int, int, list[dict]]:
+    """크롤링 결과를 DB에 저장. (새로 추가된 건수, 전체 건수, 새로운 공고 리스트) 반환."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     new_count = 0
+    new_postings = []
 
     for p in postings:
         try:
@@ -1064,12 +1075,13 @@ def save_to_db(postings: list[dict]) -> tuple[int, int]:
             ))
             if cursor.rowcount > 0:
                 new_count += 1
+                new_postings.append(p)
         except Exception as e:
             print(f"  [DB ERROR] {p.get('title', '?')}: {e}")
 
     conn.commit()
     conn.close()
-    return new_count, len(postings)
+    return new_count, len(postings), new_postings
 
 
 def save_to_json(postings: list[dict], date_str: str = None):
@@ -1165,9 +1177,10 @@ def run_all_scrapers(test_mode: bool = False) -> list[dict]:
 
     # 저장
     if all_postings:
-        new_count, total = save_to_db(all_postings)
-        save_to_json(all_postings)
+        new_count, total, new_postings_list = save_to_db(all_postings)
+        save_to_json(new_postings_list)
         print(f"\n[Result] {new_count} new / {total} total postings saved to DB")
+        all_postings = new_postings_list # 오직 새로운(새로 발굴된) 포스팅만 반환하여 이메일로 전송!
     else:
         print("\n[Result] No postings found")
 
