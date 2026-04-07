@@ -304,6 +304,9 @@ img {
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 800;
@@ -316,6 +319,13 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.header__logo-img {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+  object-fit: contain;
 }
 
 .header__nav {
