@@ -16,6 +16,29 @@ OUTPUT_EMAIL_DIR = os.path.join(PROJECT_ROOT, "output", "email")
 TEMPLATE_DIR = os.path.join(PROJECT_ROOT, "templates")
 SCRAPED_DATA_DIR = os.path.join(PROJECT_ROOT, ".tmp", "scraped_data")
 
+def load_env():
+    env = {}
+    env_path = os.path.join(PROJECT_ROOT, '.env')
+    if not os.path.exists(env_path):
+        return env
+    try:
+        # Try UTF-16 first
+        try:
+            with open(env_path, 'r', encoding='utf-16') as f:
+                lines = f.readlines()
+        except:
+            with open(env_path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+        for line in lines:
+            if '=' in line and not line.strip().startswith('#'):
+                k, v = line.strip().split('=', 1)
+                env[k.strip()] = v.strip().strip('"\'')
+    except:
+        pass
+    return env
+
+ENV = load_env()
+
 
 # Type -> badge class mapping for email
 TYPE_BADGE = {
@@ -246,7 +269,8 @@ def build_email_html(postings: list[dict], date_str: str = None) -> str:
     html = html.replace("{{ date_display }}", date_display)
     html = html.replace("{{ posting_count }}", str(len(postings)))
     html = html.replace("{{ postings_html }}", postings_html)
-    html = html.replace("{{ site_url }}", "https://yourdomain.com")
+    site_url = ENV.get("SITE_URL", "https://albadanji.com")
+    html = html.replace("{{ site_url }}", site_url)
     html = html.replace("{{ unsubscribe_url }}", "{UNSUBSCRIBE_LINK}")
 
     return html
@@ -320,8 +344,8 @@ def build_all(date_str: str = None):
     # 1. 데이터 로드
     postings = get_today_postings(date_str)
     if not postings:
-        print("[WARN] No postings found for today!")
-        return
+        print("[INFO] No new postings today, but proceeding with build as requested.")
+        postings = [] # Ensure it's an empty list
 
     print(f"[Data] {len(postings)} postings loaded")
 

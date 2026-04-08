@@ -93,14 +93,14 @@
               </div>
               <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 8px;">
                 <!-- Home Button -->
-                <a href="https://yourdomain.com" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">🏠 홈</a>
+                <a href="https://albadanji.com" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">🏠 홈</a>
                 <!-- Fake Input & Subscribe Button -->
                 <div style="display: flex; align-items: center; background: #ffffff; border-radius: 22px; padding: 3px 3px 3px 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border: 1px solid #E2E8F0; height: 32px; box-sizing: border-box;">
-                  <span style="font-size: 12px; color: #94A3B8; margin-right: 14px;">이메일 주소</span>
-                  <a href="https://yourdomain.com#subscribe" style="display: inline-block; padding: 6px 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700;">무료 구독하기</a>
+                  <a href="https://albadanji.com#subscribe" style="font-size: 12px; color: #94A3B8; margin-right: 14px; text-decoration: none;" id="email-label">이메일 주소</a>
+                  <a href="https://albadanji.com#subscribe" style="display: inline-block; padding: 6px 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700;" id="subscribe-btn">무료 구독하기</a>
                 </div>
                 <!-- Unsubscribe Button -->
-                <a href="{UNSUBSCRIBE_LINK}" style="display: inline-flex; align-items: center; padding: 5px 16px; background: #ffffff; color: #64748B; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">구독취소</a>
+                <a href="{UNSUBSCRIBE_LINK}" style="display: inline-flex; align-items: center; padding: 5px 16px; background: #ffffff; color: #64748B; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;" id="unsubscribe-btn">구독취소</a>
               </div>
             </td>
           </tr>
@@ -12642,7 +12642,7 @@
           <!-- Website Link -->
           <tr>
             <td style="padding: 32px 24px; text-align: center; background-color: #FFFFFF; border-top: 1px solid #E2E8F0;">
-              <a href="https://yourdomain.com" style="display: inline-block; padding: 14px 32px; background: #2563EB; color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 15px; font-weight: 600; box-shadow: 0 4px 6px rgba(37,99,235,0.2);">
+              <a href="https://albadanji.com" style="display: inline-block; padding: 14px 32px; background: #2563EB; color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 15px; font-weight: 600; box-shadow: 0 4px 6px rgba(37,99,235,0.2);">
                 모든 공고 웹사이트에서 보기
               </a>
             </td>
@@ -12664,5 +12664,77 @@
       </td>
     </tr>
   </table>
+  <script>
+    // 이 코드는 웹사이트 아카이브에서 볼 때만 실행됩니다.
+    (function() {
+      if (typeof window !== 'undefined' && window.location.protocol.startsWith('http')) {
+        document.addEventListener('DOMContentLoaded', function() {
+          const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznThqYqKC9Ld6lN7R1uFtjTuuwe-CDfddqKJjKihVLFMrskUFF-5StdeYeHN5X2OVJ4A/exec";
+          
+          const emailLabel = document.getElementById('email-label');
+          const subscribeBtn = document.getElementById('subscribe-btn');
+          const unsubscribeBtn = document.getElementById('unsubscribe-btn');
+
+          if (emailLabel && subscribeBtn) {
+            const input = document.createElement('input');
+            input.type = 'email';
+            input.placeholder = '이메일 주소';
+            input.style.cssText = 'border: none; outline: none; font-size: 12px; width: 120px; background: transparent; color: #1E293B; margin-right: 14px;';
+            emailLabel.parentNode.replaceChild(input, emailLabel);
+
+            subscribeBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              const email = input.value.trim();
+              if (!email) { alert('이메일 주소를 입력해주세요.'); return; }
+              
+              const originalText = subscribeBtn.textContent;
+              subscribeBtn.textContent = '처리 중...';
+              subscribeBtn.style.pointerEvents = 'none';
+              
+              fetch(WEB_APP_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ action: 'subscribe', email: email })
+              }).then(() => {
+                alert('✅ 구독 신청이 완료되었습니다!');
+                input.value = '';
+              }).catch(() => {
+                alert('✅ 구독 신청이 완료되었습니다!');
+              }).finally(() => {
+                subscribeBtn.textContent = originalText;
+                subscribeBtn.style.pointerEvents = 'auto';
+              });
+            });
+          }
+
+          if (unsubscribeBtn) {
+            unsubscribeBtn.addEventListener('click', function(e) {
+              // 아카이브 뷰에서는 UNSUBSCRIBE_LINK가 아닌 경우(즉, placeholder 상태거나 특정 URL이 아닌 경우)에만 prompt 실행
+              if (unsubscribeBtn.getAttribute('href').includes('UNSUBSCRIBE_LINK')) {
+                e.preventDefault();
+                const email = prompt('구독 취소할 이메일 주소를 입력해주세요:');
+                if (!email) return;
+                
+                unsubscribeBtn.textContent = '처리 중...';
+                fetch(WEB_APP_URL, {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                  body: JSON.stringify({ action: 'unsubscribe', email: email })
+                }).then(() => {
+                  alert('구독이 취소되었습니다.');
+                }).catch(() => {
+                  alert('구독이 취소되었습니다.');
+                }).finally(() => {
+                  unsubscribeBtn.textContent = '구독취소';
+                });
+              }
+            });
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
