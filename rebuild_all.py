@@ -33,7 +33,7 @@ def rebuild_json_from_db(date_str):
 
 from newsletter_builder import build_all
 
-for date_str in ["2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08"]:
+for date_str in ["2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09"]:
     count = rebuild_json_from_db(date_str)
     print(f"\n--- Building {date_str} ({count}건) ---")
     build_all(date_str)

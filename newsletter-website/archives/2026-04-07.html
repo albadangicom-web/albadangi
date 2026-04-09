@@ -94,11 +94,12 @@
               <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 8px;">
                 <!-- Home Button -->
                 <a href="https://albadanji.com" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;">🏠 홈</a>
-                <!-- Fake Input & Subscribe Button -->
-                <div style="display: flex; align-items: center; background: #ffffff; border-radius: 22px; padding: 3px 3px 3px 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border: 1px solid #E2E8F0; height: 32px; box-sizing: border-box;">
-                  <a href="https://albadanji.com#subscribe" style="font-size: 12px; color: #94A3B8; margin-right: 14px; text-decoration: none;" id="email-label">이메일 주소</a>
-                  <a href="https://albadanji.com#subscribe" style="display: inline-block; padding: 6px 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700;" id="subscribe-btn">무료 구독하기</a>
+                <!-- Email Input (Pill) -->
+                <div style="display: inline-flex; align-items: center; background: #ffffff; border-radius: 20px; padding: 0 14px; border: 1px solid #E2E8F0; height: 32px; box-sizing: border-box;" id="email-input-wrapper">
+                  <a href="https://albadanji.com#subscribe" style="font-size: 12px; color: #94A3B8; text-decoration: none;" id="email-label">이메일 주소</a>
                 </div>
+                <!-- Subscribe Button (Pill) -->
+                <a href="https://albadanji.com#subscribe" style="display: inline-flex; align-items: center; padding: 0 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700; height: 32px; box-sizing: border-box;" id="subscribe-btn">무료 구독하기</a>
                 <!-- Unsubscribe Button -->
                 <a href="{UNSUBSCRIBE_LINK}" style="display: inline-flex; align-items: center; padding: 5px 16px; background: #ffffff; color: #64748B; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 600; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box;" id="unsubscribe-btn">구독취소</a>
               </div>
@@ -5929,7 +5930,7 @@
             const input = document.createElement('input');
             input.type = 'email';
             input.placeholder = '이메일 주소';
-            input.style.cssText = 'border: none; outline: none; font-size: 12px; width: 120px; background: transparent; color: #1E293B; margin-right: 14px;';
+            input.style.cssText = 'border: none; outline: none; font-size: 12px; width: 120px; background: transparent; color: #1E293B;';
             emailLabel.parentNode.replaceChild(input, emailLabel);
 
             subscribeBtn.addEventListener('click', function(e) {

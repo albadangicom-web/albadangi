@@ -38,11 +38,16 @@ def run_daily():
     
     # Step 3: 이메일 발송
     print("\n[Step 3/3] Sending emails...")
+    stats = {"success": 0, "fail": 0, "total": 0}
     try:
-        from email_sender import send_newsletters
-        send_newsletters(dry_run=False)
+        from email_sender import send_newsletters, send_admin_report
+        stats = send_newsletters(dry_run=False)
+        
+        # Step 4: 보고서 발송
+        print("\n[Step 4/4] Sending report to admin...")
+        send_admin_report(stats, len(postings))
     except Exception as e:
-        print(f"  [Error] 이메일 발송 모듈 실패: {e}")
+        print(f"  [Error] 이메일 발송 또는 보고 모듈 실패: {e}")
         
     print("\n" + "=" * 60)
     print("  DAILY RUN COMPLETE!")
