@@ -306,6 +306,39 @@ def log_newsletter(date_str: str, total: int, web_path: str, email_path: str):
         print(f"[DB WARN] Newsletter log failed: {e}")
 
 
+def build_all_data_js(start_date: str = "2026-04-05"):
+    """list.html용: DB에서 start_date 이후 전체 공고를 all_data.js로 생성"""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    c = conn.cursor()
+    c.execute("""
+        SELECT id, title, source, source_url,
+               target_age, target_gender, target_condition,
+               date, time, duration, reward, location,
+               type, scraped_at, is_active, url_hash
+        FROM postings
+        WHERE date(scraped_at) >= ?
+          AND is_active = 1
+        ORDER BY scraped_at DESC
+    """, (start_date,))
+    rows = c.fetchall()
+    conn.close()
+
+    import json as _json
+    postings = [dict(r) for r in rows]
+    output = {
+        "generated_at": datetime.now().isoformat(),
+        "start_date": start_date,
+        "count": len(postings),
+        "postings": postings,
+    }
+    out_path = os.path.join(WEBSITE_DIR, "all_data.js")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(f"window.allPostingsData = {_json.dumps(output, ensure_ascii=False, indent=2)};\n")
+    print(f"[all_data.js] {len(postings)}건 누적 저장 완료")
+
+
+
 def build_website_archive():
     """웹사이트 아카이브용 데이터 JS 생성 및 파일 복사"""
     import shutil
@@ -359,7 +392,10 @@ def build_all(date_str: str = None):
     # 4. 아카이브 업데이트
     build_website_archive()
 
-    # 5. 로그
+    # 5. 전체 누적 데이터 업데이트 (list.html용)
+    build_all_data_js()
+
+    # 6. 로그
     log_newsletter(date_str, len(postings), web_path, email_path)
 
     print(f"\n[DONE] Newsletter built successfully!")
