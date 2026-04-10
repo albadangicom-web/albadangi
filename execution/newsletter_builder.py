@@ -74,13 +74,7 @@ def get_today_postings(date_str: str = None) -> list[dict]:
     if not date_str:
         date_str = datetime.now().strftime("%Y-%m-%d")
 
-    # 먼저 JSON에서 시도
-    json_path = os.path.join(SCRAPED_DATA_DIR, f"{date_str}.json")
-    if os.path.exists(json_path):
-        with open(json_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-
-    # DB에서 가져오기
+    # 항상 DB에서 가져오기 (JSON은 크롤러 실행별 신규 건수만 저장되므로 무시)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
