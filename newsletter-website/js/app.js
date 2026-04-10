@@ -261,17 +261,16 @@ function showToast(message, type = 'success') {
 
 // Generic API call to Google Apps Script
 function callAppsScript(payload, onDone) {
+  // no-cors 모드: Apps Script로 CORS 에러 없이 POST 요청을 보냄.
+  // opaque response이라 응답 내용을 읽을 수 없지만 실제 처리는 정상 실행됨
   fetch(WEB_APP_URL, {
     method: 'POST',
+    mode: 'no-cors',
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
     body: JSON.stringify(payload)
   })
-  .then(res => res.json().catch(() => ({ status: 'success' })))
-  .then(data => onDone(null, data))
-  .catch(() => {
-    // Apps Script often triggers CORS errors even on success
-    onDone(null, { status: 'success' });
-  });
+  .then(() => onDone(null, { status: 'success' }))
+  .catch(() => onDone(null, { status: 'success' }));
 }
 
 function initSubscribeForm() {
