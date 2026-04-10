@@ -410,6 +410,31 @@ function initLogoTooltip() {
   const tooltips = document.querySelectorAll('.logo-tooltip');
   if (!tooltips.length) return;
 
+  const CITY_MAP = {
+    'Seoul': '서울', 'Busan': '부산', 'Incheon': '인천', 'Daegu': '대구', 
+    'Daejeon': '대전', 'Gwangju': '광주', 'Ulsan': '울산', 'Sejong': '세종', 
+    'Gyeonggi-do': '경기', 'Gangwon-do': '강원', 'Chungcheongbuk-do': '충북', 
+    'Chungcheongnam-do': '충남', 'Jeollabuk-do': '전북', 'Jeollanam-do': '전남', 
+    'Gyeongsangbuk-do': '경북', 'Gyeongsangnam-do': '경남', 'Jeju-do': '제주',
+    'Suwon': '수원', 'Seongnam': '성남', 'Uijeongbu': '의정부', 'Anyang': '안양',
+    'Bucheon': '부천', 'Gwangmyeong': '광명', 'Pyeongtaek': '평택', 'Dongducheon': '동두천',
+    'Ansan': '안산', 'Goyang': '고양', 'Gwacheon': '과천', 'Guri': '구리',
+    'Namyangju': '남양주', 'Osan': '오산', 'Siheung': '시흥', 'Gunpo': '군포',
+    'Uiwang': '의왕', 'Hanam': '하남', 'Yongin': '용인', 'Paju': '파주',
+    'Icheon': '이천', 'Anseong': '안성', 'Gimpo': '김포', 'Hwaseong': '화성',
+    'Yangju': '양주', 'Pocheon': '포천', 'Yeoju': '여주',
+    'Yeoncheon': '연천', 'Gapyeong': '가평', 'Yangpyeong': '양평',
+    'Cheongju': '청주', 'Chungju': '충주', 'Jecheon': '제천',
+    'Cheonan': '천안', 'Gongju': '공주', 'Boryeong': '보령', 'Asan': '아산',
+    'Seosan': '서산', 'Nonsan': '논산', 'Gyeryong': '계룡', 'Dangjin': '당진',
+    'Jeonju': '전주', 'Gunsan': '군산', 'Iksan': '익산', 'Jeongeup': '정읍', 'Namwon': '남원', 'Gimje': '김제',
+    'Mokpo': '목포', 'Yeosu': '여수', 'Suncheon': '순천', 'Naju': '나주', 'Gwangyang': '광양',
+    'Pohang': '포항', 'Gyeongju': '경주', 'Gimcheon': '김천', 'Andong': '안동', 'Gumi': '구미',
+    'Yeongju': '영주', 'Yeongcheon': '영천', 'Sangju': '상주', 'Mungyeong': '문경', 'Gyeongsan': '경산',
+    'Changwon': '창원', 'Jinju': '진주', 'Tongyeong': '통영', 'Sacheon': '사천', 'Gimhae': '김해',
+    'Miryang': '밀양', 'Geoje': '거제', 'Yangsan': '양산', 'Jeju': '제주', 'Seogwipo': '서귀포'
+  };
+
   let weatherData = null;
   let isFetchingWeather = false;
 
@@ -421,7 +446,10 @@ function initLogoTooltip() {
       const ipData = await ipRes.json();
       const lat = ipData.latitude;
       const lon = ipData.longitude;
-      const city = ipData.city || '위치 불명';
+      const rawCity = ipData.city || 'Unknown';
+      
+      // 영어 명칭이 맵핑에 있으면 한글로, 없으면 영어 그대로 혹은 기본 한글로 출력
+      const city = CITY_MAP[rawCity] || rawCity.replace('Si', '').trim();
 
       const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
       const weatherJson = await weatherRes.json();
@@ -437,6 +465,7 @@ function initLogoTooltip() {
 
   const updateTooltips = () => {
     const now = new Date();
+    const dateStr = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')}`;
     const timeStr = String(now.getHours()).padStart(2, '0') + ':' + 
                     String(now.getMinutes()).padStart(2, '0') + ':' + 
                     String(now.getSeconds()).padStart(2, '0');
@@ -444,7 +473,7 @@ function initLogoTooltip() {
     const weatherStr = weatherData || '날씨 불러오는 중...';
     
     tooltips.forEach(tooltip => {
-      tooltip.textContent = `${weatherStr} | 시간: ${timeStr}`;
+      tooltip.textContent = `${weatherStr} | 📅 ${dateStr} ⏰ ${timeStr}`;
     });
   };
 
