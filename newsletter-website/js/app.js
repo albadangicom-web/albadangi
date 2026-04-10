@@ -237,7 +237,7 @@ function updateFilterCounts() {
 }
 
 // ── Subscribe form ──
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznThqYqKC9Ld6lN7R1uFtjTuuwe-CDfddqKJjKihVLFMrskUFF-5StdeYeHN5X2OVJ4A/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxsoNoQ5saodpsC9AlkW1qGPUeCzKUGomU6iAG58y7zD541ahWTuoSJH1gVmD8ekJzlwQ/exec";
 
 // Toast notification helper
 function showToast(message, type = 'success') {
@@ -405,11 +405,69 @@ function initThemeToggle() {
   });
 }
 
+// ── Logo Tooltip (Weather & Time) ──
+function initLogoTooltip() {
+  const tooltips = document.querySelectorAll('.logo-tooltip');
+  if (!tooltips.length) return;
+
+  let weatherData = null;
+  let isFetchingWeather = false;
+
+  const fetchWeather = async () => {
+    if (weatherData || isFetchingWeather) return;
+    isFetchingWeather = true;
+    try {
+      const ipRes = await fetch('https://ipapi.co/json/');
+      const ipData = await ipRes.json();
+      const lat = ipData.latitude;
+      const lon = ipData.longitude;
+      const city = ipData.city || '위치 불명';
+
+      const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+      const weatherJson = await weatherRes.json();
+      const temp = weatherJson.current_weather.temperature;
+
+      weatherData = `${city} ${temp}°C`;
+    } catch (e) {
+      console.error('Failed to fetch weather data', e);
+      weatherData = '날씨 정보 오류';
+    }
+    isFetchingWeather = false;
+  };
+
+  const updateTooltips = () => {
+    const now = new Date();
+    const timeStr = String(now.getHours()).padStart(2, '0') + ':' + 
+                    String(now.getMinutes()).padStart(2, '0') + ':' + 
+                    String(now.getSeconds()).padStart(2, '0');
+    
+    const weatherStr = weatherData || '날씨 불러오는 중...';
+    
+    tooltips.forEach(tooltip => {
+      tooltip.textContent = `${weatherStr} | 시간: ${timeStr}`;
+    });
+  };
+
+  // Fetch weather on first hover to save API calls
+  const logos = document.querySelectorAll('.header__logo');
+  logos.forEach(logo => {
+    logo.addEventListener('mouseenter', () => {
+      if (!weatherData && !isFetchingWeather) {
+        fetchWeather();
+      }
+    });
+  });
+
+  setInterval(updateTooltips, 1000);
+  updateTooltips();
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   updateDateHeader();
   initFilters();
   initSubscribeForm();
   initThemeToggle();
+  initLogoTooltip();
   loadPostings();
 });

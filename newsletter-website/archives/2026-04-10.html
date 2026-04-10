@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  <title>알바단지 - 2026.04.10 (금)</title>
   <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <style>
     /* Reset */
@@ -88,18 +88,18 @@
                 알바단지를 매일 아침 배달합니다!
               </h1>
                <div style="text-align: center; margin-top: 8px;">
-                 <span style="font-size: 15px; color: #64748B; display: inline-block; vertical-align: middle; margin-right: 12px;">{{ date_display }}</span>
-                 <span style="display: inline-block; padding: 4px 12px; background: #F1F5F9; border-radius: 20px; font-size: 13px; color: #475569; font-weight: 600; vertical-align: middle;">오늘 신규 공고: {{ posting_count }}건</span>
+                 <span style="font-size: 15px; color: #64748B; display: inline-block; vertical-align: middle; margin-right: 12px;">2026.04.10 (금)</span>
+                 <span style="display: inline-block; padding: 4px 12px; background: #F1F5F9; border-radius: 20px; font-size: 13px; color: #475569; font-weight: 600; vertical-align: middle;">오늘 신규 공고: 0건</span>
               </div>
               <div style="margin-top: 20px; text-align: center;">
                 <!-- Home Button -->
-                <a href="{{ site_url }}" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box; vertical-align: middle; margin: 0 4px 8px 4px;">🏠 홈</a>
+                <a href="https://albadanji.com" style="display: inline-flex; align-items: center; padding: 5px 14px; background: #ffffff; color: #475569; text-decoration: none; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1px solid #E2E8F0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); height: 32px; box-sizing: border-box; vertical-align: middle; margin: 0 4px 8px 4px;">🏠 홈</a>
                 <!-- Email Input (Pill) -->
                 <div style="display: inline-flex; align-items: center; background: #ffffff; border-radius: 20px; padding: 0 14px; border: 1px solid #E2E8F0; height: 32px; box-sizing: border-box; vertical-align: middle; margin: 0 4px 8px 4px;" id="email-input-wrapper">
-                  <a href="{{ site_url }}#subscribe" style="font-size: 12px; color: #94A3B8; text-decoration: none;" id="email-label">이메일 주소</a>
+                  <a href="https://albadanji.com#subscribe" style="font-size: 12px; color: #94A3B8; text-decoration: none;" id="email-label">이메일 주소</a>
                 </div>
                 <!-- Subscribe Button (Pill) -->
-                <a href="{{ site_url }}#subscribe" style="display: inline-flex; align-items: center; padding: 0 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700; height: 32px; box-sizing: border-box; vertical-align: middle; margin: 0 4px 8px 4px;" id="subscribe-btn">무료 구독하기</a>
+                <a href="https://albadanji.com#subscribe" style="display: inline-flex; align-items: center; padding: 0 16px; background: #18181B; color: #ffffff; text-decoration: none; border-radius: 18px; font-size: 12px; font-weight: 700; height: 32px; box-sizing: border-box; vertical-align: middle; margin: 0 4px 8px 4px;" id="subscribe-btn">무료 구독하기</a>
               </div>
             </td>
           </tr>
@@ -109,7 +109,7 @@
             <td class="posting-wrap" style="padding: 24px; background-color: #F8FAFC;">
               <!-- Container for all postings -->
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                {{ postings_html }}
+                
               </table>
             </td>
           </tr>
@@ -117,7 +117,7 @@
           <!-- Website Link -->
           <tr>
             <td style="padding: 32px 24px; text-align: center; background-color: #FFFFFF; border-top: 1px solid #E2E8F0;">
-              <a href="{{ site_url }}" style="display: inline-block; padding: 14px 32px; background: #2563EB; color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 15px; font-weight: 600; box-shadow: 0 4px 6px rgba(37,99,235,0.2);">
+              <a href="https://albadanji.com" style="display: inline-block; padding: 14px 32px; background: #2563EB; color: #ffffff; text-decoration: none; border-radius: 24px; font-size: 15px; font-weight: 600; box-shadow: 0 4px 6px rgba(37,99,235,0.2);">
                 모든 공고 웹사이트에서 보기
               </a>
             </td>
@@ -129,7 +129,7 @@
               <p>&copy; 2026 Albadanji. All rights reserved.</p>
               <p style="margin-top: 8px;">
                 이 메일은 알바단지 구독자에게 발송되었습니다.<br>
-                더 이상 수신을 원치 않으시면 <a href="{{ unsubscribe_url }}" style="color: #64748B; text-decoration: underline;">수신 거부</a>를 클릭하세요.
+                더 이상 수신을 원치 않으시면 <a href="{UNSUBSCRIBE_LINK}" style="color: #64748B; text-decoration: underline;">수신 거부</a>를 클릭하세요.
               </p>
             </td>
           </tr>
@@ -144,7 +144,7 @@
     (function() {
       if (typeof window !== 'undefined' && window.location.protocol.startsWith('http')) {
         document.addEventListener('DOMContentLoaded', function() {
-          const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxsoNoQ5saodpsC9AlkW1qGPUeCzKUGomU6iAG58y7zD541ahWTuoSJH1gVmD8ekJzlwQ/exec";
+          const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbznThqYqKC9Ld6lN7R1uFtjTuuwe-CDfddqKJjKihVLFMrskUFF-5StdeYeHN5X2OVJ4A/exec";
           
           const emailLabel = document.getElementById('email-label');
           const subscribeBtn = document.getElementById('subscribe-btn');

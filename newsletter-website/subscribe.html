@@ -19,7 +19,7 @@
     <div class="container header__inner">
       <a href="index.html" class="header__logo">
         <span>알바단지</span>
-        <div class="golden-leaves-container"></div>
+        <div class="logo-tooltip" id="logo-tooltip">Loading weather...</div>
       </a>
       <nav class="header__nav">
         <a href="index.html" class="header__link">홈</a>
@@ -67,6 +67,23 @@
         <div class="stat-item__label" style="margin-top: 12px; font-size: 1rem; color: var(--text-primary);">스팸 메일 제로</div>
         <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">개인정보를 안전하게 보호</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Subscription Action Forms -->
+  <section class="container" style="margin-bottom: 4rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+    <div style="width: 100%; max-width: 400px;">
+      <form class="subscribe-form" style="display: flex; gap: 0.5rem; height: 46px;">
+        <input type="email" class="nav-subscribe-input" placeholder="이메일 주소" required autocomplete="email" style="flex: 1; width: auto; font-size: 0.95rem; padding: 0 20px;">
+        <button type="submit" class="header__cta" style="padding: 0 1.5rem; font-size: 0.95rem;">무료구독하기</button>
+      </form>
+    </div>
+    
+    <div style="width: 100%; max-width: 400px;">
+      <form style="display: flex; gap: 0.5rem; height: 46px;">
+        <input type="email" class="nav-subscribe-input" placeholder="이메일 주소" required autocomplete="email" style="flex: 1; width: auto; font-size: 0.95rem; padding: 0 20px;">
+        <button type="button" class="header__cta nav-unsubscribe-btn header__cta--secondary" style="padding: 0 1.5rem; font-size: 0.95rem;">구독취소하기</button>
+      </form>
     </div>
   </section>
 

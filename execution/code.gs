@@ -13,6 +13,8 @@ function doPost(e) {
   }
   
   var email = params.email;
+  var action = params.action || 'subscribe';
+  
   if(!email) {
     return ContentService.createTextOutput(JSON.stringify({'status': 'error', 'message': 'Email required'}))
                          .setMimeType(ContentService.MimeType.JSON);
@@ -27,26 +29,39 @@ function doPost(e) {
     data = sheet.getDataRange().getValues();
   }
   
-  // 이미 존재하는 이메일인지 검사
-  for(var i=1; i<data.length; i++){
-    if(data[i][1] === email) {
-      if(data[i][2] !== '구독중') {
-        sheet.getRange(i+1, 3).setValue('구독중'); // 다시 구독으로 상태 변경
+  if (action === 'unsubscribe') {
+    for(var i=1; i<data.length; i++){
+      if(data[i][1] === email) {
+        if(data[i][2] !== '구독취소') {
+          sheet.getRange(i+1, 3).setValue('구독취소');
+        }
+        found = true;
+        break;
       }
-      found = true;
-      break;
     }
+    return ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 취소 완료'}))
+                         .setMimeType(ContentService.MimeType.JSON);
+    
+  } else {
+    // subscribe
+    for(var i=1; i<data.length; i++){
+      if(data[i][1] === email) {
+        if(data[i][2] !== '구독중') {
+          sheet.getRange(i+1, 3).setValue('구독중'); // 다시 구독으로 상태 변경
+        }
+        found = true;
+        break;
+      }
+    }
+    
+    if(!found){
+      var timestamp = new Date();
+      sheet.appendRow([timestamp, email, '구독중']);
+    }
+    
+    return ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 완료'}))
+                         .setMimeType(ContentService.MimeType.JSON);
   }
-  
-  if(!found){
-    var timestamp = new Date();
-    sheet.appendRow([timestamp, email, '구독중']);
-  }
-  
-  // CORS 처리를 위해 JSON 반환
-  var output = ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 완료'}));
-  output.setMimeType(ContentService.MimeType.JSON);
-  return output;
 }
 
 function doGet(e) {

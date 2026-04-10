@@ -1,3 +1,3 @@
 @echo off
-cd /d C:\Users\Z640\Desktop\MRnewsletter
+cd /d "%~dp0"
 py execution\run_daily.py
