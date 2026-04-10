@@ -12,7 +12,8 @@ function doPost(e) {
                          .setMimeType(ContentService.MimeType.JSON);
   }
   
-  var email = params.email;
+  // 이메일 소문자 정규화 + 공백 제거
+  var email = (params.email || '').trim().toLowerCase();
   var action = params.action || 'subscribe';
   
   if(!email) {
@@ -25,38 +26,39 @@ function doPost(e) {
   
   // 데이터가 아예 없는 경우 첫 줄(헤더) 추가
   if (data.length === 0 || (data.length === 1 && data[0][0] === '')) {
-    sheet.appendRow(["가입일", "이메일", "상태"]);
+    sheet.appendRow(["가입일", "이메일", "상태", "취소일"]);
     data = sheet.getDataRange().getValues();
   }
   
   if (action === 'unsubscribe') {
-    for(var i=1; i<data.length; i++){
-      if(data[i][1] === email) {
-        if(data[i][2] !== '구독취소') {
-          sheet.getRange(i+1, 3).setValue('구독취소');
-        }
+    for (var i = 1; i < data.length; i++) {
+      // 대소문자 구분 없이 이메일 비교
+      if ((data[i][1] || '').toString().trim().toLowerCase() === email) {
+        sheet.getRange(i + 1, 3).setValue('구독취소');
+        sheet.getRange(i + 1, 4).setValue(new Date()); // D열에 취소 시간 기록
         found = true;
         break;
       }
     }
-    return ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 취소 완료'}))
+    return ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 취소 완료', 'found': found}))
                          .setMimeType(ContentService.MimeType.JSON);
     
   } else {
     // subscribe
-    for(var i=1; i<data.length; i++){
-      if(data[i][1] === email) {
-        if(data[i][2] !== '구독중') {
-          sheet.getRange(i+1, 3).setValue('구독중'); // 다시 구독으로 상태 변경
+    for (var i = 1; i < data.length; i++) {
+      if ((data[i][1] || '').toString().trim().toLowerCase() === email) {
+        if (data[i][2] !== '구독중') {
+          sheet.getRange(i + 1, 3).setValue('구독중'); // 재구독 시 상태 변경
+          sheet.getRange(i + 1, 4).setValue('');       // 취소일 초기화
         }
         found = true;
         break;
       }
     }
     
-    if(!found){
+    if (!found) {
       var timestamp = new Date();
-      sheet.appendRow([timestamp, email, '구독중']);
+      sheet.appendRow([timestamp, email, '구독중', '']);
     }
     
     return ContentService.createTextOutput(JSON.stringify({'status': 'success', 'message': '구독 완료'}))
@@ -72,8 +74,8 @@ function doGet(e) {
   if (action === 'get_subscribers') {
     var data = sheet.getDataRange().getValues();
     var subscribers = [];
-    for(var i=1; i<data.length; i++){
-      if(data[i][2] === '구독중') {
+    for (var i = 1; i < data.length; i++) {
+      if (data[i][2] === '구독중') {
         subscribers.push(data[i][1]);
       }
     }
@@ -81,15 +83,16 @@ function doGet(e) {
                          .setMimeType(ContentService.MimeType.JSON);
   }
   
-  // 사용자가 이메일에서 "구독취소" 버튼을 눌렀을 때
+  // 사용자가 이메일에서 "구독취소" 링크를 눌렀을 때 (GET)
   if (action === 'unsubscribe') {
-    var email = e.parameter.email;
-    if(email){
+    var email = (e.parameter.email || '').trim().toLowerCase();
+    if (email) {
       var data = sheet.getDataRange().getValues();
       var found = false;
-      for(var i=1; i<data.length; i++){
-        if(data[i][1] === email) {
-          sheet.getRange(i+1, 3).setValue('구독취소');
+      for (var i = 1; i < data.length; i++) {
+        if ((data[i][1] || '').toString().trim().toLowerCase() === email) {
+          sheet.getRange(i + 1, 3).setValue('구독취소');
+          sheet.getRange(i + 1, 4).setValue(new Date()); // D열에 취소 시간 기록
           found = true;
           break;
         }
