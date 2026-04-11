@@ -307,26 +307,26 @@ function processSubscription(form, action) {
     if (!submitBtn) return;
     
     const originalText = submitBtn.textContent;
-    const originalBg = submitBtn.style.backgroundColor;
+    const originalBackground = submitBtn.style.background;
     const originalColor = submitBtn.style.color;
 
     // Loading state
     submitBtn.textContent = '처리중...';
     submitBtn.disabled = true;
-    submitBtn.style.backgroundColor = '#94a3b8';
+    submitBtn.style.background = '#94a3b8';
 
     callAppsScript({ action, email }, (err, data) => {
       emailInput.value = '';
       
       // Success state (Green)
       submitBtn.textContent = '처리완료';
-      submitBtn.style.backgroundColor = '#16a34a'; // Green
+      submitBtn.style.background = '#16a34a'; // Green
       submitBtn.style.color = 'white';
       
       // Revert after 2 seconds
       setTimeout(() => {
         submitBtn.textContent = originalText;
-        submitBtn.style.backgroundColor = originalBg || '';
+        submitBtn.style.background = originalBackground || '';
         submitBtn.style.color = originalColor || '';
         submitBtn.disabled = false;
       }, 2000);
