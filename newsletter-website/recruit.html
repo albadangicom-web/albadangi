@@ -25,6 +25,7 @@
   <div class="auth-bg" id="auth-screen">
     <h2>관리자 인증</h2>
     <p style="font-size: 14px; color: #64748b;">이 페이지는 관리자 전용 등록 폼입니다.</p>
+    <input type="text" id="auth-id" placeholder="아이디 입력" autocomplete="off">
     <input type="password" id="auth-pwd" placeholder="비밀번호 입력">
     <button id="auth-btn">접속하기</button>
   </div>
@@ -89,23 +90,59 @@
   </div>
 
   <script>
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzuzBiPnIGiJTP99Hk1L-jPuPXWRd1SSDxQAMNYskue4dkMpLAK5jA3vXLOG0ti_Qx6Wg/exec";
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycby-rgLaa9wYlV1RYj78C6ilIJ-zULtQXOTY7NsefgLthXA8KSVjTFXLD5sAFwNsZ8QjHw/exec";
 
-    // 간단 비번 로직 (보안상 강력하진 않으나 숨김 용도)
-    const SECRET = "1234";
+    let currentAdminId = "";
+    let currentAdminPwd = "";
 
     const authScreen = document.getElementById('auth-screen');
     const formContainer = document.getElementById('recruit-form-container');
+    const authId = document.getElementById('auth-id');
     const authPwd = document.getElementById('auth-pwd');
     const authBtn = document.getElementById('auth-btn');
 
     authBtn.addEventListener('click', () => {
-      if (authPwd.value === SECRET) {
-        authScreen.style.display = 'none';
-        formContainer.style.display = 'block';
-      } else {
-        alert("비밀번호가 일치하지 않습니다.");
+      const idStr = authId.value.trim();
+      const pwdStr = authPwd.value.trim();
+      
+      if (!idStr || !pwdStr) {
+        alert("아이디와 비밀번호를 모두 입력해주세요.");
+        return;
       }
+
+      authBtn.textContent = "확인중...";
+      authBtn.disabled = true;
+
+      const payload = {
+        action: 'verify_auth',
+        admin_id: idStr,
+        admin_pwd: pwdStr
+      };
+
+      fetch(WEB_APP_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          currentAdminId = idStr;
+          currentAdminPwd = pwdStr;
+          authScreen.style.display = 'none';
+          formContainer.style.display = 'block';
+        } else {
+          alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+          authBtn.textContent = "접속하기";
+          authBtn.disabled = false;
+        }
+      })
+      .catch(err => {
+        alert("서버 연결에 실패했습니다. (인증 중 오류)");
+        console.error(err);
+        authBtn.textContent = "접속하기";
+        authBtn.disabled = false;
+      });
     });
 
     authPwd.addEventListener('keypress', (e) => {
@@ -123,6 +160,8 @@
 
       const payload = {
         action: 'add_featured',
+        admin_id: currentAdminId,
+        admin_pwd: currentAdminPwd,
         title: document.getElementById('p_title').value,
         type: document.getElementById('p_type').value,
         date: document.getElementById('p_date').value,
@@ -136,18 +175,23 @@
 
       fetch(WEB_APP_URL, {
         method: 'POST',
-        mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload)
       })
-      .then(() => {
-        alert("성공적으로 서버에 기록되었습니다! 내일 아침 뉴스레터 발행 시 등록됩니다.");
-        form.reset();
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          alert("성공적으로 서버에 기록되었습니다! 내일 아침 뉴스레터 발행 시 등록됩니다.");
+          form.reset();
+        } else {
+          alert("저장 실패: " + (data.message || "권한이 없습니다."));
+        }
         submitBtn.textContent = "고정 공고 등록 전송하기";
         submitBtn.disabled = false;
       })
       .catch((err) => {
         alert("통신 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+        console.error(err);
         submitBtn.textContent = "고정 공고 등록 전송하기";
         submitBtn.disabled = false;
       });
