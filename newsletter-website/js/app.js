@@ -103,16 +103,23 @@ function renderPostingCard(p, index) {
         <span class="posting-card__type ${typeClass}">${typeIcon} ${effectiveType}</span>
       </div>
       ${keyInfoItems.length > 0 ? `<div class="posting-card__key-info">${keyInfoItems.join('')}</div>` : ''}
-      <div class="posting-card__link-hint">상세보기 &rarr;</div>
     </a>
   `;
 }
 
-// ── HTML escape ──
+// ── HTML helpers ──
 function escapeHtml(text) {
   const div = document.createElement('div');
-  div.textContent = text;
+  div.textContent = text || "";
   return div.innerHTML;
+}
+
+function linkify(text) {
+  if (!text) return "";
+  const urlRegex = /(https?:\/\/[^\s<]+)/g;
+  return text.replace(urlRegex, (url) => {
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); text-decoration: underline;">${url}</a>`;
+  });
 }
 
 // ── Render all postings ──
@@ -422,6 +429,8 @@ function openModal(index) {
   const typeClass = TYPE_CLASS_MAP[effectiveType] || 'posting-card__type--other';
   const typeIcon = TYPE_ICON_MAP[effectiveType] || '&#128196;';
 
+  const formattedContent = linkify(escapeHtml(p.survey_content));
+
   contentArea.innerHTML = `
     <div class="modal-content__header">
       <div class="modal-content__title">${escapeHtml(p.title)}</div>
@@ -435,10 +444,7 @@ function openModal(index) {
       ${p.reward ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#128176; 사례비</span><span class="posting-card__info-value posting-card__info-value--reward">${escapeHtml(p.reward)}</span></div>` : ''}
       ${p.location ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#128205; 장소</span><span class="posting-card__info-value">${escapeHtml(p.location)}</span></div>` : ''}
     </div>
-    <div class="modal-content__body">${escapeHtml(p.survey_content)}</div>
-    <div class="modal-content__cta">
-      <a href="${p.source_url}" target="_blank" rel="noopener noreferrer" class="header__cta modal-content__btn">지금 바로 지원하기</a>
-    </div>
+    <div class="modal-content__body">${formattedContent}</div>
   `;
 
   modal.classList.add('active');
