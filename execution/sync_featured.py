@@ -50,16 +50,16 @@ def sync_featured_postings():
             
             if res.get('status') == 'success':
                 featured_data = res.get('data', [])
-                if not featured_data:
-                    print("  [결과] 새로 등록된 고정 공고가 없습니다.")
-                    return
-                
-                print(f"  [결과] 총 {len(featured_data)}건의 고정 공고를 발견했습니다. DB에 저장합니다.")
+                print(f"  [결과] 총 {len(featured_data)}건의 고정 공고를 발견했습니다. DB를 동기화합니다.")
                 
                 conn = sqlite3.connect(db_path)
                 c = conn.cursor()
                 scraped_at = datetime.now().isoformat()
                 
+                # 먼저 기존 고정 공고를 모두 삭제 (완벽 동기화를 위해)
+                c.execute("DELETE FROM postings WHERE is_featured = 1 AND source = '알바단지 자체'")
+                
+                # 가져온 고정 공고 새로 삽입
                 for p in featured_data:
                     c.execute("""
                         INSERT INTO postings (
@@ -84,7 +84,7 @@ def sync_featured_postings():
                 
                 conn.commit()
                 conn.close()
-                print("  [완료] 고정 공고 DB 저장이 완료되었습니다.")
+                print("  [완료] 고정 공고 DB 동기화가 완료되었습니다.")
             else:
                 print(f"  [오류] 구글 시트에서 응답이 실패했습니다: {res}")
                 

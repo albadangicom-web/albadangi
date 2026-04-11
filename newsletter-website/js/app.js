@@ -287,101 +287,103 @@ function callAppsScript(payload, onDone) {
   .catch(() => onDone(null, { status: 'success' }));
 }
 
+function processSubscription(form, action) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailInput = form.querySelector('input[type="email"]');
+    if (!emailInput) return;
+    const email = emailInput.value.trim();
+    if (!email) return;
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (!submitBtn) return;
+    
+    const originalText = submitBtn.textContent;
+    const originalBg = submitBtn.style.backgroundColor;
+    const originalBgCol = window.getComputedStyle(submitBtn).backgroundColor;
+
+    // Loading state
+    submitBtn.textContent = '처리중...';
+    submitBtn.disabled = true;
+    submitBtn.style.backgroundColor = '#94a3b8';
+
+    callAppsScript({ action, email }, (err, data) => {
+      emailInput.value = '';
+      
+      // Success state (Green)
+      submitBtn.textContent = '처리완료';
+      submitBtn.style.backgroundColor = '#16a34a'; // Green
+      submitBtn.style.color = 'white';
+      
+      // Revert after 2 seconds
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.style.backgroundColor = originalBg || '';
+        submitBtn.disabled = false;
+      }, 2000);
+      
+      // Note: Removed toast alerts as per user request
+    });
+  });
+}
+
 function initSubscribeForm() {
-  // ── 구독하기 (모든 subscribe-form) ──
-  const forms = document.querySelectorAll('.subscribe-form');
-  forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const emailInput = form.querySelector('input[type="email"]');
-      if (!emailInput) return;
-      const email = emailInput.value.trim();
-      if (!email) return;
+  const subForms = document.querySelectorAll('.subscribe-form');
+  subForms.forEach(form => processSubscription(form, 'subscribe'));
 
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn ? submitBtn.textContent : '';
-      if (submitBtn) { submitBtn.textContent = '처리중...'; submitBtn.disabled = true; }
-
-      callAppsScript({ action: 'subscribe', email }, (err, data) => {
-        emailInput.value = '';
-        if (submitBtn) { submitBtn.textContent = originalText; submitBtn.disabled = false; }
-        showToast('✅ 구독 완료! 매일 아침 최신 정보를 보내드릴게요.', 'success');
-      });
-    });
-  });
-
-  // ── 헤더 구독취소 버튼 ──
-  const headerUnsubBtns = document.querySelectorAll('.nav-unsubscribe-btn');
-  headerUnsubBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const form = btn.closest('form');
-      const emailInput = form ? form.querySelector('input[type="email"]') : null;
-      const email = emailInput ? emailInput.value.trim() : '';
-
-      if (!email) {
-        showToast('취소할 이메일 주소를 먼저 입력해주세요.', 'error');
-        if (emailInput) emailInput.focus();
-        return;
-      }
-
-      btn.textContent = '처리중...';
-      btn.disabled = true;
-
-      callAppsScript({ action: 'unsubscribe', email }, (err, data) => {
-        btn.textContent = '구독취소';
-        btn.disabled = false;
-        if (emailInput) emailInput.value = '';
-        showToast('구독이 취소되었습니다.', 'info');
-      });
-    });
-  });
-
-  // ── 푸터 구독취소 버튼 ──
-  const footerUnsubBtns = document.querySelectorAll('.footer-unsubscribe-btn');
-  footerUnsubBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const email = prompt('구독 취소할 이메일 주소를 입력해주세요:');
-      if (!email || !email.trim()) return;
-
-      callAppsScript({ action: 'unsubscribe', email: email.trim() }, (err, data) => {
-        showToast('구독이 취소되었습니다.', 'info');
-      });
-    });
-  });
+  const unsubForms = document.querySelectorAll('.unsubscribe-form');
+  unsubForms.forEach(form => processSubscription(form, 'unsubscribe'));
 }
 
 // ── Load data ──
 async function loadPostings() {
   try {
-    // Check if data is provided via data.js loaded in HTML
+    let basePostings = [];
     if (window.postingsData) {
-      allPostings = window.postingsData.postings || window.postingsData;
-      
-      // Default to urgent filter if available
-      const urgentBtn = document.querySelector('[data-filter="urgent"]');
-      if (urgentBtn) {
-        urgentBtn.click();
-      } else {
-        renderPostings(allPostings);
-      }
-      
-      updateStats(allPostings);
-      updateFilterCounts();
+      basePostings = window.postingsData.postings || window.postingsData;
     } else {
-      // Fallback if data.json is used on an actual server
       const resp = await fetch('data.json');
       if (resp.ok) {
         const data = await resp.json();
-        allPostings = data.postings || data;
-        renderPostings(allPostings);
-        updateStats(allPostings);
-      updateFilterCounts();
+        basePostings = data.postings || data;
       }
     }
+
+    // [LIVE UPDATE] 구글 시트에서 실시간 고정 공고 끌어오기
+    try {
+      const liveRes = await fetch(`${WEB_APP_URL}?action=get_featured`);
+      const liveData = await liveRes.json();
+      if (liveData.status === 'success' && liveData.data) {
+        const liveFeatured = liveData.data.map(p => ({
+          ...p,
+          is_featured: 1,
+          source: '알바단지 자체'
+        }));
+        
+        // 기존 DB 배포본 중 고정공고는 제거하고 실시간 데이터를 덮어씌움
+        basePostings = basePostings.filter(p => p.is_featured != 1 || p.source !== '알바단지 자체');
+        allPostings = [...liveFeatured, ...basePostings];
+      } else {
+        allPostings = basePostings;
+      }
+    } catch (e) {
+      console.warn("Live featured fetch failed, using local.", e);
+      allPostings = basePostings;
+    }
+
+    // Default to urgent filter if available
+    const urgentBtn = document.querySelector('[data-filter="urgent"]');
+    if (urgentBtn) {
+      urgentBtn.click();
+    } else {
+      renderPostings(allPostings);
+    }
+    
+    updateStats(allPostings);
+    updateFilterCounts();
+
   } catch (err) {
     console.log('No data found, using embedded data if available');
-    // Check if postings are embedded in the page
     if (window.__POSTINGS_DATA__) {
       allPostings = window.__POSTINGS_DATA__;
       renderPostings(allPostings);

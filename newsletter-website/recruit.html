@@ -32,12 +32,21 @@
 
   <!-- Recruit Form -->
   <div class="container" id="recruit-form-container">
+    <div id="featured-list-container" style="margin-bottom: 30px; background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
+      <h2 style="font-size: 18px; font-weight: 600; color: #334155; margin-top: 0;">기존 등록된 공고</h2>
+      <ul id="featured-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+        <li style="color: #94a3b8; font-size: 14px;">로딩 중...</li>
+      </ul>
+    </div>
+
     <h1>자사 공고 신규 등록 (고정 공고)</h1>
     <p style="color: #64748b; font-size: 14px; margin-bottom: 30px;">
-      여기서 입력된 정보는 구글 시트로 안전하게 전송되며, 매일 아침 알바단지 시스템이 자동으로 수거하여 뉴스레터 최상단에 배치합니다.
+      새로운 공고를 등록하거나, 위 목록에서 기존 공고를 선택해 수정할 수 있습니다.
     </p>
 
     <form id="recruit-form">
+      <input type="hidden" id="p_id" value="">
+
       <div class="form-group">
         <label>제목 (Title) *</label>
         <input type="text" id="p_title" placeholder="예: [알바단지] 향수 블라인드 테스트" required>
@@ -131,6 +140,7 @@
           currentAdminPwd = pwdStr;
           authScreen.style.display = 'none';
           formContainer.style.display = 'block';
+          loadFeaturedPostings();
         } else {
           alert("아이디 또는 비밀번호가 일치하지 않습니다.");
           authBtn.textContent = "접속하기";
@@ -145,6 +155,142 @@
       });
     });
 
+    let currentPostings = [];
+
+    function loadFeaturedPostings() {
+      const listEl = document.getElementById('featured-list');
+      listEl.innerHTML = '<li style="color: #94a3b8; font-size: 14px;">로딩 중...</li>';
+      
+      fetch(`${WEB_APP_URL}?action=get_featured`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.status === 'success') {
+            currentPostings = data.data || [];
+            renderPostingsList();
+          } else {
+            listEl.innerHTML = '<li style="color: #ef4444; font-size: 14px;">데이터를 불러오지 못했습니다.</li>';
+          }
+        })
+        .catch(err => {
+          listEl.innerHTML = '<li style="color: #ef4444; font-size: 14px;">통신 오류 발생</li>';
+        });
+    }
+
+    function renderPostingsList() {
+      const listEl = document.getElementById('featured-list');
+      listEl.innerHTML = '';
+      if (currentPostings.length === 0) {
+        listEl.innerHTML = '<li style="color: #94a3b8; font-size: 14px;">등록된 공고가 없습니다.</li>';
+        return;
+      }
+
+      currentPostings.forEach(p => {
+        const li = document.createElement('li');
+        li.style.display = 'flex';
+        li.style.justifyContent = 'space-between';
+        li.style.alignItems = 'center';
+        li.style.padding = '12px 16px';
+        li.style.background = 'white';
+        li.style.border = '1px solid #cbd5e1';
+        li.style.borderRadius = '6px';
+        
+        const titleSpan = document.createElement('span');
+        titleSpan.textContent = p.title || '제목 없음';
+        titleSpan.style.flex = '1';
+        titleSpan.style.fontSize = '14px';
+        titleSpan.style.color = '#334155';
+        titleSpan.style.fontWeight = '500';
+        titleSpan.style.whiteSpace = 'nowrap';
+        titleSpan.style.overflow = 'hidden';
+        titleSpan.style.textOverflow = 'ellipsis';
+        titleSpan.style.marginRight = '12px';
+
+        const btnGroup = document.createElement('div');
+        btnGroup.style.display = 'flex';
+        btnGroup.style.gap = '8px';
+
+        const editBtn = document.createElement('button');
+        editBtn.textContent = '수정';
+        editBtn.type = 'button';
+        editBtn.style.padding = '6px 12px';
+        editBtn.style.fontSize = '12px';
+        editBtn.style.background = '#e2e8f0';
+        editBtn.style.color = '#475569';
+        editBtn.style.width = 'auto';
+        editBtn.onclick = () => fillEditForm(p);
+
+        const delBtn = document.createElement('button');
+        delBtn.textContent = '삭제';
+        delBtn.type = 'button';
+        delBtn.style.padding = '6px 12px';
+        delBtn.style.fontSize = '12px';
+        delBtn.style.background = '#fee2e2';
+        delBtn.style.color = '#ef4444';
+        delBtn.style.width = 'auto';
+        delBtn.onclick = () => deletePosting(p.id);
+
+        btnGroup.appendChild(editBtn);
+        btnGroup.appendChild(delBtn);
+        
+        li.appendChild(titleSpan);
+        li.appendChild(btnGroup);
+        listEl.appendChild(li);
+      });
+    }
+
+    function fillEditForm(p) {
+      document.getElementById('p_id').value = p.id || '';
+      document.getElementById('p_title').value = p.title || '';
+      document.getElementById('p_type').value = p.type || '좌담회';
+      document.getElementById('p_date').value = p.date || '';
+      document.getElementById('p_duration').value = p.duration || '';
+      document.getElementById('p_reward').value = p.reward || '';
+      document.getElementById('p_target').value = p.target || '';
+      document.getElementById('p_location').value = p.location || '';
+      document.getElementById('p_url').value = p.url || '';
+      document.getElementById('p_content').value = p.survey_content || '';
+      
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.textContent = '수정 완료하기';
+      submitBtn.style.background = '#10b981'; // Green
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    function deletePosting(id) {
+      if(!confirm("정말 이 공고를 삭제하시겠습니까? (삭제된 공고는 즉시 사라집니다)")) return;
+      
+      const payload = {
+        action: 'delete_featured',
+        admin_id: currentAdminId,
+        admin_pwd: currentAdminPwd,
+        id: id
+      };
+
+      fetch(WEB_APP_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          alert("성공적으로 삭제되었습니다.");
+          form.reset();
+          resetFormState();
+          loadFeaturedPostings();
+        } else {
+          alert("삭제 실패: " + (data.message || "권한이 없습니다."));
+        }
+      });
+    }
+
+    function resetFormState() {
+      document.getElementById('p_id').value = '';
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.textContent = '고정 공고 등록 전송하기';
+      submitBtn.style.background = '#3b82f6';
+    }
+
     authPwd.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') authBtn.click();
     });
@@ -158,10 +304,14 @@
       submitBtn.textContent = "전송중...";
       submitBtn.disabled = true;
 
+      const p_id = document.getElementById('p_id').value;
+      const isEdit = !!p_id;
+
       const payload = {
-        action: 'add_featured',
+        action: isEdit ? 'update_featured' : 'add_featured',
         admin_id: currentAdminId,
         admin_pwd: currentAdminPwd,
+        id: p_id,
         title: document.getElementById('p_title').value,
         type: document.getElementById('p_type').value,
         date: document.getElementById('p_date').value,
@@ -181,18 +331,20 @@
       .then(res => res.json())
       .then(data => {
         if (data.status === 'success') {
-          alert("성공적으로 서버에 기록되었습니다! 내일 아침 뉴스레터 발행 시 등록됩니다.");
+          alert("성공적으로 서버에 반영되었습니다!");
           form.reset();
+          resetFormState();
+          loadFeaturedPostings();
         } else {
-          alert("저장 실패: " + (data.message || "권한이 없습니다."));
+          alert("저장 실패: " + (data.message || "오류가 발생했습니다."));
+          resetFormState();
         }
-        submitBtn.textContent = "고정 공고 등록 전송하기";
         submitBtn.disabled = false;
       })
       .catch((err) => {
         alert("통신 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
         console.error(err);
-        submitBtn.textContent = "고정 공고 등록 전송하기";
+        resetFormState();
         submitBtn.disabled = false;
       });
     });
