@@ -358,46 +358,64 @@ async function loadPostings() {
       }
     }
 
-    // [LIVE UPDATE] 구글 시트에서 실시간 고정 공고 끌어오기
-    try {
-      const liveRes = await fetch(`${WEB_APP_URL}?action=get_featured`);
-      const liveData = await liveRes.json();
-      if (liveData.status === 'success' && liveData.data) {
-        const liveFeatured = liveData.data.map(p => ({
-          ...p,
-          is_featured: 1,
-          source: '알바단지 자체'
-        }));
-        
-        // 기존 DB 배포본 중 고정공고는 제거하고 실시간 데이터를 덮어씌움
-        basePostings = basePostings.filter(p => p.is_featured != 1 || p.source !== '알바단지 자체');
-        allPostings = [...liveFeatured, ...basePostings];
-      } else {
-        allPostings = basePostings;
-      }
-    } catch (e) {
-      console.warn("Live featured fetch failed, using local.", e);
-      allPostings = basePostings;
-    }
+    // 1단계: 로컬 데이터 즉시 렌더링 (체감 속도 최적화)
+    allPostings = basePostings;
+    applyInitialRender();
 
-    // Default to urgent filter if available
-    const urgentBtn = document.querySelector('[data-filter="urgent"]');
-    if (urgentBtn) {
-      urgentBtn.click();
-    } else {
-      renderPostings(allPostings);
-    }
-    
-    updateStats(allPostings);
-    updateFilterCounts();
+    // 2단계: 백그라운드에서 실시간 고정 공고 업데이트 진행 (비동기)
+    syncLiveFeatured();
 
   } catch (err) {
     console.log('No data found, using embedded data if available');
     if (window.__POSTINGS_DATA__) {
       allPostings = window.__POSTINGS_DATA__;
-      renderPostings(allPostings);
-      updateStats(allPostings);
+      applyInitialRender();
     }
+  }
+}
+
+function applyInitialRender() {
+  // Default to urgent filter if available
+  const urgentBtn = document.querySelector('[data-filter="urgent"]');
+  if (urgentBtn) {
+    urgentBtn.click();
+  } else {
+    renderPostings(allPostings);
+  }
+  updateStats(allPostings);
+  updateFilterCounts();
+}
+
+async function syncLiveFeatured() {
+  try {
+    const liveRes = await fetch(`${WEB_APP_URL}?action=get_featured`);
+    const liveData = await liveRes.json();
+    
+    if (liveData.status === 'success' && liveData.data) {
+      const liveFeatured = liveData.data.map(p => ({
+        ...p,
+        is_featured: 1,
+        source: '알바단지 자체'
+      }));
+      
+      // 기존 목록에서 고정공고 교체
+      const baseOnly = allPostings.filter(p => p.is_featured != 1 || p.source !== '알바단지 자체');
+      allPostings = [...liveFeatured, ...baseOnly];
+      
+      // 현재 활성화된 필터 유지하며 재렌더링
+      const activeBtn = document.querySelector('.filter-btn.active');
+      if (activeBtn) {
+        activeBtn.click();
+      } else {
+        renderPostings(allPostings);
+      }
+      
+      updateStats(allPostings);
+      updateFilterCounts();
+      console.log("Live featured postings synchronized.");
+    }
+  } catch (e) {
+    console.warn("Live featured fetch failed in background.", e);
   }
 }
 
