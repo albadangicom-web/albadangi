@@ -237,7 +237,7 @@ function updateFilterCounts() {
 }
 
 // ── Subscribe form ──
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzhOytISR2qHGa7c4q1awBTt6aeDDUCWxwEO5FNVIM-JUy4GCgEmwgyoQlzYVhEs5Uvmg/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzuzBiPnIGiJTP99Hk1L-jPuPXWRd1SSDxQAMNYskue4dkMpLAK5jA3vXLOG0ti_Qx6Wg/exec";
 
 // Toast notification helper
 function showToast(message, type = 'success') {
