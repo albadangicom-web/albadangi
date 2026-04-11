@@ -1,8 +1,488 @@
 window.allPostingsData = {
-  "generated_at": "2026-04-11T05:07:31.232884",
+  "generated_at": "2026-04-12T05:07:51.763964",
   "start_date": "2026-04-05",
-  "count": 654,
+  "count": 678,
   "postings": [
+    {
+      "id": null,
+      "title": "최근 3개월 내 주류 소비 경험이 있으신 분 온라인 좌담회 / 만 19-40세남녀",
+      "source": "알바단지 자체",
+      "source_url": "https://forms.gle/6gTnbyVERzoCEZ7G9",
+      "target_age": "만 19-40세남녀",
+      "target_gender": null,
+      "target_condition": null,
+      "date": null,
+      "time": null,
+      "duration": "1시간",
+      "reward": "50,000원",
+      "location": "온라인",
+      "type": "좌담회",
+      "scraped_at": "2026-04-11T12:56:02.930051",
+      "is_active": 1,
+      "url_hash": null,
+      "is_featured": 1,
+      "survey_content": "[모집대상]\n\n1) 한국에 거주하는 ** 만 19-40세 ** 남녀\n\n2) 최근 3개월 이내에 주류 소비 경험이 있으신 분\n\n3) 카메라가 있는 노트북 및 기기를 통해 온라인으로 조사 참여가 가능하신 분\n\n-------------------------------------------------------------------\n\n[조사안내]\n\n■ 방식: 온라인 좌담회\n\n■ 일정: 2026년 4월23일(목)~24일(금) 중 한 타임 (60분)\n\n■ 사례금: 5만원"
+    },
+    {
+      "id": "63bc58126282a29e62db8c5d60ea7070",
+      "title": "▶ 4/24~5/6 과자류 관련 식품조사 / 만20-49세 남녀",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35123",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "4/24(금)~ 5/6(수)",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "경복궁역 부근 (전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다)",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:12.204869",
+      "is_active": 1,
+      "url_hash": "63bc58126282a29e62db8c5d60ea7070",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "df44a4d9f594965c46012a8155f39220",
+      "title": "▶4/21~22)토끼. 기니피그 좌담회 / 만 20-29세 남/여 대학생 및 직장인",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35124",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "4월21일(화)~4월22일(수) 오후4시/ 오후7시30분",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "여의도역 부근 (전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다)",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:09.830243",
+      "is_active": 1,
+      "url_hash": "df44a4d9f594965c46012a8155f39220",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "407389ee92e1feab6dad540ea95c2687",
+      "title": "▶4/17, 20]전자제품 관련 소비자 조사 / 남녀",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35125",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "주 1회 이상 운동을 하는 스마트워치 이용자 및 구매 의향 있으신 분",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "선릉역 부근 (전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다)",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:07.405919",
+      "is_active": 1,
+      "url_hash": "407389ee92e1feab6dad540ea95c2687",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "a35cc49bce9ad3592b327a80d66d30b9",
+      "title": "공지▶5/6~8)캔디류  맛테스트 / 만30-65세 남녀",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35126",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "주 1회 이상 캔디를 취식하시는 분",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "5,9호선 여의도역 부근 (전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다)",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:05.015683",
+      "is_active": 1,
+      "url_hash": "a35cc49bce9ad3592b327a80d66d30b9",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "ce6a09da2e4e7834e9d50483d77e7cfd",
+      "title": "▶4/17(금) 식품조사  / 만25~49세 여성",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35127",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "4/17(금)",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "경복궁역 부근 (전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다)",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:02.606807",
+      "is_active": 1,
+      "url_hash": "ce6a09da2e4e7834e9d50483d77e7cfd",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "83c33f1aec3dad6b25f40d103a73100c",
+      "title": "▶추후협의) 10분 기호식품 관련 온라인 설문 / 만19-24세 남여",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35128",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "네이버페이 포인트 5천원(",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:06:00.216732",
+      "is_active": 1,
+      "url_hash": "83c33f1aec3dad6b25f40d103a73100c",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "31d4bfda516b343fadcc174745336943",
+      "title": "▶4월 5쨰주 예정) 애니메이션 관련 조사 / 만18-35세 남녀",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35129",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:05:57.803883",
+      "is_active": 1,
+      "url_hash": "31d4bfda516b343fadcc174745336943",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "b796a9f0a4c0c2e09132412c58462bfe",
+      "title": "▶4/22~24)아이스크림 맛테스트 /만20-59세 남녀~~150명",
+      "source": "sk77lee_cafe",
+      "source_url": "https://cafe.naver.com/sk77lee/35130",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "아이스크림을 좋아하고 자주 구매하는 분(최근 6개월 내 직접 구매 + 섭취 경험 필수!!)",
+      "date": "4월 22일(수)~4월 24일(금)--오전 11시/ 오후 2시/ 오후 4시/ 오후 7시",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "전화 인터뷰후 참석 확정되신 분에 한하여 문자로 알려드립니다",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:05:55.395918",
+      "is_active": 1,
+      "url_hash": "b796a9f0a4c0c2e09132412c58462bfe",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "cb8642048bf29d304d5daca558cba764",
+      "title": "좌담회 / 사이버 범죄 신고 & 범죄 신고",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124141",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:29.698852",
+      "is_active": 1,
+      "url_hash": "cb8642048bf29d304d5daca558cba764",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "88f403efe09b505bd14a890179feac48",
+      "title": "좌담회알바 / 사례비 관련해서 안내드립니다 ~",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124142",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:27.295337",
+      "is_active": 1,
+      "url_hash": "88f403efe09b505bd14a890179feac48",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "c3f8b17b4840d1aa8c40a13f67d2e8f8",
+      "title": "좌담회 / 좌담회알바 / 좌담회카페 / 좌담회알바좌담회카페",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124143",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:24.916467",
+      "is_active": 1,
+      "url_hash": "c3f8b17b4840d1aa8c40a13f67d2e8f8",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "4b48e17cd09f9a083259a4c82ca720c1",
+      "title": "리서치회사에서 조사 시작전 / 또는 마치고(온라인조사 포함) 나면 필수로 신분증을 제출하게 됩니다 ~",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124144",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:22.486462",
+      "is_active": 1,
+      "url_hash": "4b48e17cd09f9a083259a4c82ca720c1",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "5ddd530a1b8bad3be179ee5d53e7260b",
+      "title": "좌담회 카페 / 신청하시기전에 필독입니다 ~",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124145",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:20.067783",
+      "is_active": 1,
+      "url_hash": "5ddd530a1b8bad3be179ee5d53e7260b",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "973ed627b43b3e064c967170bae7e493",
+      "title": "리서치 관련 모집을 희망하시는분은 봐주세요~",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124146",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:17.499900",
+      "is_active": 1,
+      "url_hash": "973ed627b43b3e064c967170bae7e493",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "0e941fd1201e8fb0e97a145abfdec219",
+      "title": "2026년 4월 제조업 종사자 온라인 패널 모집",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124147",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "아래 제조업 회사 근무자 (직원 수 무관,부품, 완제품 생산 회사 모두 가능)",
+      "date": "",
+      "time": "",
+      "duration": "응답 사례 : 모바일 상품권 5천원권 매달 지급 (단, 응답시) 이마트, CU, GS, 세븐 일레븐 중 택1",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:15.060704",
+      "is_active": 1,
+      "url_hash": "0e941fd1201e8fb0e97a145abfdec219",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "94df8a36640de18624444bf47097af2c",
+      "title": "5/15~18)만 20~59세 남녀 ) 자동차 관련 설문조사+좌담회",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124148",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "-최근 2년내 준중형 SUV 신차 구매자(대상A): 10만원",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:12.675080",
+      "is_active": 1,
+      "url_hash": "94df8a36640de18624444bf47097af2c",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "7cd9bfe407bc8f5371d421a0e54a0772",
+      "title": "4/17~21) 만 20~49세 남녀 ) 주류 맛 테스트 조사 (설문+좌담회)",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124149",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "설문 1시간30분(설문후 대기시간 포함) + 좌담회 1시간30분",
+      "reward": "",
+      "location": "2호선 충정로역 부근",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:10.289686",
+      "is_active": 1,
+      "url_hash": "7cd9bfe407bc8f5371d421a0e54a0772",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "a6395d92ede348c505b2057318081fe0",
+      "title": "고유링크) 4/20~21) 만 16-35세 수도권 거주 남녀 )슈팅 게임 유저 좌담회",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124150",
+      "target_age": "만 16-35세",
+      "target_gender": "남녀",
+      "target_condition": "주 4시간 이상 슈팅 장르 게임을 활발히 플레이하고 있는 만 16-35세 수도권 거주 남녀",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:07.925281",
+      "is_active": 1,
+      "url_hash": "a6395d92ede348c505b2057318081fe0",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "6bfa14df9fcb350d3353ab17cdfdb006",
+      "title": "고유링크) 20대이상 여성 ) 생성형 AI 대규모 커뮤니티 조사(100명 추가)",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124151",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "3) 구글계정으로 최종 초대장 발송 -> 참여 확정",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:05.505077",
+      "is_active": 1,
+      "url_hash": "6bfa14df9fcb350d3353ab17cdfdb006",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "7330cd0906035dec9a010565553ebd70",
+      "title": "고유링크) 20대이상 남성 ) 생성형 AI 대규모 커뮤니티 조사(100명 추가)",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124152",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "3) 구글계정으로 최종 초대장 발송 -> 참여 확정",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:02.915446",
+      "is_active": 1,
+      "url_hash": "7330cd0906035dec9a010565553ebd70",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "354c25c2b204e2bbd79f2a32838ad29d",
+      "title": "고유링크) 90분,상품권10만)4/16~17)모바일 관련 좌담회–만20~49세 남성-LGU+고객만",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124153",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:04:00.322308",
+      "is_active": 1,
+      "url_hash": "354c25c2b204e2bbd79f2a32838ad29d",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "e93f18e6be5f76a3d99da321231b249d",
+      "title": "고유링크) 90분,상품권10만)4/16~17)모바일 관련 좌담회–만20~49세 여성-LGU+고객만",
+      "source": "naver_cafe",
+      "source_url": "https://cafe.naver.com/togetheralba/124154",
+      "target_age": "",
+      "target_gender": "",
+      "target_condition": "",
+      "date": "",
+      "time": "",
+      "duration": "",
+      "reward": "",
+      "location": "",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:03:57.710797",
+      "is_active": 1,
+      "url_hash": "e93f18e6be5f76a3d99da321231b249d",
+      "is_featured": 0,
+      "survey_content": null
+    },
+    {
+      "id": "9a481e1a5f5546ad7f3644c624ecdab5",
+      "title": "[25~59세 남녀]로봇청소기 사용자·구매의향자 좌담회–4월 15일~16일[6만원]",
+      "source": "researchi",
+      "source_url": "http://researchi.co.kr/24812",
+      "target_age": "25~59세",
+      "target_gender": "남녀",
+      "target_condition": "25~59세 남녀, 가구 소득 높은 가전제품 구매 결정권자, 100만원 이상 로봇 진공청소기 사용자",
+      "date": "4월 15일, 4월 16일 1시 / 4시 / 7시",
+      "time": "약 2시간",
+      "duration": "약 2시간",
+      "reward": "6만원",
+      "location": "추후 안내",
+      "type": "좌담회",
+      "scraped_at": "2026-04-12T05:01:56.075388",
+      "is_active": 1,
+      "url_hash": "9a481e1a5f5546ad7f3644c624ecdab5",
+      "is_featured": 0,
+      "survey_content": null
+    },
     {
       "id": "6cb912237fd22fa7783bc46abc92f5b4",
       "title": "▶4/20~21)슈팅 게임 유저 좌담회 / 만 16-35세 수도권 거주 남녀",
@@ -19,7 +499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:05:38.050497",
       "is_active": 1,
-      "url_hash": "6cb912237fd22fa7783bc46abc92f5b4"
+      "url_hash": "6cb912237fd22fa7783bc46abc92f5b4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a6f24658c7b233a04105d47905ab1f37",
@@ -37,7 +519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:05:35.661807",
       "is_active": 1,
-      "url_hash": "a6f24658c7b233a04105d47905ab1f37"
+      "url_hash": "a6f24658c7b233a04105d47905ab1f37",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "03fc421a33cd3e26e1a941097a59070a",
@@ -55,7 +539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:46.895030",
       "is_active": 1,
-      "url_hash": "03fc421a33cd3e26e1a941097a59070a"
+      "url_hash": "03fc421a33cd3e26e1a941097a59070a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ec9f983cf4bdd38d38e9303f04f41a0a",
@@ -73,7 +559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:44.457903",
       "is_active": 1,
-      "url_hash": "ec9f983cf4bdd38d38e9303f04f41a0a"
+      "url_hash": "ec9f983cf4bdd38d38e9303f04f41a0a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f46ac6a6e6be55dd8315a1923f80327d",
@@ -91,7 +579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:39.562923",
       "is_active": 1,
-      "url_hash": "f46ac6a6e6be55dd8315a1923f80327d"
+      "url_hash": "f46ac6a6e6be55dd8315a1923f80327d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1866495877242329cdc07a754de194d5",
@@ -109,7 +599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:37.194271",
       "is_active": 1,
-      "url_hash": "1866495877242329cdc07a754de194d5"
+      "url_hash": "1866495877242329cdc07a754de194d5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a4fb7b97abebf9fd4fbb0b2906696727",
@@ -127,7 +619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:34.828377",
       "is_active": 1,
-      "url_hash": "a4fb7b97abebf9fd4fbb0b2906696727"
+      "url_hash": "a4fb7b97abebf9fd4fbb0b2906696727",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b7e1d07c351a1c5d792075db434351a2",
@@ -145,7 +639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:32.448223",
       "is_active": 1,
-      "url_hash": "b7e1d07c351a1c5d792075db434351a2"
+      "url_hash": "b7e1d07c351a1c5d792075db434351a2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3aaa7e47020bbb660596a45b2c6ca579",
@@ -163,7 +659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:30.052135",
       "is_active": 1,
-      "url_hash": "3aaa7e47020bbb660596a45b2c6ca579"
+      "url_hash": "3aaa7e47020bbb660596a45b2c6ca579",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e22aa30f21912b2a4f477882cae2847b",
@@ -181,7 +679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:27.657457",
       "is_active": 1,
-      "url_hash": "e22aa30f21912b2a4f477882cae2847b"
+      "url_hash": "e22aa30f21912b2a4f477882cae2847b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c50945a2b4928e75f52bb0112f1bae21",
@@ -199,7 +699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:25.279726",
       "is_active": 1,
-      "url_hash": "c50945a2b4928e75f52bb0112f1bae21"
+      "url_hash": "c50945a2b4928e75f52bb0112f1bae21",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ce6af8be0000ef07f15ed68f65868f6e",
@@ -217,7 +719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:22.896261",
       "is_active": 1,
-      "url_hash": "ce6af8be0000ef07f15ed68f65868f6e"
+      "url_hash": "ce6af8be0000ef07f15ed68f65868f6e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "92761548b875a2f1dcaa9a7f16028cfa",
@@ -235,7 +739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:20.522734",
       "is_active": 1,
-      "url_hash": "92761548b875a2f1dcaa9a7f16028cfa"
+      "url_hash": "92761548b875a2f1dcaa9a7f16028cfa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0e206a720bd8e34b9345cebb62e3a829",
@@ -253,7 +759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:18.152701",
       "is_active": 1,
-      "url_hash": "0e206a720bd8e34b9345cebb62e3a829"
+      "url_hash": "0e206a720bd8e34b9345cebb62e3a829",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "104e761b2da0b3f5d11f99659143cafb",
@@ -271,7 +779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:15.788158",
       "is_active": 1,
-      "url_hash": "104e761b2da0b3f5d11f99659143cafb"
+      "url_hash": "104e761b2da0b3f5d11f99659143cafb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6e47adc1e0858cfb4fcbe1d45fd7ff1f",
@@ -289,7 +799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:13.409911",
       "is_active": 1,
-      "url_hash": "6e47adc1e0858cfb4fcbe1d45fd7ff1f"
+      "url_hash": "6e47adc1e0858cfb4fcbe1d45fd7ff1f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0485b510a112117128789a0d2ca57f2e",
@@ -307,7 +819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:11.029225",
       "is_active": 1,
-      "url_hash": "0485b510a112117128789a0d2ca57f2e"
+      "url_hash": "0485b510a112117128789a0d2ca57f2e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b1a349522395625f7b88aee1fd709f7a",
@@ -325,7 +839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:08.655710",
       "is_active": 1,
-      "url_hash": "b1a349522395625f7b88aee1fd709f7a"
+      "url_hash": "b1a349522395625f7b88aee1fd709f7a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "46ca86762b1e75cd688a7232ca3564e3",
@@ -343,7 +859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:06.262294",
       "is_active": 1,
-      "url_hash": "46ca86762b1e75cd688a7232ca3564e3"
+      "url_hash": "46ca86762b1e75cd688a7232ca3564e3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "89a4a014ec7d5ae450a9ced6f6e4ae0f",
@@ -361,7 +879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:03.864813",
       "is_active": 1,
-      "url_hash": "89a4a014ec7d5ae450a9ced6f6e4ae0f"
+      "url_hash": "89a4a014ec7d5ae450a9ced6f6e4ae0f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "97d9ae6c7b1bb31e2834669c419a1fef",
@@ -379,7 +899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:04:01.480062",
       "is_active": 1,
-      "url_hash": "97d9ae6c7b1bb31e2834669c419a1fef"
+      "url_hash": "97d9ae6c7b1bb31e2834669c419a1fef",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6146b78e9c2442a7ce1987a87010ca9a",
@@ -397,7 +919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:59.097152",
       "is_active": 1,
-      "url_hash": "6146b78e9c2442a7ce1987a87010ca9a"
+      "url_hash": "6146b78e9c2442a7ce1987a87010ca9a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "42a8a63168b544b8f2c145c99bdca194",
@@ -415,7 +939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:56.693423",
       "is_active": 1,
-      "url_hash": "42a8a63168b544b8f2c145c99bdca194"
+      "url_hash": "42a8a63168b544b8f2c145c99bdca194",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b985f43d55a3b8c61e8c29af85d4c10c",
@@ -433,7 +959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:54.282250",
       "is_active": 1,
-      "url_hash": "b985f43d55a3b8c61e8c29af85d4c10c"
+      "url_hash": "b985f43d55a3b8c61e8c29af85d4c10c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d99ecbab9e5377c82eecb123bcbef3d4",
@@ -451,7 +979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:51.826702",
       "is_active": 1,
-      "url_hash": "d99ecbab9e5377c82eecb123bcbef3d4"
+      "url_hash": "d99ecbab9e5377c82eecb123bcbef3d4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "38410c258d0a40c6c61d0fca6a0b2e9b",
@@ -469,7 +999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:49.197421",
       "is_active": 1,
-      "url_hash": "38410c258d0a40c6c61d0fca6a0b2e9b"
+      "url_hash": "38410c258d0a40c6c61d0fca6a0b2e9b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2a7cecc73115033737e5df9949ff3fed",
@@ -487,7 +1019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:46.579401",
       "is_active": 1,
-      "url_hash": "2a7cecc73115033737e5df9949ff3fed"
+      "url_hash": "2a7cecc73115033737e5df9949ff3fed",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c936473a3f9f44fa2478d5c1d7c5243a",
@@ -505,7 +1039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:43.959163",
       "is_active": 1,
-      "url_hash": "c936473a3f9f44fa2478d5c1d7c5243a"
+      "url_hash": "c936473a3f9f44fa2478d5c1d7c5243a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a4e081c8e02054ba8d812fbb8322bee7",
@@ -523,7 +1059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:41.323227",
       "is_active": 1,
-      "url_hash": "a4e081c8e02054ba8d812fbb8322bee7"
+      "url_hash": "a4e081c8e02054ba8d812fbb8322bee7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0edb2ed954023d441522651e70547dd2",
@@ -541,7 +1079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:38.702247",
       "is_active": 1,
-      "url_hash": "0edb2ed954023d441522651e70547dd2"
+      "url_hash": "0edb2ed954023d441522651e70547dd2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6938288d49b5c5d6955ec9a1b2594867",
@@ -559,7 +1099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:36.077589",
       "is_active": 1,
-      "url_hash": "6938288d49b5c5d6955ec9a1b2594867"
+      "url_hash": "6938288d49b5c5d6955ec9a1b2594867",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1be5c2e2dd83219fe1a7c4c8fa6033b0",
@@ -577,7 +1119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:33.470977",
       "is_active": 1,
-      "url_hash": "1be5c2e2dd83219fe1a7c4c8fa6033b0"
+      "url_hash": "1be5c2e2dd83219fe1a7c4c8fa6033b0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dfd3969925b86823b096d4e2a8a77561",
@@ -595,7 +1139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:30.891499",
       "is_active": 1,
-      "url_hash": "dfd3969925b86823b096d4e2a8a77561"
+      "url_hash": "dfd3969925b86823b096d4e2a8a77561",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f4d013627531d721958c342fe2435933",
@@ -613,7 +1159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:28.304283",
       "is_active": 1,
-      "url_hash": "f4d013627531d721958c342fe2435933"
+      "url_hash": "f4d013627531d721958c342fe2435933",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "da5036c06da2fd20a74029259abd39d1",
@@ -631,7 +1179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:25.644975",
       "is_active": 1,
-      "url_hash": "da5036c06da2fd20a74029259abd39d1"
+      "url_hash": "da5036c06da2fd20a74029259abd39d1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9aa06353eb75c993d6a0c5597f6637dc",
@@ -649,7 +1199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:03:23.060805",
       "is_active": 1,
-      "url_hash": "9aa06353eb75c993d6a0c5597f6637dc"
+      "url_hash": "9aa06353eb75c993d6a0c5597f6637dc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5015b05f6429a945c64e7b11d76a8e71",
@@ -667,7 +1219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:42.637958",
       "is_active": 1,
-      "url_hash": "5015b05f6429a945c64e7b11d76a8e71"
+      "url_hash": "5015b05f6429a945c64e7b11d76a8e71",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "21496c88371ec86b6d45489e08cd8eba",
@@ -685,7 +1239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:41.432724",
       "is_active": 1,
-      "url_hash": "21496c88371ec86b6d45489e08cd8eba"
+      "url_hash": "21496c88371ec86b6d45489e08cd8eba",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d553b58b4c61daced5179cf9afbb3455",
@@ -703,7 +1259,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-11T05:01:40.222229",
       "is_active": 1,
-      "url_hash": "d553b58b4c61daced5179cf9afbb3455"
+      "url_hash": "d553b58b4c61daced5179cf9afbb3455",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5c07ec0b8eb17d1203d22deaf16751d1",
@@ -721,7 +1279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:38.991142",
       "is_active": 1,
-      "url_hash": "5c07ec0b8eb17d1203d22deaf16751d1"
+      "url_hash": "5c07ec0b8eb17d1203d22deaf16751d1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8958f637b1ec318a69d8137ad96e09fc",
@@ -739,7 +1299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:37.786691",
       "is_active": 1,
-      "url_hash": "8958f637b1ec318a69d8137ad96e09fc"
+      "url_hash": "8958f637b1ec318a69d8137ad96e09fc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "80d94e404698651467b48114c756c237",
@@ -757,7 +1319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:36.517966",
       "is_active": 1,
-      "url_hash": "80d94e404698651467b48114c756c237"
+      "url_hash": "80d94e404698651467b48114c756c237",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "623bd9e66d57446ce3d2b1df2b527fe6",
@@ -775,7 +1339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:35.250882",
       "is_active": 1,
-      "url_hash": "623bd9e66d57446ce3d2b1df2b527fe6"
+      "url_hash": "623bd9e66d57446ce3d2b1df2b527fe6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "35115fe84d2cbd854239c9dd44ccb220",
@@ -793,7 +1359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:33.960361",
       "is_active": 1,
-      "url_hash": "35115fe84d2cbd854239c9dd44ccb220"
+      "url_hash": "35115fe84d2cbd854239c9dd44ccb220",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9fb95fa70a4d289ec7e59e20263548c1",
@@ -811,7 +1379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:32.684482",
       "is_active": 1,
-      "url_hash": "9fb95fa70a4d289ec7e59e20263548c1"
+      "url_hash": "9fb95fa70a4d289ec7e59e20263548c1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "99fd08b6d56d105cd574205930266faf",
@@ -829,7 +1399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:31.423684",
       "is_active": 1,
-      "url_hash": "99fd08b6d56d105cd574205930266faf"
+      "url_hash": "99fd08b6d56d105cd574205930266faf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "48f76a1abee18eb81662f00d9c026c72",
@@ -847,7 +1419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:30.169587",
       "is_active": 1,
-      "url_hash": "48f76a1abee18eb81662f00d9c026c72"
+      "url_hash": "48f76a1abee18eb81662f00d9c026c72",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "69399f4cba811bf6fef4c44aa6aab56f",
@@ -865,7 +1439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:28.902520",
       "is_active": 1,
-      "url_hash": "69399f4cba811bf6fef4c44aa6aab56f"
+      "url_hash": "69399f4cba811bf6fef4c44aa6aab56f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e818c7337f24f0da834352f95a52f1f0",
@@ -883,7 +1459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:01:27.646675",
       "is_active": 1,
-      "url_hash": "e818c7337f24f0da834352f95a52f1f0"
+      "url_hash": "e818c7337f24f0da834352f95a52f1f0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cea780b07a1e2388d3b1c8d41d54ac6c",
@@ -901,7 +1479,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-11T05:01:26.382211",
       "is_active": 1,
-      "url_hash": "cea780b07a1e2388d3b1c8d41d54ac6c"
+      "url_hash": "cea780b07a1e2388d3b1c8d41d54ac6c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bdfd7a4ccc7fa3ac488e09064f2146e4",
@@ -919,7 +1499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:00:44.837832",
       "is_active": 1,
-      "url_hash": "bdfd7a4ccc7fa3ac488e09064f2146e4"
+      "url_hash": "bdfd7a4ccc7fa3ac488e09064f2146e4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a9a733df4253b2f876384534bc4d49bd",
@@ -937,7 +1519,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-11T05:00:17.808518",
       "is_active": 1,
-      "url_hash": "a9a733df4253b2f876384534bc4d49bd"
+      "url_hash": "a9a733df4253b2f876384534bc4d49bd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "65c5fd9d9e43774eac0a28aae7510e15",
@@ -955,7 +1539,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-11T05:00:17.262463",
       "is_active": 1,
-      "url_hash": "65c5fd9d9e43774eac0a28aae7510e15"
+      "url_hash": "65c5fd9d9e43774eac0a28aae7510e15",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cdf4834980b60e21c3fe0581c948f7c1",
@@ -973,7 +1559,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-11T05:00:16.705009",
       "is_active": 1,
-      "url_hash": "cdf4834980b60e21c3fe0581c948f7c1"
+      "url_hash": "cdf4834980b60e21c3fe0581c948f7c1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9a6fe739d8d8402a6fbeef5281dd66b2",
@@ -991,7 +1579,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-11T05:00:15.609072",
       "is_active": 1,
-      "url_hash": "9a6fe739d8d8402a6fbeef5281dd66b2"
+      "url_hash": "9a6fe739d8d8402a6fbeef5281dd66b2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "99abe2a11de3d211f58be9350392e41a",
@@ -1009,7 +1599,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-11T05:00:07.337634",
       "is_active": 1,
-      "url_hash": "99abe2a11de3d211f58be9350392e41a"
+      "url_hash": "99abe2a11de3d211f58be9350392e41a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "10ac79efe23bbbeaa4e9a140f247eb6e",
@@ -1027,7 +1619,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-11T05:00:06.383818",
       "is_active": 1,
-      "url_hash": "10ac79efe23bbbeaa4e9a140f247eb6e"
+      "url_hash": "10ac79efe23bbbeaa4e9a140f247eb6e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5b53bda9d651496b1aba1f6f5d85f004",
@@ -1045,7 +1639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:00:05.834981",
       "is_active": 1,
-      "url_hash": "5b53bda9d651496b1aba1f6f5d85f004"
+      "url_hash": "5b53bda9d651496b1aba1f6f5d85f004",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5fbfd9d4ee848dafaf6647fc7edc9e58",
@@ -1063,7 +1659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-11T05:00:05.294992",
       "is_active": 1,
-      "url_hash": "5fbfd9d4ee848dafaf6647fc7edc9e58"
+      "url_hash": "5fbfd9d4ee848dafaf6647fc7edc9e58",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "943dd8375aa522569f418fbcf91d9841",
@@ -1081,7 +1679,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-11T05:00:04.751834",
       "is_active": 1,
-      "url_hash": "943dd8375aa522569f418fbcf91d9841"
+      "url_hash": "943dd8375aa522569f418fbcf91d9841",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "20c9d1d69daab5aae90ff15af65e039d",
@@ -1099,7 +1699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:06:21.359595",
       "is_active": 1,
-      "url_hash": "20c9d1d69daab5aae90ff15af65e039d"
+      "url_hash": "20c9d1d69daab5aae90ff15af65e039d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d1996dc2404d666fc915497b2ba25b83",
@@ -1117,7 +1719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:06:18.659123",
       "is_active": 1,
-      "url_hash": "d1996dc2404d666fc915497b2ba25b83"
+      "url_hash": "d1996dc2404d666fc915497b2ba25b83",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fa704b0c1ead4fe51efe504782c7129b",
@@ -1135,7 +1739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:06:15.897819",
       "is_active": 1,
-      "url_hash": "fa704b0c1ead4fe51efe504782c7129b"
+      "url_hash": "fa704b0c1ead4fe51efe504782c7129b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1858202fec6a2c51e375c43386f05272",
@@ -1153,7 +1759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:04:04.613388",
       "is_active": 1,
-      "url_hash": "1858202fec6a2c51e375c43386f05272"
+      "url_hash": "1858202fec6a2c51e375c43386f05272",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "91382391d94807cef85d4c4bc541a4e9",
@@ -1171,7 +1779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:04:01.881216",
       "is_active": 1,
-      "url_hash": "91382391d94807cef85d4c4bc541a4e9"
+      "url_hash": "91382391d94807cef85d4c4bc541a4e9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "751124003bd05eddbfdae5e0c5ae8636",
@@ -1189,7 +1799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:03:59.122245",
       "is_active": 1,
-      "url_hash": "751124003bd05eddbfdae5e0c5ae8636"
+      "url_hash": "751124003bd05eddbfdae5e0c5ae8636",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0976e59a83a464b69ff1b16dec9ad2ef",
@@ -1207,7 +1819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:03:56.447464",
       "is_active": 1,
-      "url_hash": "0976e59a83a464b69ff1b16dec9ad2ef"
+      "url_hash": "0976e59a83a464b69ff1b16dec9ad2ef",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6f86b621a32e8d6f9e4bd3cdeab94525",
@@ -1225,7 +1839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:02:07.106212",
       "is_active": 1,
-      "url_hash": "6f86b621a32e8d6f9e4bd3cdeab94525"
+      "url_hash": "6f86b621a32e8d6f9e4bd3cdeab94525",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4cb79b5038638b80104a1ab25f1d8f1f",
@@ -1243,7 +1859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:01:53.137411",
       "is_active": 1,
-      "url_hash": "4cb79b5038638b80104a1ab25f1d8f1f"
+      "url_hash": "4cb79b5038638b80104a1ab25f1d8f1f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a064733a0b7808ab36021eae3d52760d",
@@ -1261,7 +1879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-10T05:00:04.985618",
       "is_active": 1,
-      "url_hash": "a064733a0b7808ab36021eae3d52760d"
+      "url_hash": "a064733a0b7808ab36021eae3d52760d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8e15d1fec2e370286fc21aca74dfd9ff",
@@ -1279,7 +1899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T18:19:00.081491",
       "is_active": 1,
-      "url_hash": "8e15d1fec2e370286fc21aca74dfd9ff"
+      "url_hash": "8e15d1fec2e370286fc21aca74dfd9ff",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "19343b3ea9eb2b0ae858ff6a3f89e91c",
@@ -1297,7 +1919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T18:18:57.525820",
       "is_active": 1,
-      "url_hash": "19343b3ea9eb2b0ae858ff6a3f89e91c"
+      "url_hash": "19343b3ea9eb2b0ae858ff6a3f89e91c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f53328663565bc71e7d8c8ffd208e574",
@@ -1315,7 +1939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T18:18:54.456029",
       "is_active": 1,
-      "url_hash": "f53328663565bc71e7d8c8ffd208e574"
+      "url_hash": "f53328663565bc71e7d8c8ffd208e574",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1381cbe5b754eccad5dc1dac7d9d8738",
@@ -1333,7 +1959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T18:18:51.582319",
       "is_active": 1,
-      "url_hash": "1381cbe5b754eccad5dc1dac7d9d8738"
+      "url_hash": "1381cbe5b754eccad5dc1dac7d9d8738",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f32722c194ca63c44aac032e34e6c8c6",
@@ -1351,7 +1979,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-09T18:15:21.621309",
       "is_active": 1,
-      "url_hash": "f32722c194ca63c44aac032e34e6c8c6"
+      "url_hash": "f32722c194ca63c44aac032e34e6c8c6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ec8fb64ce28cb201e844e8ff05f1e6bd",
@@ -1369,7 +1999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:51.358279",
       "is_active": 1,
-      "url_hash": "ec8fb64ce28cb201e844e8ff05f1e6bd"
+      "url_hash": "ec8fb64ce28cb201e844e8ff05f1e6bd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dd2fece2ac6a85625936c94939cbfc9a",
@@ -1387,7 +2019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:49.134818",
       "is_active": 1,
-      "url_hash": "dd2fece2ac6a85625936c94939cbfc9a"
+      "url_hash": "dd2fece2ac6a85625936c94939cbfc9a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e3750c5086e17fc26cd8bcaae489bbcd",
@@ -1405,7 +2039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:46.681688",
       "is_active": 1,
-      "url_hash": "e3750c5086e17fc26cd8bcaae489bbcd"
+      "url_hash": "e3750c5086e17fc26cd8bcaae489bbcd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5ccaf61765ce13e064350967d4126863",
@@ -1423,7 +2059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:44.254022",
       "is_active": 1,
-      "url_hash": "5ccaf61765ce13e064350967d4126863"
+      "url_hash": "5ccaf61765ce13e064350967d4126863",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "657f2087f1aee7e0dbf54601fbe6fd0d",
@@ -1441,7 +2079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:41.808721",
       "is_active": 1,
-      "url_hash": "657f2087f1aee7e0dbf54601fbe6fd0d"
+      "url_hash": "657f2087f1aee7e0dbf54601fbe6fd0d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c26884b606fc197ae771ccdf95934e4b",
@@ -1459,7 +2099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:39.323587",
       "is_active": 1,
-      "url_hash": "c26884b606fc197ae771ccdf95934e4b"
+      "url_hash": "c26884b606fc197ae771ccdf95934e4b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ae8ab74e91b5827ef4e21df8dc7a1f75",
@@ -1477,7 +2119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:36.861474",
       "is_active": 1,
-      "url_hash": "ae8ab74e91b5827ef4e21df8dc7a1f75"
+      "url_hash": "ae8ab74e91b5827ef4e21df8dc7a1f75",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5f1c24bee1e12e17596ba970be9e6fd5",
@@ -1495,7 +2139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:34.624338",
       "is_active": 1,
-      "url_hash": "5f1c24bee1e12e17596ba970be9e6fd5"
+      "url_hash": "5f1c24bee1e12e17596ba970be9e6fd5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f49b6c7ac592b0ec224403225de97b62",
@@ -1513,7 +2159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:24:32.057406",
       "is_active": 1,
-      "url_hash": "f49b6c7ac592b0ec224403225de97b62"
+      "url_hash": "f49b6c7ac592b0ec224403225de97b62",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "957dc107edf05051a9bd2594de62d222",
@@ -1531,7 +2179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:23:56.534467",
       "is_active": 1,
-      "url_hash": "957dc107edf05051a9bd2594de62d222"
+      "url_hash": "957dc107edf05051a9bd2594de62d222",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0f8d04aae7007814675df0f0896fc18a",
@@ -1549,7 +2199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:54.321428",
       "is_active": 1,
-      "url_hash": "0f8d04aae7007814675df0f0896fc18a"
+      "url_hash": "0f8d04aae7007814675df0f0896fc18a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "88c85c2beed595c13a67dc81d85c4ef2",
@@ -1567,7 +2219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:48.318689",
       "is_active": 1,
-      "url_hash": "88c85c2beed595c13a67dc81d85c4ef2"
+      "url_hash": "88c85c2beed595c13a67dc81d85c4ef2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4d63268d3b5c8157addcd91ca104a746",
@@ -1585,7 +2239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:45.308484",
       "is_active": 1,
-      "url_hash": "4d63268d3b5c8157addcd91ca104a746"
+      "url_hash": "4d63268d3b5c8157addcd91ca104a746",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "16ca8b3624533b2ae9fff26f70dc7f35",
@@ -1603,7 +2259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:42.238851",
       "is_active": 1,
-      "url_hash": "16ca8b3624533b2ae9fff26f70dc7f35"
+      "url_hash": "16ca8b3624533b2ae9fff26f70dc7f35",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9f1e64b8da583448dd6c5b765878568b",
@@ -1621,7 +2279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:39.171352",
       "is_active": 1,
-      "url_hash": "9f1e64b8da583448dd6c5b765878568b"
+      "url_hash": "9f1e64b8da583448dd6c5b765878568b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c9377168d3aa0ad587387de0aad17567",
@@ -1639,7 +2299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:36.520307",
       "is_active": 1,
-      "url_hash": "c9377168d3aa0ad587387de0aad17567"
+      "url_hash": "c9377168d3aa0ad587387de0aad17567",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6d6529320cdf1e76e91f01f6b0a594ca",
@@ -1657,7 +2319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:33.366146",
       "is_active": 1,
-      "url_hash": "6d6529320cdf1e76e91f01f6b0a594ca"
+      "url_hash": "6d6529320cdf1e76e91f01f6b0a594ca",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "caf3fca60de2dc7d4dda0b70581e6959",
@@ -1675,7 +2339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:30.246452",
       "is_active": 1,
-      "url_hash": "caf3fca60de2dc7d4dda0b70581e6959"
+      "url_hash": "caf3fca60de2dc7d4dda0b70581e6959",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5bca780ef6ec492d4a30d58cdaf56d58",
@@ -1693,7 +2359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:27.438339",
       "is_active": 1,
-      "url_hash": "5bca780ef6ec492d4a30d58cdaf56d58"
+      "url_hash": "5bca780ef6ec492d4a30d58cdaf56d58",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1afd8ccd5860499a5073592a04667eca",
@@ -1711,7 +2379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:24.431099",
       "is_active": 1,
-      "url_hash": "1afd8ccd5860499a5073592a04667eca"
+      "url_hash": "1afd8ccd5860499a5073592a04667eca",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e1fa9ee62e42b5d199275962a5dd09e5",
@@ -1729,7 +2399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:21.964941",
       "is_active": 1,
-      "url_hash": "e1fa9ee62e42b5d199275962a5dd09e5"
+      "url_hash": "e1fa9ee62e42b5d199275962a5dd09e5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dc17e655b129711ef4443882b196c997",
@@ -1747,7 +2419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:19.516840",
       "is_active": 1,
-      "url_hash": "dc17e655b129711ef4443882b196c997"
+      "url_hash": "dc17e655b129711ef4443882b196c997",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c7fc30ae7ac75f71f246b05c3911718c",
@@ -1765,7 +2439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:17.066894",
       "is_active": 1,
-      "url_hash": "c7fc30ae7ac75f71f246b05c3911718c"
+      "url_hash": "c7fc30ae7ac75f71f246b05c3911718c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5045f78a87f40ff688056b269f680125",
@@ -1783,7 +2459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:14.646301",
       "is_active": 1,
-      "url_hash": "5045f78a87f40ff688056b269f680125"
+      "url_hash": "5045f78a87f40ff688056b269f680125",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c818c74fd43438b604d11dc0ba3b26e9",
@@ -1801,7 +2479,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:12.191733",
       "is_active": 1,
-      "url_hash": "c818c74fd43438b604d11dc0ba3b26e9"
+      "url_hash": "c818c74fd43438b604d11dc0ba3b26e9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e86514b9ec195c311eb9ac1db514b313",
@@ -1819,7 +2499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:09.725052",
       "is_active": 1,
-      "url_hash": "e86514b9ec195c311eb9ac1db514b313"
+      "url_hash": "e86514b9ec195c311eb9ac1db514b313",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f50cdc34cad67106fca95f012ce983cd",
@@ -1837,7 +2519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:07.281112",
       "is_active": 1,
-      "url_hash": "f50cdc34cad67106fca95f012ce983cd"
+      "url_hash": "f50cdc34cad67106fca95f012ce983cd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2e660b89400ead4310c829a17f72af63",
@@ -1855,7 +2539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:04.780261",
       "is_active": 1,
-      "url_hash": "2e660b89400ead4310c829a17f72af63"
+      "url_hash": "2e660b89400ead4310c829a17f72af63",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "989f44edeebc0d97b313f78f34440cb4",
@@ -1873,7 +2559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T17:22:02.289604",
       "is_active": 1,
-      "url_hash": "989f44edeebc0d97b313f78f34440cb4"
+      "url_hash": "989f44edeebc0d97b313f78f34440cb4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c95f90c56523315f5259e24abc64a1de",
@@ -1891,7 +2579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:05:00.897258",
       "is_active": 1,
-      "url_hash": "c95f90c56523315f5259e24abc64a1de"
+      "url_hash": "c95f90c56523315f5259e24abc64a1de",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "59fceba7129a510e0c21042670b6aeda",
@@ -1909,7 +2599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:58.436196",
       "is_active": 1,
-      "url_hash": "59fceba7129a510e0c21042670b6aeda"
+      "url_hash": "59fceba7129a510e0c21042670b6aeda",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a0e6acab963cc84fc39a14d178259dfb",
@@ -1927,7 +2619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:56.051174",
       "is_active": 1,
-      "url_hash": "a0e6acab963cc84fc39a14d178259dfb"
+      "url_hash": "a0e6acab963cc84fc39a14d178259dfb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6562c00e7a19bb1453ec52c978f46421",
@@ -1945,7 +2639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:53.652237",
       "is_active": 1,
-      "url_hash": "6562c00e7a19bb1453ec52c978f46421"
+      "url_hash": "6562c00e7a19bb1453ec52c978f46421",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "27a886c28a297104b140e4666d0fcfbf",
@@ -1963,7 +2659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:48.794200",
       "is_active": 1,
-      "url_hash": "27a886c28a297104b140e4666d0fcfbf"
+      "url_hash": "27a886c28a297104b140e4666d0fcfbf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c6408ee755014ef974589c0010bdbb57",
@@ -1981,7 +2679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:46.438802",
       "is_active": 1,
-      "url_hash": "c6408ee755014ef974589c0010bdbb57"
+      "url_hash": "c6408ee755014ef974589c0010bdbb57",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ffb3f41135ee41ab24d3e63e9b3511d6",
@@ -1999,7 +2699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:44.074711",
       "is_active": 1,
-      "url_hash": "ffb3f41135ee41ab24d3e63e9b3511d6"
+      "url_hash": "ffb3f41135ee41ab24d3e63e9b3511d6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a5b3e485ba8945cc6ec21dc2454cbb4d",
@@ -2017,7 +2719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:41.710164",
       "is_active": 1,
-      "url_hash": "a5b3e485ba8945cc6ec21dc2454cbb4d"
+      "url_hash": "a5b3e485ba8945cc6ec21dc2454cbb4d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6171039e6b328ebafd076492da63d9f1",
@@ -2035,7 +2739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:39.333043",
       "is_active": 1,
-      "url_hash": "6171039e6b328ebafd076492da63d9f1"
+      "url_hash": "6171039e6b328ebafd076492da63d9f1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "66e3e4d96846760d673be025b28f327e",
@@ -2053,7 +2759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:36.966916",
       "is_active": 1,
-      "url_hash": "66e3e4d96846760d673be025b28f327e"
+      "url_hash": "66e3e4d96846760d673be025b28f327e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4d914a8d599b7066d568fba152f4e2a6",
@@ -2071,7 +2779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:34.594908",
       "is_active": 1,
-      "url_hash": "4d914a8d599b7066d568fba152f4e2a6"
+      "url_hash": "4d914a8d599b7066d568fba152f4e2a6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bbf652ee96f7127b3ac06360c98d16ee",
@@ -2089,7 +2799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:32.168850",
       "is_active": 1,
-      "url_hash": "bbf652ee96f7127b3ac06360c98d16ee"
+      "url_hash": "bbf652ee96f7127b3ac06360c98d16ee",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0fb59df4b4a1f0d3cae7638e301ad5a6",
@@ -2107,7 +2819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:29.775214",
       "is_active": 1,
-      "url_hash": "0fb59df4b4a1f0d3cae7638e301ad5a6"
+      "url_hash": "0fb59df4b4a1f0d3cae7638e301ad5a6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f9f65d268dfb669c87cb269927d9629b",
@@ -2125,7 +2839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:27.369620",
       "is_active": 1,
-      "url_hash": "f9f65d268dfb669c87cb269927d9629b"
+      "url_hash": "f9f65d268dfb669c87cb269927d9629b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ceb6d08957fcef7b238483a07f15ac51",
@@ -2143,7 +2859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:24.995530",
       "is_active": 1,
-      "url_hash": "ceb6d08957fcef7b238483a07f15ac51"
+      "url_hash": "ceb6d08957fcef7b238483a07f15ac51",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8ee10bc2c4d9e603c4a0d9fad34bf5fa",
@@ -2161,7 +2879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:22.604817",
       "is_active": 1,
-      "url_hash": "8ee10bc2c4d9e603c4a0d9fad34bf5fa"
+      "url_hash": "8ee10bc2c4d9e603c4a0d9fad34bf5fa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fb4be7c4442d201486e29b2eee89d258",
@@ -2179,7 +2899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:20.235836",
       "is_active": 1,
-      "url_hash": "fb4be7c4442d201486e29b2eee89d258"
+      "url_hash": "fb4be7c4442d201486e29b2eee89d258",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fced42f716273f027a49716f0cc03455",
@@ -2197,7 +2919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:17.853066",
       "is_active": 1,
-      "url_hash": "fced42f716273f027a49716f0cc03455"
+      "url_hash": "fced42f716273f027a49716f0cc03455",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "90bc95b43e38d9768296e0a547127eae",
@@ -2215,7 +2939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:15.477258",
       "is_active": 1,
-      "url_hash": "90bc95b43e38d9768296e0a547127eae"
+      "url_hash": "90bc95b43e38d9768296e0a547127eae",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7c8f064f8b9acf14d9db6d803d324cd3",
@@ -2233,7 +2959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:13.078066",
       "is_active": 1,
-      "url_hash": "7c8f064f8b9acf14d9db6d803d324cd3"
+      "url_hash": "7c8f064f8b9acf14d9db6d803d324cd3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f68665b207b2586a612735ef6d7e5d1c",
@@ -2251,7 +2979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:10.701130",
       "is_active": 1,
-      "url_hash": "f68665b207b2586a612735ef6d7e5d1c"
+      "url_hash": "f68665b207b2586a612735ef6d7e5d1c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "947b7b92d0441e3e08b633d0d1a6c59e",
@@ -2269,7 +2999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:08.292097",
       "is_active": 1,
-      "url_hash": "947b7b92d0441e3e08b633d0d1a6c59e"
+      "url_hash": "947b7b92d0441e3e08b633d0d1a6c59e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d74fe4ea37f62a4b16ff1fe0bf78038d",
@@ -2287,7 +3019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:05.729096",
       "is_active": 1,
-      "url_hash": "d74fe4ea37f62a4b16ff1fe0bf78038d"
+      "url_hash": "d74fe4ea37f62a4b16ff1fe0bf78038d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "da303bdd51e35605e49c52e07e168d48",
@@ -2305,7 +3039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:03.095819",
       "is_active": 1,
-      "url_hash": "da303bdd51e35605e49c52e07e168d48"
+      "url_hash": "da303bdd51e35605e49c52e07e168d48",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a3f2df2d5371e130adccac3f94cce391",
@@ -2323,7 +3059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:04:00.463886",
       "is_active": 1,
-      "url_hash": "a3f2df2d5371e130adccac3f94cce391"
+      "url_hash": "a3f2df2d5371e130adccac3f94cce391",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b87d7af4af04471512a5070ac6559671",
@@ -2341,7 +3079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:03:55.323303",
       "is_active": 1,
-      "url_hash": "b87d7af4af04471512a5070ac6559671"
+      "url_hash": "b87d7af4af04471512a5070ac6559671",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5e9ab3912575a39bd82e8834f3ac1ccf",
@@ -2359,7 +3099,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-09T05:02:15.219581",
       "is_active": 1,
-      "url_hash": "5e9ab3912575a39bd82e8834f3ac1ccf"
+      "url_hash": "5e9ab3912575a39bd82e8834f3ac1ccf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "86139dd8a7dd7133cf807159557c21e3",
@@ -2377,7 +3119,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-09T05:02:13.937665",
       "is_active": 1,
-      "url_hash": "86139dd8a7dd7133cf807159557c21e3"
+      "url_hash": "86139dd8a7dd7133cf807159557c21e3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c092f5b19a50a5ac63d1558ee83476db",
@@ -2395,7 +3139,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-09T05:02:12.669600",
       "is_active": 1,
-      "url_hash": "c092f5b19a50a5ac63d1558ee83476db"
+      "url_hash": "c092f5b19a50a5ac63d1558ee83476db",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aa63b00216e7dde460f58e24e6ade20b",
@@ -2413,7 +3159,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-09T05:02:11.419885",
       "is_active": 1,
-      "url_hash": "aa63b00216e7dde460f58e24e6ade20b"
+      "url_hash": "aa63b00216e7dde460f58e24e6ade20b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "55817e522625a33127db8a67b5a84460",
@@ -2431,7 +3179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:10.147208",
       "is_active": 1,
-      "url_hash": "55817e522625a33127db8a67b5a84460"
+      "url_hash": "55817e522625a33127db8a67b5a84460",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f8c5ce158701b0dd41dd601c16ca67f6",
@@ -2449,7 +3199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:08.894057",
       "is_active": 1,
-      "url_hash": "f8c5ce158701b0dd41dd601c16ca67f6"
+      "url_hash": "f8c5ce158701b0dd41dd601c16ca67f6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7f99fb3908e27e6031c31e0ab91c3591",
@@ -2467,7 +3219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:07.648795",
       "is_active": 1,
-      "url_hash": "7f99fb3908e27e6031c31e0ab91c3591"
+      "url_hash": "7f99fb3908e27e6031c31e0ab91c3591",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cd1b41113ef6d70b60f216932d60ddfa",
@@ -2485,7 +3239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:06.354082",
       "is_active": 1,
-      "url_hash": "cd1b41113ef6d70b60f216932d60ddfa"
+      "url_hash": "cd1b41113ef6d70b60f216932d60ddfa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7fff8250095cfb6c5f1c6beaff24fd93",
@@ -2503,7 +3259,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-09T05:02:05.073526",
       "is_active": 1,
-      "url_hash": "7fff8250095cfb6c5f1c6beaff24fd93"
+      "url_hash": "7fff8250095cfb6c5f1c6beaff24fd93",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "701ce3e76ba50bdc51aec9bb7402f47e",
@@ -2521,7 +3279,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-09T05:02:03.786228",
       "is_active": 1,
-      "url_hash": "701ce3e76ba50bdc51aec9bb7402f47e"
+      "url_hash": "701ce3e76ba50bdc51aec9bb7402f47e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "355725ff8f9e6bc7e9b7c3a4a44f5980",
@@ -2539,7 +3299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:02.459185",
       "is_active": 1,
-      "url_hash": "355725ff8f9e6bc7e9b7c3a4a44f5980"
+      "url_hash": "355725ff8f9e6bc7e9b7c3a4a44f5980",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "773514c2d75e5beb94b00182ec83b4b4",
@@ -2557,7 +3319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:02:01.149864",
       "is_active": 1,
-      "url_hash": "773514c2d75e5beb94b00182ec83b4b4"
+      "url_hash": "773514c2d75e5beb94b00182ec83b4b4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "495cf6ed5f57995b1a3de1ad2c254c59",
@@ -2575,7 +3339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:01:59.856623",
       "is_active": 1,
-      "url_hash": "495cf6ed5f57995b1a3de1ad2c254c59"
+      "url_hash": "495cf6ed5f57995b1a3de1ad2c254c59",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7021b101dca82184df595d9477feef05",
@@ -2593,7 +3359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:01:58.553086",
       "is_active": 1,
-      "url_hash": "7021b101dca82184df595d9477feef05"
+      "url_hash": "7021b101dca82184df595d9477feef05",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "75489f5bb9df8af3fd310402f7c67cab",
@@ -2611,7 +3379,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-09T05:01:57.269413",
       "is_active": 1,
-      "url_hash": "75489f5bb9df8af3fd310402f7c67cab"
+      "url_hash": "75489f5bb9df8af3fd310402f7c67cab",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5d9b946f36092cbbb9981815285f8c36",
@@ -2629,7 +3399,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-09T05:01:56.001419",
       "is_active": 1,
-      "url_hash": "5d9b946f36092cbbb9981815285f8c36"
+      "url_hash": "5d9b946f36092cbbb9981815285f8c36",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0e4336469536caaa7a6fad1afb30ff71",
@@ -2647,7 +3419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:01:14.417669",
       "is_active": 1,
-      "url_hash": "0e4336469536caaa7a6fad1afb30ff71"
+      "url_hash": "0e4336469536caaa7a6fad1afb30ff71",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3ac017d92efe9e67eff806d2c22bdc72",
@@ -2665,7 +3439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:01:07.936702",
       "is_active": 1,
-      "url_hash": "3ac017d92efe9e67eff806d2c22bdc72"
+      "url_hash": "3ac017d92efe9e67eff806d2c22bdc72",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8e2e06cbe8c31226e9b331fb02e3de40",
@@ -2683,7 +3459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:01:01.470442",
       "is_active": 1,
-      "url_hash": "8e2e06cbe8c31226e9b331fb02e3de40"
+      "url_hash": "8e2e06cbe8c31226e9b331fb02e3de40",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "96f13f6cd179e0245680a769bd1d0fdb",
@@ -2701,7 +3479,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-09T05:00:22.110293",
       "is_active": 1,
-      "url_hash": "96f13f6cd179e0245680a769bd1d0fdb"
+      "url_hash": "96f13f6cd179e0245680a769bd1d0fdb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "395834e8edae549e8c0369eba7cf1e76",
@@ -2719,7 +3499,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-09T05:00:11.565305",
       "is_active": 1,
-      "url_hash": "395834e8edae549e8c0369eba7cf1e76"
+      "url_hash": "395834e8edae549e8c0369eba7cf1e76",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5a2529ebf1e40e4d7d7db40c8c60537b",
@@ -2737,7 +3519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:00:07.952671",
       "is_active": 1,
-      "url_hash": "5a2529ebf1e40e4d7d7db40c8c60537b"
+      "url_hash": "5a2529ebf1e40e4d7d7db40c8c60537b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5493d7d0db8e0e3672635a72b8727d27",
@@ -2755,7 +3539,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-09T05:00:05.775364",
       "is_active": 1,
-      "url_hash": "5493d7d0db8e0e3672635a72b8727d27"
+      "url_hash": "5493d7d0db8e0e3672635a72b8727d27",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9cc75445d831d01a4196bda0cadf0b50",
@@ -2773,7 +3559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-09T05:00:04.567868",
       "is_active": 1,
-      "url_hash": "9cc75445d831d01a4196bda0cadf0b50"
+      "url_hash": "9cc75445d831d01a4196bda0cadf0b50",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0454645c40b0c93c08ddb5b4a37ace24",
@@ -2791,7 +3579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:23.913283",
       "is_active": 1,
-      "url_hash": "0454645c40b0c93c08ddb5b4a37ace24"
+      "url_hash": "0454645c40b0c93c08ddb5b4a37ace24",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a3eef203da51d6997a477faffacd84fa",
@@ -2809,7 +3599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:21.526484",
       "is_active": 1,
-      "url_hash": "a3eef203da51d6997a477faffacd84fa"
+      "url_hash": "a3eef203da51d6997a477faffacd84fa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cf76bda7e6b982036ee205e1a4c296da",
@@ -2827,7 +3619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:19.363042",
       "is_active": 1,
-      "url_hash": "cf76bda7e6b982036ee205e1a4c296da"
+      "url_hash": "cf76bda7e6b982036ee205e1a4c296da",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c4ab36b02d441de4bf2ce74d132e2879",
@@ -2845,7 +3639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:17.154328",
       "is_active": 1,
-      "url_hash": "c4ab36b02d441de4bf2ce74d132e2879"
+      "url_hash": "c4ab36b02d441de4bf2ce74d132e2879",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f50679ba32fa2d477c1809b50e1b2e42",
@@ -2863,7 +3659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:14.961394",
       "is_active": 1,
-      "url_hash": "f50679ba32fa2d477c1809b50e1b2e42"
+      "url_hash": "f50679ba32fa2d477c1809b50e1b2e42",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ddb72983280bc9ad66dc190a794807d0",
@@ -2881,7 +3679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:12.780008",
       "is_active": 1,
-      "url_hash": "ddb72983280bc9ad66dc190a794807d0"
+      "url_hash": "ddb72983280bc9ad66dc190a794807d0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "206c0321bf27ac20d4a7ad61dc14d725",
@@ -2899,7 +3699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:10.349584",
       "is_active": 1,
-      "url_hash": "206c0321bf27ac20d4a7ad61dc14d725"
+      "url_hash": "206c0321bf27ac20d4a7ad61dc14d725",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b76bbdc2902121b03259a826d6e28e14",
@@ -2917,7 +3719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:07.925694",
       "is_active": 1,
-      "url_hash": "b76bbdc2902121b03259a826d6e28e14"
+      "url_hash": "b76bbdc2902121b03259a826d6e28e14",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4dc32c79a902be5a6d93df3f34aef8ea",
@@ -2935,7 +3739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:06:05.518586",
       "is_active": 1,
-      "url_hash": "4dc32c79a902be5a6d93df3f34aef8ea"
+      "url_hash": "4dc32c79a902be5a6d93df3f34aef8ea",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "713a3b1f2102535f49c9608d230b4f04",
@@ -2953,7 +3759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:04:02.093741",
       "is_active": 1,
-      "url_hash": "713a3b1f2102535f49c9608d230b4f04"
+      "url_hash": "713a3b1f2102535f49c9608d230b4f04",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "688f2ad1adcabaf7b91d6f08f854697f",
@@ -2971,7 +3779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:03:59.409895",
       "is_active": 1,
-      "url_hash": "688f2ad1adcabaf7b91d6f08f854697f"
+      "url_hash": "688f2ad1adcabaf7b91d6f08f854697f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f14572007f6d2277d4e58339312a18f3",
@@ -2989,7 +3799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:03:56.702286",
       "is_active": 1,
-      "url_hash": "f14572007f6d2277d4e58339312a18f3"
+      "url_hash": "f14572007f6d2277d4e58339312a18f3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7c49b65c0b8c94879f8cf08c133936e7",
@@ -3007,7 +3819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:03:54.014717",
       "is_active": 1,
-      "url_hash": "7c49b65c0b8c94879f8cf08c133936e7"
+      "url_hash": "7c49b65c0b8c94879f8cf08c133936e7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8c5d009c7a504b8e4d6a512fa2243e4f",
@@ -3025,7 +3839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-08T05:00:05.213080",
       "is_active": 1,
-      "url_hash": "8c5d009c7a504b8e4d6a512fa2243e4f"
+      "url_hash": "8c5d009c7a504b8e4d6a512fa2243e4f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d4fe6e8e30ac2209b52c3e155cb8da06",
@@ -3043,7 +3859,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-08T05:00:04.029803",
       "is_active": 1,
-      "url_hash": "d4fe6e8e30ac2209b52c3e155cb8da06"
+      "url_hash": "d4fe6e8e30ac2209b52c3e155cb8da06",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b8f6bb2e6f09d86f460f8e72d385a2f0",
@@ -3061,7 +3879,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T22:42:12.759040",
       "is_active": 1,
-      "url_hash": "b8f6bb2e6f09d86f460f8e72d385a2f0"
+      "url_hash": "b8f6bb2e6f09d86f460f8e72d385a2f0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9f0d499a86638ed43e2de5596609aaa8",
@@ -3079,7 +3899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:28:08.608523",
       "is_active": 1,
-      "url_hash": "9f0d499a86638ed43e2de5596609aaa8"
+      "url_hash": "9f0d499a86638ed43e2de5596609aaa8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a594fcd02cd00697aae5b8822f2aeb06",
@@ -3097,7 +3919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:28:06.183325",
       "is_active": 1,
-      "url_hash": "a594fcd02cd00697aae5b8822f2aeb06"
+      "url_hash": "a594fcd02cd00697aae5b8822f2aeb06",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "384c2b92b37d12500e0e535998810cf4",
@@ -3115,7 +3939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:28:03.793729",
       "is_active": 1,
-      "url_hash": "384c2b92b37d12500e0e535998810cf4"
+      "url_hash": "384c2b92b37d12500e0e535998810cf4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e56d0b56539ee2cfb6dd2a57c43a884c",
@@ -3133,7 +3959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:28:01.354774",
       "is_active": 1,
-      "url_hash": "e56d0b56539ee2cfb6dd2a57c43a884c"
+      "url_hash": "e56d0b56539ee2cfb6dd2a57c43a884c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e4ab22958d0b3e5b6e939ef181b75377",
@@ -3151,7 +3979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:59.129530",
       "is_active": 1,
-      "url_hash": "e4ab22958d0b3e5b6e939ef181b75377"
+      "url_hash": "e4ab22958d0b3e5b6e939ef181b75377",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e39aa2ae38806cc0a9c87d8b39eaea19",
@@ -3169,7 +3999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:56.678801",
       "is_active": 1,
-      "url_hash": "e39aa2ae38806cc0a9c87d8b39eaea19"
+      "url_hash": "e39aa2ae38806cc0a9c87d8b39eaea19",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9d4c6b1b6e5a69750ed72808956508e7",
@@ -3187,7 +4019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:54.230136",
       "is_active": 1,
-      "url_hash": "9d4c6b1b6e5a69750ed72808956508e7"
+      "url_hash": "9d4c6b1b6e5a69750ed72808956508e7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2b3af4eeb2f126aa4a4107467376825d",
@@ -3205,7 +4039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:51.972379",
       "is_active": 1,
-      "url_hash": "2b3af4eeb2f126aa4a4107467376825d"
+      "url_hash": "2b3af4eeb2f126aa4a4107467376825d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "932bfd258b0cd681e0e502c6e4ec8b36",
@@ -3223,7 +4059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:49.778608",
       "is_active": 1,
-      "url_hash": "932bfd258b0cd681e0e502c6e4ec8b36"
+      "url_hash": "932bfd258b0cd681e0e502c6e4ec8b36",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "728286df92e6b0b8a1f8a9fc3c0dd7b9",
@@ -3241,7 +4079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:47.330727",
       "is_active": 1,
-      "url_hash": "728286df92e6b0b8a1f8a9fc3c0dd7b9"
+      "url_hash": "728286df92e6b0b8a1f8a9fc3c0dd7b9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5618a2c4f1a2de7416dc22c03f5e188b",
@@ -3259,7 +4099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:45.142453",
       "is_active": 1,
-      "url_hash": "5618a2c4f1a2de7416dc22c03f5e188b"
+      "url_hash": "5618a2c4f1a2de7416dc22c03f5e188b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "384d79a18f9d7b6e05c4d0fdaa2e11ac",
@@ -3277,7 +4119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:42.640505",
       "is_active": 1,
-      "url_hash": "384d79a18f9d7b6e05c4d0fdaa2e11ac"
+      "url_hash": "384d79a18f9d7b6e05c4d0fdaa2e11ac",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c0c4ee378603679939d5a39ba7345426",
@@ -3295,7 +4139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:40.436762",
       "is_active": 1,
-      "url_hash": "c0c4ee378603679939d5a39ba7345426"
+      "url_hash": "c0c4ee378603679939d5a39ba7345426",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b703d9cbd40edf65b83140c58dff9672",
@@ -3313,7 +4159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:29.956861",
       "is_active": 1,
-      "url_hash": "b703d9cbd40edf65b83140c58dff9672"
+      "url_hash": "b703d9cbd40edf65b83140c58dff9672",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "26d0f75d62b356257a9b1dcea190cc48",
@@ -3331,7 +4179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:27.490408",
       "is_active": 1,
-      "url_hash": "26d0f75d62b356257a9b1dcea190cc48"
+      "url_hash": "26d0f75d62b356257a9b1dcea190cc48",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "34bf5f9ba4686f1963e39dbf0f2d9819",
@@ -3349,7 +4199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:25.157465",
       "is_active": 1,
-      "url_hash": "34bf5f9ba4686f1963e39dbf0f2d9819"
+      "url_hash": "34bf5f9ba4686f1963e39dbf0f2d9819",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cc73861f4651087a13f0bd5e6b85d9c5",
@@ -3367,7 +4219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:22.674623",
       "is_active": 1,
-      "url_hash": "cc73861f4651087a13f0bd5e6b85d9c5"
+      "url_hash": "cc73861f4651087a13f0bd5e6b85d9c5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7e3369cb2b747d064918ced2751aae76",
@@ -3385,7 +4239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:19.519597",
       "is_active": 1,
-      "url_hash": "7e3369cb2b747d064918ced2751aae76"
+      "url_hash": "7e3369cb2b747d064918ced2751aae76",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6145533e8fc84668242179c99682fa07",
@@ -3403,7 +4259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:16.343422",
       "is_active": 1,
-      "url_hash": "6145533e8fc84668242179c99682fa07"
+      "url_hash": "6145533e8fc84668242179c99682fa07",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ab05e76863e5baf8324fac8743534428",
@@ -3421,7 +4279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:13.135284",
       "is_active": 1,
-      "url_hash": "ab05e76863e5baf8324fac8743534428"
+      "url_hash": "ab05e76863e5baf8324fac8743534428",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "16c4ada416c0dc0dd5fff6b1a0db5ddb",
@@ -3439,7 +4299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:09.995902",
       "is_active": 1,
-      "url_hash": "16c4ada416c0dc0dd5fff6b1a0db5ddb"
+      "url_hash": "16c4ada416c0dc0dd5fff6b1a0db5ddb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d3875bf156a7cf8dd93ced572f4e4ff6",
@@ -3457,7 +4319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:07.082400",
       "is_active": 1,
-      "url_hash": "d3875bf156a7cf8dd93ced572f4e4ff6"
+      "url_hash": "d3875bf156a7cf8dd93ced572f4e4ff6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cf9874aa8b160b2c2e27446144a34d95",
@@ -3475,7 +4339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:04.401335",
       "is_active": 1,
-      "url_hash": "cf9874aa8b160b2c2e27446144a34d95"
+      "url_hash": "cf9874aa8b160b2c2e27446144a34d95",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d3d562fb7f99afa8cf20b28eb7e38e0e",
@@ -3493,7 +4359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:27:01.232602",
       "is_active": 1,
-      "url_hash": "d3d562fb7f99afa8cf20b28eb7e38e0e"
+      "url_hash": "d3d562fb7f99afa8cf20b28eb7e38e0e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c943a2999dc61dcebb435eb47706c4b1",
@@ -3511,7 +4379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:58.164938",
       "is_active": 1,
-      "url_hash": "c943a2999dc61dcebb435eb47706c4b1"
+      "url_hash": "c943a2999dc61dcebb435eb47706c4b1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "304d96e03c55d086ea5384cb92386d88",
@@ -3529,7 +4399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:55.760476",
       "is_active": 1,
-      "url_hash": "304d96e03c55d086ea5384cb92386d88"
+      "url_hash": "304d96e03c55d086ea5384cb92386d88",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6f41aee72bf290e2712c55ecf47f1755",
@@ -3547,7 +4419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:53.394269",
       "is_active": 1,
-      "url_hash": "6f41aee72bf290e2712c55ecf47f1755"
+      "url_hash": "6f41aee72bf290e2712c55ecf47f1755",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1a67ebc0d6c00daad7c50df40844a409",
@@ -3565,7 +4439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:51.016876",
       "is_active": 1,
-      "url_hash": "1a67ebc0d6c00daad7c50df40844a409"
+      "url_hash": "1a67ebc0d6c00daad7c50df40844a409",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e904222e255690fe43b706af514c3fe5",
@@ -3583,7 +4459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:48.641408",
       "is_active": 1,
-      "url_hash": "e904222e255690fe43b706af514c3fe5"
+      "url_hash": "e904222e255690fe43b706af514c3fe5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "05ff4a9ec850ffe75135b1a58fc3e849",
@@ -3601,7 +4479,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:46.260285",
       "is_active": 1,
-      "url_hash": "05ff4a9ec850ffe75135b1a58fc3e849"
+      "url_hash": "05ff4a9ec850ffe75135b1a58fc3e849",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "726d4d5907e3c6ad34a00710a1f4fb85",
@@ -3619,7 +4499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:43.887374",
       "is_active": 1,
-      "url_hash": "726d4d5907e3c6ad34a00710a1f4fb85"
+      "url_hash": "726d4d5907e3c6ad34a00710a1f4fb85",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "271d56c75aae26c753e463d83e48b7af",
@@ -3637,7 +4519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:41.391573",
       "is_active": 1,
-      "url_hash": "271d56c75aae26c753e463d83e48b7af"
+      "url_hash": "271d56c75aae26c753e463d83e48b7af",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b36f0ecfc3ff2c237bb9d647f8ec040f",
@@ -3655,7 +4539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:38.840370",
       "is_active": 1,
-      "url_hash": "b36f0ecfc3ff2c237bb9d647f8ec040f"
+      "url_hash": "b36f0ecfc3ff2c237bb9d647f8ec040f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "75bd84dadd63db086a3dafddf6c2f6b5",
@@ -3673,7 +4559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:36.385440",
       "is_active": 1,
-      "url_hash": "75bd84dadd63db086a3dafddf6c2f6b5"
+      "url_hash": "75bd84dadd63db086a3dafddf6c2f6b5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5983ec35ed121c11b7bb90bf6a3aedc8",
@@ -3691,7 +4579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:33.950972",
       "is_active": 1,
-      "url_hash": "5983ec35ed121c11b7bb90bf6a3aedc8"
+      "url_hash": "5983ec35ed121c11b7bb90bf6a3aedc8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6164b11345d5b2f8de0a972aca9e62e4",
@@ -3709,7 +4599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:31.520224",
       "is_active": 1,
-      "url_hash": "6164b11345d5b2f8de0a972aca9e62e4"
+      "url_hash": "6164b11345d5b2f8de0a972aca9e62e4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c60620caace883b6a9a86886066148d9",
@@ -3727,7 +4619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:29.066956",
       "is_active": 1,
-      "url_hash": "c60620caace883b6a9a86886066148d9"
+      "url_hash": "c60620caace883b6a9a86886066148d9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7dd1a6a33432df127c72e8a941e4768b",
@@ -3745,7 +4639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:26.614583",
       "is_active": 1,
-      "url_hash": "7dd1a6a33432df127c72e8a941e4768b"
+      "url_hash": "7dd1a6a33432df127c72e8a941e4768b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2b092953ffd8da349fac1b4859915259",
@@ -3763,7 +4659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:24.118139",
       "is_active": 1,
-      "url_hash": "2b092953ffd8da349fac1b4859915259"
+      "url_hash": "2b092953ffd8da349fac1b4859915259",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0a5e6fe1114271142db61735eb849ffe",
@@ -3781,7 +4679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:19.273487",
       "is_active": 1,
-      "url_hash": "0a5e6fe1114271142db61735eb849ffe"
+      "url_hash": "0a5e6fe1114271142db61735eb849ffe",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a31e45674b9758fc5e6db8f7800bc538",
@@ -3799,7 +4699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:16.858635",
       "is_active": 1,
-      "url_hash": "a31e45674b9758fc5e6db8f7800bc538"
+      "url_hash": "a31e45674b9758fc5e6db8f7800bc538",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "410906cddd6306036f75f766cd4c6f75",
@@ -3817,7 +4719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:14.444451",
       "is_active": 1,
-      "url_hash": "410906cddd6306036f75f766cd4c6f75"
+      "url_hash": "410906cddd6306036f75f766cd4c6f75",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b5fdb8715d93c8b4dafa1af68fc96263",
@@ -3835,7 +4739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:12.025779",
       "is_active": 1,
-      "url_hash": "b5fdb8715d93c8b4dafa1af68fc96263"
+      "url_hash": "b5fdb8715d93c8b4dafa1af68fc96263",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "74b7aae4d1bcc08b816ead4e4f9954d8",
@@ -3853,7 +4759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:09.656235",
       "is_active": 1,
-      "url_hash": "74b7aae4d1bcc08b816ead4e4f9954d8"
+      "url_hash": "74b7aae4d1bcc08b816ead4e4f9954d8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cc16a45ea78ad00d72ecbc149f835000",
@@ -3871,7 +4779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:07.214784",
       "is_active": 1,
-      "url_hash": "cc16a45ea78ad00d72ecbc149f835000"
+      "url_hash": "cc16a45ea78ad00d72ecbc149f835000",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c2acd6250991e1786897b106c402c371",
@@ -3889,7 +4799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:04.838638",
       "is_active": 1,
-      "url_hash": "c2acd6250991e1786897b106c402c371"
+      "url_hash": "c2acd6250991e1786897b106c402c371",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "78e07444dac3ad73d7b27e3a37d0f802",
@@ -3907,7 +4819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:26:02.401879",
       "is_active": 1,
-      "url_hash": "78e07444dac3ad73d7b27e3a37d0f802"
+      "url_hash": "78e07444dac3ad73d7b27e3a37d0f802",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "34b67821e299debad491003c1aa7c03e",
@@ -3925,7 +4839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:59.948908",
       "is_active": 1,
-      "url_hash": "34b67821e299debad491003c1aa7c03e"
+      "url_hash": "34b67821e299debad491003c1aa7c03e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5af540bc41759ace0f1c8da1055ab06c",
@@ -3943,7 +4859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:57.576810",
       "is_active": 1,
-      "url_hash": "5af540bc41759ace0f1c8da1055ab06c"
+      "url_hash": "5af540bc41759ace0f1c8da1055ab06c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fcf7be0828a995d58489f2dc8ffef3d4",
@@ -3961,7 +4879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:55.208742",
       "is_active": 1,
-      "url_hash": "fcf7be0828a995d58489f2dc8ffef3d4"
+      "url_hash": "fcf7be0828a995d58489f2dc8ffef3d4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "89690e8c55927089af291e59d294b958",
@@ -3979,7 +4899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:52.769646",
       "is_active": 1,
-      "url_hash": "89690e8c55927089af291e59d294b958"
+      "url_hash": "89690e8c55927089af291e59d294b958",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1f23d0303d8a259866e50bb0713006ee",
@@ -3997,7 +4919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:50.412906",
       "is_active": 1,
-      "url_hash": "1f23d0303d8a259866e50bb0713006ee"
+      "url_hash": "1f23d0303d8a259866e50bb0713006ee",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3a31dbd709195a291610c1b642e673d5",
@@ -4015,7 +4939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:48.054876",
       "is_active": 1,
-      "url_hash": "3a31dbd709195a291610c1b642e673d5"
+      "url_hash": "3a31dbd709195a291610c1b642e673d5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "31dfb285c9e8847ac4d564894329b6dc",
@@ -4033,7 +4959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:45.663882",
       "is_active": 1,
-      "url_hash": "31dfb285c9e8847ac4d564894329b6dc"
+      "url_hash": "31dfb285c9e8847ac4d564894329b6dc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ef48670e468d35329ef1a9335b6e99fa",
@@ -4051,7 +4979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:43.304626",
       "is_active": 1,
-      "url_hash": "ef48670e468d35329ef1a9335b6e99fa"
+      "url_hash": "ef48670e468d35329ef1a9335b6e99fa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a98bc13e5813ef66b002be1426966956",
@@ -4069,7 +4999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:40.943086",
       "is_active": 1,
-      "url_hash": "a98bc13e5813ef66b002be1426966956"
+      "url_hash": "a98bc13e5813ef66b002be1426966956",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c2aee569e604b33c906b95705a68ab5c",
@@ -4087,7 +5019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:38.555134",
       "is_active": 1,
-      "url_hash": "c2aee569e604b33c906b95705a68ab5c"
+      "url_hash": "c2aee569e604b33c906b95705a68ab5c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "29a5fbb439634b3319f4a1a6f823cce6",
@@ -4105,7 +5039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:36.161108",
       "is_active": 1,
-      "url_hash": "29a5fbb439634b3319f4a1a6f823cce6"
+      "url_hash": "29a5fbb439634b3319f4a1a6f823cce6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2184a15f93646febee063d7fb50f1d67",
@@ -4123,7 +5059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:33.731929",
       "is_active": 1,
-      "url_hash": "2184a15f93646febee063d7fb50f1d67"
+      "url_hash": "2184a15f93646febee063d7fb50f1d67",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e68f58d567a8c23be39386b34877f346",
@@ -4141,7 +5079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:31.321091",
       "is_active": 1,
-      "url_hash": "e68f58d567a8c23be39386b34877f346"
+      "url_hash": "e68f58d567a8c23be39386b34877f346",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a0afe601df8f0c65e04ab2ce16973a49",
@@ -4159,7 +5099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:28.384641",
       "is_active": 1,
-      "url_hash": "a0afe601df8f0c65e04ab2ce16973a49"
+      "url_hash": "a0afe601df8f0c65e04ab2ce16973a49",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e037a8ceaac05417bd93cde667291ce9",
@@ -4177,7 +5119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:25:25.115252",
       "is_active": 1,
-      "url_hash": "e037a8ceaac05417bd93cde667291ce9"
+      "url_hash": "e037a8ceaac05417bd93cde667291ce9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "241a31d30b29a70b2fad9018ff4f1675",
@@ -4195,7 +5139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:45.443668",
       "is_active": 1,
-      "url_hash": "241a31d30b29a70b2fad9018ff4f1675"
+      "url_hash": "241a31d30b29a70b2fad9018ff4f1675",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "73f28aab7507284f2657de6a022e579b",
@@ -4213,7 +5159,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-07T22:23:35.564473",
       "is_active": 1,
-      "url_hash": "73f28aab7507284f2657de6a022e579b"
+      "url_hash": "73f28aab7507284f2657de6a022e579b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "34607101f3fb55719dda823d1a25d66b",
@@ -4231,7 +5179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:34.347189",
       "is_active": 1,
-      "url_hash": "34607101f3fb55719dda823d1a25d66b"
+      "url_hash": "34607101f3fb55719dda823d1a25d66b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "99544839c76f515705363c3336a482b6",
@@ -4249,7 +5199,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-07T22:23:33.137887",
       "is_active": 1,
-      "url_hash": "99544839c76f515705363c3336a482b6"
+      "url_hash": "99544839c76f515705363c3336a482b6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8983fae394aa7719d3dd2a9e7def24e3",
@@ -4267,7 +5219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:31.943770",
       "is_active": 1,
-      "url_hash": "8983fae394aa7719d3dd2a9e7def24e3"
+      "url_hash": "8983fae394aa7719d3dd2a9e7def24e3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e8f771c3bc9dfeca0324a17e7a3a39e5",
@@ -4285,7 +5239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:30.624234",
       "is_active": 1,
-      "url_hash": "e8f771c3bc9dfeca0324a17e7a3a39e5"
+      "url_hash": "e8f771c3bc9dfeca0324a17e7a3a39e5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5c7e278cb11a24de99dbe2e2eec10612",
@@ -4303,7 +5259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:29.342797",
       "is_active": 1,
-      "url_hash": "5c7e278cb11a24de99dbe2e2eec10612"
+      "url_hash": "5c7e278cb11a24de99dbe2e2eec10612",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e81a05c12740ddae3b26fc39b70d9c79",
@@ -4321,7 +5279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:28.088867",
       "is_active": 1,
-      "url_hash": "e81a05c12740ddae3b26fc39b70d9c79"
+      "url_hash": "e81a05c12740ddae3b26fc39b70d9c79",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "395977298a7616d7ab288e4d2b4dc7d5",
@@ -4339,7 +5299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:26.811137",
       "is_active": 1,
-      "url_hash": "395977298a7616d7ab288e4d2b4dc7d5"
+      "url_hash": "395977298a7616d7ab288e4d2b4dc7d5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "25498e757ca86921c9109e585dcab8ec",
@@ -4357,7 +5319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:25.515097",
       "is_active": 1,
-      "url_hash": "25498e757ca86921c9109e585dcab8ec"
+      "url_hash": "25498e757ca86921c9109e585dcab8ec",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "361a23369bdec15c65b039a6ee42c4b0",
@@ -4375,7 +5339,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-07T22:23:24.236712",
       "is_active": 1,
-      "url_hash": "361a23369bdec15c65b039a6ee42c4b0"
+      "url_hash": "361a23369bdec15c65b039a6ee42c4b0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fbe111ad8c4355ec21edafd8c24b8717",
@@ -4393,7 +5359,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T22:23:22.977406",
       "is_active": 1,
-      "url_hash": "fbe111ad8c4355ec21edafd8c24b8717"
+      "url_hash": "fbe111ad8c4355ec21edafd8c24b8717",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1cd8e163ea964faa75aef21b4a2a8bab",
@@ -4411,7 +5379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:21.739698",
       "is_active": 1,
-      "url_hash": "1cd8e163ea964faa75aef21b4a2a8bab"
+      "url_hash": "1cd8e163ea964faa75aef21b4a2a8bab",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8bb6789be274c0b83a136e65404fb441",
@@ -4429,7 +5399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:23:20.485758",
       "is_active": 1,
-      "url_hash": "8bb6789be274c0b83a136e65404fb441"
+      "url_hash": "8bb6789be274c0b83a136e65404fb441",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "06e234fd75da25ccb573d4de48203348",
@@ -4447,7 +5419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:22:38.868583",
       "is_active": 1,
-      "url_hash": "06e234fd75da25ccb573d4de48203348"
+      "url_hash": "06e234fd75da25ccb573d4de48203348",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "21a50755def10831e4a508afb5caacbe",
@@ -4465,7 +5439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:22:32.419810",
       "is_active": 1,
-      "url_hash": "21a50755def10831e4a508afb5caacbe"
+      "url_hash": "21a50755def10831e4a508afb5caacbe",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "73d444ea2c049bf5fdc8b15b6087f3d3",
@@ -4483,7 +5459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:22:25.926728",
       "is_active": 1,
-      "url_hash": "73d444ea2c049bf5fdc8b15b6087f3d3"
+      "url_hash": "73d444ea2c049bf5fdc8b15b6087f3d3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "71fac83c0fe69f276504461b51168482",
@@ -4501,7 +5479,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T22:21:54.335686",
       "is_active": 1,
-      "url_hash": "71fac83c0fe69f276504461b51168482"
+      "url_hash": "71fac83c0fe69f276504461b51168482",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "556fdb886002cc3b763c2114d2c1b5fd",
@@ -4519,7 +5499,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T22:21:52.682990",
       "is_active": 1,
-      "url_hash": "556fdb886002cc3b763c2114d2c1b5fd"
+      "url_hash": "556fdb886002cc3b763c2114d2c1b5fd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5cf226ea735946912a68427ddc9ec218",
@@ -4537,7 +5519,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-07T22:21:51.011627",
       "is_active": 1,
-      "url_hash": "5cf226ea735946912a68427ddc9ec218"
+      "url_hash": "5cf226ea735946912a68427ddc9ec218",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d7f34d85adb4fe7b70014275c61ee432",
@@ -4555,7 +5539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:21:38.733364",
       "is_active": 1,
-      "url_hash": "d7f34d85adb4fe7b70014275c61ee432"
+      "url_hash": "d7f34d85adb4fe7b70014275c61ee432",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0412382a6415f80f784c3fff581d5f50",
@@ -4573,7 +5559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T22:21:38.194423",
       "is_active": 1,
-      "url_hash": "0412382a6415f80f784c3fff581d5f50"
+      "url_hash": "0412382a6415f80f784c3fff581d5f50",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "25ed58253624f728d003ae6f120a3ae6",
@@ -4591,7 +5579,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-07T05:02:05.004997",
       "is_active": 1,
-      "url_hash": "25ed58253624f728d003ae6f120a3ae6"
+      "url_hash": "25ed58253624f728d003ae6f120a3ae6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c10f355b88cfe494955d03b1cbf9bcd3",
@@ -4609,7 +5599,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T05:02:03.743281",
       "is_active": 1,
-      "url_hash": "c10f355b88cfe494955d03b1cbf9bcd3"
+      "url_hash": "c10f355b88cfe494955d03b1cbf9bcd3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e312eaa58148d8b5f79539ed3c2381c9",
@@ -4627,7 +5619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:02:02.506316",
       "is_active": 1,
-      "url_hash": "e312eaa58148d8b5f79539ed3c2381c9"
+      "url_hash": "e312eaa58148d8b5f79539ed3c2381c9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bb883e2c4950cd0dc5050f89e4fe68f5",
@@ -4645,7 +5639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:02:01.259563",
       "is_active": 1,
-      "url_hash": "bb883e2c4950cd0dc5050f89e4fe68f5"
+      "url_hash": "bb883e2c4950cd0dc5050f89e4fe68f5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "539d900a52a5cd5f65d12644287d89b7",
@@ -4663,7 +5659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:01:56.117444",
       "is_active": 1,
-      "url_hash": "539d900a52a5cd5f65d12644287d89b7"
+      "url_hash": "539d900a52a5cd5f65d12644287d89b7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6ab220a6c289eb32181a7730273aba6b",
@@ -4681,7 +5679,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-07T05:01:54.806835",
       "is_active": 1,
-      "url_hash": "6ab220a6c289eb32181a7730273aba6b"
+      "url_hash": "6ab220a6c289eb32181a7730273aba6b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e0cfca460c876dcde81fb0a2984e59e6",
@@ -4699,7 +5699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:01:53.545077",
       "is_active": 1,
-      "url_hash": "e0cfca460c876dcde81fb0a2984e59e6"
+      "url_hash": "e0cfca460c876dcde81fb0a2984e59e6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f634aff0ffaa1c8b7d1fdf110d8e05ae",
@@ -4717,7 +5719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:01:52.245333",
       "is_active": 1,
-      "url_hash": "f634aff0ffaa1c8b7d1fdf110d8e05ae"
+      "url_hash": "f634aff0ffaa1c8b7d1fdf110d8e05ae",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "56b49dc307e63f049ca9f0a483ac8873",
@@ -4735,7 +5739,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T05:01:50.956940",
       "is_active": 1,
-      "url_hash": "56b49dc307e63f049ca9f0a483ac8873"
+      "url_hash": "56b49dc307e63f049ca9f0a483ac8873",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4ea7e4b954bf2fb060c38964064fbe25",
@@ -4753,7 +5759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:01:49.655874",
       "is_active": 1,
-      "url_hash": "4ea7e4b954bf2fb060c38964064fbe25"
+      "url_hash": "4ea7e4b954bf2fb060c38964064fbe25",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "62aa41ebba14b5a56debbf81133fc0a3",
@@ -4771,7 +5779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:01:48.385405",
       "is_active": 1,
-      "url_hash": "62aa41ebba14b5a56debbf81133fc0a3"
+      "url_hash": "62aa41ebba14b5a56debbf81133fc0a3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "142d1df772550ed4e71dccaaa5771bc6",
@@ -4789,7 +5799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:00:14.020853",
       "is_active": 1,
-      "url_hash": "142d1df772550ed4e71dccaaa5771bc6"
+      "url_hash": "142d1df772550ed4e71dccaaa5771bc6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "902cda4009afe9177240718f17518d99",
@@ -4807,7 +5819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:00:12.816351",
       "is_active": 1,
-      "url_hash": "902cda4009afe9177240718f17518d99"
+      "url_hash": "902cda4009afe9177240718f17518d99",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "15c00727a55d8481dbb09d163a1b3d7b",
@@ -4825,7 +5839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-07T05:00:11.237181",
       "is_active": 1,
-      "url_hash": "15c00727a55d8481dbb09d163a1b3d7b"
+      "url_hash": "15c00727a55d8481dbb09d163a1b3d7b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "65c4fcd3e3400683aeaa5d5c6692e9ba",
@@ -4843,7 +5859,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T05:00:08.755277",
       "is_active": 1,
-      "url_hash": "65c4fcd3e3400683aeaa5d5c6692e9ba"
+      "url_hash": "65c4fcd3e3400683aeaa5d5c6692e9ba",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9329902e4e882683b207181cb80d12c1",
@@ -4861,7 +5879,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-07T05:00:03.715526",
       "is_active": 1,
-      "url_hash": "9329902e4e882683b207181cb80d12c1"
+      "url_hash": "9329902e4e882683b207181cb80d12c1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0c5712b46784c1a02c8545fe137465ad",
@@ -4879,7 +5899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:55.705373",
       "is_active": 1,
-      "url_hash": "0c5712b46784c1a02c8545fe137465ad"
+      "url_hash": "0c5712b46784c1a02c8545fe137465ad",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "eeffd391683bab55c3eeeb84543e1e4e",
@@ -4897,7 +5919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:52.927939",
       "is_active": 1,
-      "url_hash": "eeffd391683bab55c3eeeb84543e1e4e"
+      "url_hash": "eeffd391683bab55c3eeeb84543e1e4e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e07804cae43c80c55790c70eda42aad3",
@@ -4915,7 +5939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:32.171168",
       "is_active": 1,
-      "url_hash": "e07804cae43c80c55790c70eda42aad3"
+      "url_hash": "e07804cae43c80c55790c70eda42aad3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7d854c9f6e45d7db47f05162aee8e5d3",
@@ -4933,7 +5959,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:05.306259",
       "is_active": 1,
-      "url_hash": "7d854c9f6e45d7db47f05162aee8e5d3"
+      "url_hash": "7d854c9f6e45d7db47f05162aee8e5d3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5ff3359b85a28c645bc4d551c00b7fbc",
@@ -4951,7 +5979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:02.906843",
       "is_active": 1,
-      "url_hash": "5ff3359b85a28c645bc4d551c00b7fbc"
+      "url_hash": "5ff3359b85a28c645bc4d551c00b7fbc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5942f214025a8617c10509588173ad10",
@@ -4969,7 +5999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:29:00.507713",
       "is_active": 1,
-      "url_hash": "5942f214025a8617c10509588173ad10"
+      "url_hash": "5942f214025a8617c10509588173ad10",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "91036396c505097fb2d0a51e168e9968",
@@ -4987,7 +6019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:58.092726",
       "is_active": 1,
-      "url_hash": "91036396c505097fb2d0a51e168e9968"
+      "url_hash": "91036396c505097fb2d0a51e168e9968",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d6750ada6ac590c8df348551f7c1f52c",
@@ -5005,7 +6039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:55.677907",
       "is_active": 1,
-      "url_hash": "d6750ada6ac590c8df348551f7c1f52c"
+      "url_hash": "d6750ada6ac590c8df348551f7c1f52c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7cdaa748964ca69fa66e4b2a7b84e7ea",
@@ -5023,7 +6059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:53.306764",
       "is_active": 1,
-      "url_hash": "7cdaa748964ca69fa66e4b2a7b84e7ea"
+      "url_hash": "7cdaa748964ca69fa66e4b2a7b84e7ea",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ddafd0b43f9f346a1fb790bbb62f4340",
@@ -5041,7 +6079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:50.930898",
       "is_active": 1,
-      "url_hash": "ddafd0b43f9f346a1fb790bbb62f4340"
+      "url_hash": "ddafd0b43f9f346a1fb790bbb62f4340",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8de14ce2be7ca19c08f4f56a94588baa",
@@ -5059,7 +6099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:48.512563",
       "is_active": 1,
-      "url_hash": "8de14ce2be7ca19c08f4f56a94588baa"
+      "url_hash": "8de14ce2be7ca19c08f4f56a94588baa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3d53d13676ad9af8c697b5708eac9948",
@@ -5077,7 +6119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:38.858345",
       "is_active": 1,
-      "url_hash": "3d53d13676ad9af8c697b5708eac9948"
+      "url_hash": "3d53d13676ad9af8c697b5708eac9948",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "221337af689e2147b57b084524f50870",
@@ -5095,7 +6139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:36.500001",
       "is_active": 1,
-      "url_hash": "221337af689e2147b57b084524f50870"
+      "url_hash": "221337af689e2147b57b084524f50870",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a9f8a94410375534a78601f1c71dbc7c",
@@ -5113,7 +6159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:33.935347",
       "is_active": 1,
-      "url_hash": "a9f8a94410375534a78601f1c71dbc7c"
+      "url_hash": "a9f8a94410375534a78601f1c71dbc7c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f6da203560623a3749fb733bc9b8bd92",
@@ -5131,7 +6179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:23.156219",
       "is_active": 1,
-      "url_hash": "f6da203560623a3749fb733bc9b8bd92"
+      "url_hash": "f6da203560623a3749fb733bc9b8bd92",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d9b3da6ac44a579c54f3ad7b1be173b1",
@@ -5149,7 +6199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:18.522332",
       "is_active": 1,
-      "url_hash": "d9b3da6ac44a579c54f3ad7b1be173b1"
+      "url_hash": "d9b3da6ac44a579c54f3ad7b1be173b1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ad0cbe5602ec9e1eb37e884045fd7064",
@@ -5167,7 +6219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:15.610912",
       "is_active": 1,
-      "url_hash": "ad0cbe5602ec9e1eb37e884045fd7064"
+      "url_hash": "ad0cbe5602ec9e1eb37e884045fd7064",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c490d986dfcfd747f6eed66f3d8a8e99",
@@ -5185,7 +6239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:12.727041",
       "is_active": 1,
-      "url_hash": "c490d986dfcfd747f6eed66f3d8a8e99"
+      "url_hash": "c490d986dfcfd747f6eed66f3d8a8e99",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3233d6f597a85033f9b1dbf47f938f0b",
@@ -5203,7 +6259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:09.670827",
       "is_active": 1,
-      "url_hash": "3233d6f597a85033f9b1dbf47f938f0b"
+      "url_hash": "3233d6f597a85033f9b1dbf47f938f0b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7281d404d94f97046eeee6b6459f2c54",
@@ -5221,7 +6279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:28:07.293178",
       "is_active": 1,
-      "url_hash": "7281d404d94f97046eeee6b6459f2c54"
+      "url_hash": "7281d404d94f97046eeee6b6459f2c54",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7f3d496b3b1f307b1fa04b71b4a8988f",
@@ -5239,7 +6299,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T22:10:57.746618",
       "is_active": 1,
-      "url_hash": "7f3d496b3b1f307b1fa04b71b4a8988f"
+      "url_hash": "7f3d496b3b1f307b1fa04b71b4a8988f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0846f70942618ae285dd582102303d7c",
@@ -5257,7 +6319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T22:06:33.004449",
       "is_active": 1,
-      "url_hash": "0846f70942618ae285dd582102303d7c"
+      "url_hash": "0846f70942618ae285dd582102303d7c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "85b26df72c9efdff2ecc5a18a7bc1cc2",
@@ -5275,7 +6339,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T20:11:10.905475",
       "is_active": 1,
-      "url_hash": "85b26df72c9efdff2ecc5a18a7bc1cc2"
+      "url_hash": "85b26df72c9efdff2ecc5a18a7bc1cc2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "105c832f6d420e6ec8e328abf83b4544",
@@ -5293,7 +6359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T20:10:59.542737",
       "is_active": 1,
-      "url_hash": "105c832f6d420e6ec8e328abf83b4544"
+      "url_hash": "105c832f6d420e6ec8e328abf83b4544",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3a82eee57374a96d16deda7a158a385a",
@@ -5311,7 +6379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T20:10:58.264814",
       "is_active": 1,
-      "url_hash": "3a82eee57374a96d16deda7a158a385a"
+      "url_hash": "3a82eee57374a96d16deda7a158a385a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "945ba9c4e1a71d51c7d5b949e440071e",
@@ -5329,7 +6399,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:55:55.403979",
       "is_active": 1,
-      "url_hash": "945ba9c4e1a71d51c7d5b949e440071e"
+      "url_hash": "945ba9c4e1a71d51c7d5b949e440071e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3ae48ff0343da9a310bde02d7c726c33",
@@ -5347,7 +6419,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:55:53.168879",
       "is_active": 1,
-      "url_hash": "3ae48ff0343da9a310bde02d7c726c33"
+      "url_hash": "3ae48ff0343da9a310bde02d7c726c33",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dee662befc0d1ded04d62d7374c355d9",
@@ -5365,7 +6439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:50.935497",
       "is_active": 1,
-      "url_hash": "dee662befc0d1ded04d62d7374c355d9"
+      "url_hash": "dee662befc0d1ded04d62d7374c355d9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6c6554ed62ae09f76937c1ec0ebbc57c",
@@ -5383,7 +6459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:48.420071",
       "is_active": 1,
-      "url_hash": "6c6554ed62ae09f76937c1ec0ebbc57c"
+      "url_hash": "6c6554ed62ae09f76937c1ec0ebbc57c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "933035ac006a67fd2bae9a112f9cc9df",
@@ -5401,7 +6479,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:55:46.002033",
       "is_active": 1,
-      "url_hash": "933035ac006a67fd2bae9a112f9cc9df"
+      "url_hash": "933035ac006a67fd2bae9a112f9cc9df",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d700de25b5a50affa33a6d4c96d2f343",
@@ -5419,7 +6499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:43.788987",
       "is_active": 1,
-      "url_hash": "d700de25b5a50affa33a6d4c96d2f343"
+      "url_hash": "d700de25b5a50affa33a6d4c96d2f343",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "35131d90d6e5abb0233540840348bf97",
@@ -5437,7 +6519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:41.362419",
       "is_active": 1,
-      "url_hash": "35131d90d6e5abb0233540840348bf97"
+      "url_hash": "35131d90d6e5abb0233540840348bf97",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "400f998df2281fa4617df7aeba4ff7c6",
@@ -5455,7 +6539,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:55:38.937992",
       "is_active": 1,
-      "url_hash": "400f998df2281fa4617df7aeba4ff7c6"
+      "url_hash": "400f998df2281fa4617df7aeba4ff7c6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "caf8407efe82dcc658bff7b47619ce33",
@@ -5473,7 +6559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:36.719000",
       "is_active": 1,
-      "url_hash": "caf8407efe82dcc658bff7b47619ce33"
+      "url_hash": "caf8407efe82dcc658bff7b47619ce33",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ac60995a544ea64709e304a3eeceaef7",
@@ -5491,7 +6579,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:55:34.266754",
       "is_active": 1,
-      "url_hash": "ac60995a544ea64709e304a3eeceaef7"
+      "url_hash": "ac60995a544ea64709e304a3eeceaef7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f2c85676691d3d7f37b54561b480586d",
@@ -5509,7 +6599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:32.045560",
       "is_active": 1,
-      "url_hash": "f2c85676691d3d7f37b54561b480586d"
+      "url_hash": "f2c85676691d3d7f37b54561b480586d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5844546532d628748dc03e6281e2f0f9",
@@ -5527,7 +6619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:29.625250",
       "is_active": 1,
-      "url_hash": "5844546532d628748dc03e6281e2f0f9"
+      "url_hash": "5844546532d628748dc03e6281e2f0f9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "edc7f138a97ad8eb5dc8d897ad30e480",
@@ -5545,7 +6639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:27.197138",
       "is_active": 1,
-      "url_hash": "edc7f138a97ad8eb5dc8d897ad30e480"
+      "url_hash": "edc7f138a97ad8eb5dc8d897ad30e480",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0f5150d4d2fea896df90a3e1dcd1fcfd",
@@ -5563,7 +6659,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:55:24.740908",
       "is_active": 1,
-      "url_hash": "0f5150d4d2fea896df90a3e1dcd1fcfd"
+      "url_hash": "0f5150d4d2fea896df90a3e1dcd1fcfd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f0f5a9b01fb947d2cade2fe7262ef08f",
@@ -5581,7 +6679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:22.538674",
       "is_active": 1,
-      "url_hash": "f0f5a9b01fb947d2cade2fe7262ef08f"
+      "url_hash": "f0f5a9b01fb947d2cade2fe7262ef08f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8b9524f995a87e14625ba345cd972f3c",
@@ -5599,7 +6699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:20.133439",
       "is_active": 1,
-      "url_hash": "8b9524f995a87e14625ba345cd972f3c"
+      "url_hash": "8b9524f995a87e14625ba345cd972f3c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e87a4d684de1ff910a62d3d20e48d484",
@@ -5617,7 +6719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:17.738189",
       "is_active": 1,
-      "url_hash": "e87a4d684de1ff910a62d3d20e48d484"
+      "url_hash": "e87a4d684de1ff910a62d3d20e48d484",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "35bf396b286903867616d33abea9a9a7",
@@ -5635,7 +6739,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:55:15.288941",
       "is_active": 1,
-      "url_hash": "35bf396b286903867616d33abea9a9a7"
+      "url_hash": "35bf396b286903867616d33abea9a9a7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "13c893ff24772d4d8cee909786340fde",
@@ -5653,7 +6759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:13.057540",
       "is_active": 1,
-      "url_hash": "13c893ff24772d4d8cee909786340fde"
+      "url_hash": "13c893ff24772d4d8cee909786340fde",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "db822b6e90f7812606c4be7f8c250372",
@@ -5671,7 +6779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:10.537160",
       "is_active": 1,
-      "url_hash": "db822b6e90f7812606c4be7f8c250372"
+      "url_hash": "db822b6e90f7812606c4be7f8c250372",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3aaec80e32a1d776ff4df53c557f65b7",
@@ -5689,7 +6799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:08.000664",
       "is_active": 1,
-      "url_hash": "3aaec80e32a1d776ff4df53c557f65b7"
+      "url_hash": "3aaec80e32a1d776ff4df53c557f65b7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fdbc6df78ac7ff99c2e839791058175e",
@@ -5707,7 +6819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:05.465191",
       "is_active": 1,
-      "url_hash": "fdbc6df78ac7ff99c2e839791058175e"
+      "url_hash": "fdbc6df78ac7ff99c2e839791058175e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "866828aa3e655403e014568f9960865c",
@@ -5725,7 +6839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:55:02.917743",
       "is_active": 1,
-      "url_hash": "866828aa3e655403e014568f9960865c"
+      "url_hash": "866828aa3e655403e014568f9960865c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "620e09fce6bb6012feeb2ad8f722cf91",
@@ -5743,7 +6859,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:55:00.376692",
       "is_active": 1,
-      "url_hash": "620e09fce6bb6012feeb2ad8f722cf91"
+      "url_hash": "620e09fce6bb6012feeb2ad8f722cf91",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f37a346e6a834b8e27ba59d9a91443bf",
@@ -5761,7 +6879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:58.191809",
       "is_active": 1,
-      "url_hash": "f37a346e6a834b8e27ba59d9a91443bf"
+      "url_hash": "f37a346e6a834b8e27ba59d9a91443bf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ca8254cc22b546075d0bf015df7976ec",
@@ -5779,7 +6899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:55.589792",
       "is_active": 1,
-      "url_hash": "ca8254cc22b546075d0bf015df7976ec"
+      "url_hash": "ca8254cc22b546075d0bf015df7976ec",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ca6db64001610662ec21bb760e7008f6",
@@ -5797,7 +6919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:53.009805",
       "is_active": 1,
-      "url_hash": "ca6db64001610662ec21bb760e7008f6"
+      "url_hash": "ca6db64001610662ec21bb760e7008f6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8663b98a7c838eb5e1e365d83613d874",
@@ -5815,7 +6939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:50.443167",
       "is_active": 1,
-      "url_hash": "8663b98a7c838eb5e1e365d83613d874"
+      "url_hash": "8663b98a7c838eb5e1e365d83613d874",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "433e7c62b9e49f5c0246c1095014e8ed",
@@ -5833,7 +6959,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:54:47.690744",
       "is_active": 1,
-      "url_hash": "433e7c62b9e49f5c0246c1095014e8ed"
+      "url_hash": "433e7c62b9e49f5c0246c1095014e8ed",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a63a245944c2cf952cd503a497252ce3",
@@ -5851,7 +6979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:45.576659",
       "is_active": 1,
-      "url_hash": "a63a245944c2cf952cd503a497252ce3"
+      "url_hash": "a63a245944c2cf952cd503a497252ce3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4bab5c0b7b3668b5444f89b0204aae6b",
@@ -5869,7 +6999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:42.833913",
       "is_active": 1,
-      "url_hash": "4bab5c0b7b3668b5444f89b0204aae6b"
+      "url_hash": "4bab5c0b7b3668b5444f89b0204aae6b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f3bf89ab99a4143f8497517c5be9590d",
@@ -5887,7 +7019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:40.116402",
       "is_active": 1,
-      "url_hash": "f3bf89ab99a4143f8497517c5be9590d"
+      "url_hash": "f3bf89ab99a4143f8497517c5be9590d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a50b94b5d128619b179e05d2d000fb4a",
@@ -5905,7 +7039,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:54:37.699579",
       "is_active": 1,
-      "url_hash": "a50b94b5d128619b179e05d2d000fb4a"
+      "url_hash": "a50b94b5d128619b179e05d2d000fb4a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "12daced12b701da6928ee86f0f68b349",
@@ -5923,7 +7059,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:54:35.500737",
       "is_active": 1,
-      "url_hash": "12daced12b701da6928ee86f0f68b349"
+      "url_hash": "12daced12b701da6928ee86f0f68b349",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ac16128fac6fcb48d2fc79c77d7f66d1",
@@ -5941,7 +7079,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:54:33.273328",
       "is_active": 1,
-      "url_hash": "ac16128fac6fcb48d2fc79c77d7f66d1"
+      "url_hash": "ac16128fac6fcb48d2fc79c77d7f66d1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2b6be7cf1ff4d2727d97461bda4a69f2",
@@ -5959,7 +7099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:31.078996",
       "is_active": 1,
-      "url_hash": "2b6be7cf1ff4d2727d97461bda4a69f2"
+      "url_hash": "2b6be7cf1ff4d2727d97461bda4a69f2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2cb0d1666f233fc21421ba168f8cb118",
@@ -5977,7 +7119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:28.642003",
       "is_active": 1,
-      "url_hash": "2cb0d1666f233fc21421ba168f8cb118"
+      "url_hash": "2cb0d1666f233fc21421ba168f8cb118",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "65a1bfc8cd492b1e60fa17e2b5000848",
@@ -5995,7 +7139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:26.157728",
       "is_active": 1,
-      "url_hash": "65a1bfc8cd492b1e60fa17e2b5000848"
+      "url_hash": "65a1bfc8cd492b1e60fa17e2b5000848",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a2046f5925582ed9455482207b4bacf3",
@@ -6013,7 +7159,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:54:23.659332",
       "is_active": 1,
-      "url_hash": "a2046f5925582ed9455482207b4bacf3"
+      "url_hash": "a2046f5925582ed9455482207b4bacf3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "33ee7f9efd75c264929cda14d6f8426b",
@@ -6031,7 +7179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:21.402683",
       "is_active": 1,
-      "url_hash": "33ee7f9efd75c264929cda14d6f8426b"
+      "url_hash": "33ee7f9efd75c264929cda14d6f8426b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a8aaf82479ebfa44db86f59d794ac4b8",
@@ -6049,7 +7199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:18.910411",
       "is_active": 1,
-      "url_hash": "a8aaf82479ebfa44db86f59d794ac4b8"
+      "url_hash": "a8aaf82479ebfa44db86f59d794ac4b8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1d6a0924021b5763dc05f7b10e230ab7",
@@ -6067,7 +7219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:16.474156",
       "is_active": 1,
-      "url_hash": "1d6a0924021b5763dc05f7b10e230ab7"
+      "url_hash": "1d6a0924021b5763dc05f7b10e230ab7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e9c446379b89c9bf4a00db3fca1bb0ec",
@@ -6085,7 +7239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:14.066766",
       "is_active": 1,
-      "url_hash": "e9c446379b89c9bf4a00db3fca1bb0ec"
+      "url_hash": "e9c446379b89c9bf4a00db3fca1bb0ec",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1f6857b6ac9b27d20283139e64aff3b5",
@@ -6103,7 +7259,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:54:11.643677",
       "is_active": 1,
-      "url_hash": "1f6857b6ac9b27d20283139e64aff3b5"
+      "url_hash": "1f6857b6ac9b27d20283139e64aff3b5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4072eb2ff146d7ee5078aec2170f195c",
@@ -6121,7 +7279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:09.430819",
       "is_active": 1,
-      "url_hash": "4072eb2ff146d7ee5078aec2170f195c"
+      "url_hash": "4072eb2ff146d7ee5078aec2170f195c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2dcb23c9c8ee4cebb96fd94cbe58212a",
@@ -6139,7 +7299,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:54:07.018566",
       "is_active": 1,
-      "url_hash": "2dcb23c9c8ee4cebb96fd94cbe58212a"
+      "url_hash": "2dcb23c9c8ee4cebb96fd94cbe58212a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a0824d7596de83e79916f449fafec304",
@@ -6157,7 +7319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:04.712827",
       "is_active": 1,
-      "url_hash": "a0824d7596de83e79916f449fafec304"
+      "url_hash": "a0824d7596de83e79916f449fafec304",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "738ec7a424264492c2ec5f95afb7bd87",
@@ -6175,7 +7339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:54:02.170190",
       "is_active": 1,
-      "url_hash": "738ec7a424264492c2ec5f95afb7bd87"
+      "url_hash": "738ec7a424264492c2ec5f95afb7bd87",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9e40256989c935684bdbfae13663cf7e",
@@ -6193,7 +7359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:59.604974",
       "is_active": 1,
-      "url_hash": "9e40256989c935684bdbfae13663cf7e"
+      "url_hash": "9e40256989c935684bdbfae13663cf7e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b13310fadfae695aef684845befeb1fa",
@@ -6211,7 +7379,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:53:56.696754",
       "is_active": 1,
-      "url_hash": "b13310fadfae695aef684845befeb1fa"
+      "url_hash": "b13310fadfae695aef684845befeb1fa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "72c2f872bfbd61cb5d1f5f636e583c02",
@@ -6229,7 +7399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:46.450808",
       "is_active": 1,
-      "url_hash": "72c2f872bfbd61cb5d1f5f636e583c02"
+      "url_hash": "72c2f872bfbd61cb5d1f5f636e583c02",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5a388e0517ac6f3ac48a18be179949fc",
@@ -6247,7 +7419,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:44.321623",
       "is_active": 1,
-      "url_hash": "5a388e0517ac6f3ac48a18be179949fc"
+      "url_hash": "5a388e0517ac6f3ac48a18be179949fc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "95279d032e5857cb6fcbdb32e175e87b",
@@ -6265,7 +7439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:42.215014",
       "is_active": 1,
-      "url_hash": "95279d032e5857cb6fcbdb32e175e87b"
+      "url_hash": "95279d032e5857cb6fcbdb32e175e87b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "366c1013ba9648ad7e68d39f99da0c2a",
@@ -6283,7 +7459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:40.108533",
       "is_active": 1,
-      "url_hash": "366c1013ba9648ad7e68d39f99da0c2a"
+      "url_hash": "366c1013ba9648ad7e68d39f99da0c2a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "574bb0f435a9ac4c493407989af440e6",
@@ -6301,7 +7479,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:53:37.795860",
       "is_active": 1,
-      "url_hash": "574bb0f435a9ac4c493407989af440e6"
+      "url_hash": "574bb0f435a9ac4c493407989af440e6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dc71ce8f75ea06d2cb1a33699319fde6",
@@ -6319,7 +7499,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:53:35.107397",
       "is_active": 1,
-      "url_hash": "dc71ce8f75ea06d2cb1a33699319fde6"
+      "url_hash": "dc71ce8f75ea06d2cb1a33699319fde6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9475cfbcf181356c4bc319105b65bed6",
@@ -6337,7 +7519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:32.271415",
       "is_active": 1,
-      "url_hash": "9475cfbcf181356c4bc319105b65bed6"
+      "url_hash": "9475cfbcf181356c4bc319105b65bed6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4619321d4605f8765126ace4d76f0e9c",
@@ -6355,7 +7539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:30.039952",
       "is_active": 1,
-      "url_hash": "4619321d4605f8765126ace4d76f0e9c"
+      "url_hash": "4619321d4605f8765126ace4d76f0e9c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f421e13a7535e3765204ee71186fb856",
@@ -6373,7 +7559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:27.786663",
       "is_active": 1,
-      "url_hash": "f421e13a7535e3765204ee71186fb856"
+      "url_hash": "f421e13a7535e3765204ee71186fb856",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fa3c9df614b50ed14b332c895c0da7f5",
@@ -6391,7 +7579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:25.548536",
       "is_active": 1,
-      "url_hash": "fa3c9df614b50ed14b332c895c0da7f5"
+      "url_hash": "fa3c9df614b50ed14b332c895c0da7f5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "66e3fa1af8aa23c44ecb063f0fa7ac2e",
@@ -6409,7 +7599,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T13:53:23.284746",
       "is_active": 1,
-      "url_hash": "66e3fa1af8aa23c44ecb063f0fa7ac2e"
+      "url_hash": "66e3fa1af8aa23c44ecb063f0fa7ac2e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0828fa75a951f41b024f7727ebb50033",
@@ -6427,7 +7619,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T13:53:21.076393",
       "is_active": 1,
-      "url_hash": "0828fa75a951f41b024f7727ebb50033"
+      "url_hash": "0828fa75a951f41b024f7727ebb50033",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ad2225a6269926a0d1b9cdb14877e113",
@@ -6445,7 +7639,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:53:18.855717",
       "is_active": 1,
-      "url_hash": "ad2225a6269926a0d1b9cdb14877e113"
+      "url_hash": "ad2225a6269926a0d1b9cdb14877e113",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ee9ea8d5c29f2a906265c1b86f83bc8b",
@@ -6463,7 +7659,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:53:16.660436",
       "is_active": 1,
-      "url_hash": "ee9ea8d5c29f2a906265c1b86f83bc8b"
+      "url_hash": "ee9ea8d5c29f2a906265c1b86f83bc8b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "73d3b44a3d8091cd4293579bed6e2438",
@@ -6481,7 +7679,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:53:14.423838",
       "is_active": 1,
-      "url_hash": "73d3b44a3d8091cd4293579bed6e2438"
+      "url_hash": "73d3b44a3d8091cd4293579bed6e2438",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a722407df3daf5b08d1b71f0f604e165",
@@ -6499,7 +7699,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:53:12.176274",
       "is_active": 1,
-      "url_hash": "a722407df3daf5b08d1b71f0f604e165"
+      "url_hash": "a722407df3daf5b08d1b71f0f604e165",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c42d0eba56dc5876e99aba611e294176",
@@ -6517,7 +7719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:10.096122",
       "is_active": 1,
-      "url_hash": "c42d0eba56dc5876e99aba611e294176"
+      "url_hash": "c42d0eba56dc5876e99aba611e294176",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3fd9ed83fadbcdb9862b8d69f7cc7aba",
@@ -6535,7 +7739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:07.580389",
       "is_active": 1,
-      "url_hash": "3fd9ed83fadbcdb9862b8d69f7cc7aba"
+      "url_hash": "3fd9ed83fadbcdb9862b8d69f7cc7aba",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "96880eff9965153bccf6facf08293f76",
@@ -6553,7 +7759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:53:04.965942",
       "is_active": 1,
-      "url_hash": "96880eff9965153bccf6facf08293f76"
+      "url_hash": "96880eff9965153bccf6facf08293f76",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c9dcddcc8bd5579499dc775dca6295fb",
@@ -6571,7 +7779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:59.727123",
       "is_active": 1,
-      "url_hash": "c9dcddcc8bd5579499dc775dca6295fb"
+      "url_hash": "c9dcddcc8bd5579499dc775dca6295fb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "15c3b02b049df1f422ff7292bae386aa",
@@ -6589,7 +7799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:57.014974",
       "is_active": 1,
-      "url_hash": "15c3b02b049df1f422ff7292bae386aa"
+      "url_hash": "15c3b02b049df1f422ff7292bae386aa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "08217e0eeca2bc12f19624d02978d343",
@@ -6607,7 +7819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:54.108475",
       "is_active": 1,
-      "url_hash": "08217e0eeca2bc12f19624d02978d343"
+      "url_hash": "08217e0eeca2bc12f19624d02978d343",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b9171e58a7fac9021ef8e3cb74580931",
@@ -6625,7 +7839,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-06T13:52:51.609942",
       "is_active": 1,
-      "url_hash": "b9171e58a7fac9021ef8e3cb74580931"
+      "url_hash": "b9171e58a7fac9021ef8e3cb74580931",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "600ae48f9f96de0a07f502d07599a729",
@@ -6643,7 +7859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:49.409316",
       "is_active": 1,
-      "url_hash": "600ae48f9f96de0a07f502d07599a729"
+      "url_hash": "600ae48f9f96de0a07f502d07599a729",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e0ad8c387e4d8e41aa92efafb59d3425",
@@ -6661,7 +7879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:47.055760",
       "is_active": 1,
-      "url_hash": "e0ad8c387e4d8e41aa92efafb59d3425"
+      "url_hash": "e0ad8c387e4d8e41aa92efafb59d3425",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8f6ecf446157656d76513f570a093ff7",
@@ -6679,7 +7899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:44.717295",
       "is_active": 1,
-      "url_hash": "8f6ecf446157656d76513f570a093ff7"
+      "url_hash": "8f6ecf446157656d76513f570a093ff7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b99da1324c5d1a43d4a74381ecb00c5f",
@@ -6697,7 +7919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:41.599888",
       "is_active": 1,
-      "url_hash": "b99da1324c5d1a43d4a74381ecb00c5f"
+      "url_hash": "b99da1324c5d1a43d4a74381ecb00c5f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "96bd02ca689e63e50a3f5c0fa85b3e34",
@@ -6715,7 +7939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:39.312499",
       "is_active": 1,
-      "url_hash": "96bd02ca689e63e50a3f5c0fa85b3e34"
+      "url_hash": "96bd02ca689e63e50a3f5c0fa85b3e34",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ca390a0f62aa42cbe3edd580c5e58d4f",
@@ -6733,7 +7959,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T13:52:37.038635",
       "is_active": 1,
-      "url_hash": "ca390a0f62aa42cbe3edd580c5e58d4f"
+      "url_hash": "ca390a0f62aa42cbe3edd580c5e58d4f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a0a20cb71ea4ea907ad94100bab47689",
@@ -6751,7 +7979,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:52:30.363467",
       "is_active": 1,
-      "url_hash": "a0a20cb71ea4ea907ad94100bab47689"
+      "url_hash": "a0a20cb71ea4ea907ad94100bab47689",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6c97a561e063b100f230891a01c1babf",
@@ -6769,7 +7999,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:52:28.106399",
       "is_active": 1,
-      "url_hash": "6c97a561e063b100f230891a01c1babf"
+      "url_hash": "6c97a561e063b100f230891a01c1babf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e50335f4b35e9b5ff059a4c8101ee7dd",
@@ -6787,7 +8019,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T13:52:25.883977",
       "is_active": 1,
-      "url_hash": "e50335f4b35e9b5ff059a4c8101ee7dd"
+      "url_hash": "e50335f4b35e9b5ff059a4c8101ee7dd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "af2c358386d5f11d1f6e34685c3e1af2",
@@ -6805,7 +8039,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T13:52:23.487717",
       "is_active": 1,
-      "url_hash": "af2c358386d5f11d1f6e34685c3e1af2"
+      "url_hash": "af2c358386d5f11d1f6e34685c3e1af2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b0b1e5325963880478b092e40c7630f4",
@@ -6823,7 +8059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:21.277557",
       "is_active": 1,
-      "url_hash": "b0b1e5325963880478b092e40c7630f4"
+      "url_hash": "b0b1e5325963880478b092e40c7630f4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7d1c2d7a3adabe8e5f6ac3f44964fd4c",
@@ -6841,7 +8079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:18.819549",
       "is_active": 1,
-      "url_hash": "7d1c2d7a3adabe8e5f6ac3f44964fd4c"
+      "url_hash": "7d1c2d7a3adabe8e5f6ac3f44964fd4c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bde3a8e8becd64115ad3bea4aeba49bc",
@@ -6859,7 +8099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:16.372641",
       "is_active": 1,
-      "url_hash": "bde3a8e8becd64115ad3bea4aeba49bc"
+      "url_hash": "bde3a8e8becd64115ad3bea4aeba49bc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "928aa44ad03282cf62cfb379294807c6",
@@ -6877,7 +8119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:11.507852",
       "is_active": 1,
-      "url_hash": "928aa44ad03282cf62cfb379294807c6"
+      "url_hash": "928aa44ad03282cf62cfb379294807c6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ebb36e07e8bcdc73f9c37e24208f58d8",
@@ -6895,7 +8139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:03.669411",
       "is_active": 1,
-      "url_hash": "ebb36e07e8bcdc73f9c37e24208f58d8"
+      "url_hash": "ebb36e07e8bcdc73f9c37e24208f58d8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "df9553b2cac47a4c10190c6ebbee9219",
@@ -6913,7 +8159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:52:01.429482",
       "is_active": 1,
-      "url_hash": "df9553b2cac47a4c10190c6ebbee9219"
+      "url_hash": "df9553b2cac47a4c10190c6ebbee9219",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6881c67b43bef168e93c5fec90b8b19d",
@@ -6931,7 +8179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:51:59.233816",
       "is_active": 1,
-      "url_hash": "6881c67b43bef168e93c5fec90b8b19d"
+      "url_hash": "6881c67b43bef168e93c5fec90b8b19d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9d83203d82570501a0c291475b44716e",
@@ -6949,7 +8199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:51:57.018002",
       "is_active": 1,
-      "url_hash": "9d83203d82570501a0c291475b44716e"
+      "url_hash": "9d83203d82570501a0c291475b44716e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "81291e2cca3a47e9a3534ec4828d7b7b",
@@ -6967,7 +8219,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T13:51:54.741109",
       "is_active": 1,
-      "url_hash": "81291e2cca3a47e9a3534ec4828d7b7b"
+      "url_hash": "81291e2cca3a47e9a3534ec4828d7b7b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "218ae0af4e3924f932309738076a1e6f",
@@ -6985,7 +8239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:51:52.528907",
       "is_active": 1,
-      "url_hash": "218ae0af4e3924f932309738076a1e6f"
+      "url_hash": "218ae0af4e3924f932309738076a1e6f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e90a2dab48e4158999a38f2cbc2d6aab",
@@ -7003,7 +8259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T13:51:50.299001",
       "is_active": 1,
-      "url_hash": "e90a2dab48e4158999a38f2cbc2d6aab"
+      "url_hash": "e90a2dab48e4158999a38f2cbc2d6aab",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "59e014d03a2d240327caaae9e00cb73c",
@@ -7021,7 +8279,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:22:18.550390",
       "is_active": 1,
-      "url_hash": "59e014d03a2d240327caaae9e00cb73c"
+      "url_hash": "59e014d03a2d240327caaae9e00cb73c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7c85e19da89c466b4778370b74f72036",
@@ -7039,7 +8299,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:22:16.316629",
       "is_active": 1,
-      "url_hash": "7c85e19da89c466b4778370b74f72036"
+      "url_hash": "7c85e19da89c466b4778370b74f72036",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9e169684fe356d9ce6c784afc8939abc",
@@ -7057,7 +8319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:22:14.106993",
       "is_active": 1,
-      "url_hash": "9e169684fe356d9ce6c784afc8939abc"
+      "url_hash": "9e169684fe356d9ce6c784afc8939abc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "898c35335d8d4a0745796b887710c405",
@@ -7075,7 +8339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:22:11.597655",
       "is_active": 1,
-      "url_hash": "898c35335d8d4a0745796b887710c405"
+      "url_hash": "898c35335d8d4a0745796b887710c405",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "74e16ac3dfd3efdf796ee1890bcdd2c2",
@@ -7093,7 +8359,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:22:09.149815",
       "is_active": 1,
-      "url_hash": "74e16ac3dfd3efdf796ee1890bcdd2c2"
+      "url_hash": "74e16ac3dfd3efdf796ee1890bcdd2c2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "25520a102687feaf3e885f289f41b0a2",
@@ -7111,7 +8379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:22:06.928133",
       "is_active": 1,
-      "url_hash": "25520a102687feaf3e885f289f41b0a2"
+      "url_hash": "25520a102687feaf3e885f289f41b0a2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "505bbe8828e57e0cbbb51254addddb5e",
@@ -7129,7 +8399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:22:04.484936",
       "is_active": 1,
-      "url_hash": "505bbe8828e57e0cbbb51254addddb5e"
+      "url_hash": "505bbe8828e57e0cbbb51254addddb5e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d6c15c99b14bd9dfc104909a91534d41",
@@ -7147,7 +8419,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:22:02.043577",
       "is_active": 1,
-      "url_hash": "d6c15c99b14bd9dfc104909a91534d41"
+      "url_hash": "d6c15c99b14bd9dfc104909a91534d41",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5675ffa47f35967e380b715e2017e391",
@@ -7165,7 +8439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:59.821847",
       "is_active": 1,
-      "url_hash": "5675ffa47f35967e380b715e2017e391"
+      "url_hash": "5675ffa47f35967e380b715e2017e391",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2390474f81e303ce0159ab2b6349ca21",
@@ -7183,7 +8459,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:21:57.361557",
       "is_active": 1,
-      "url_hash": "2390474f81e303ce0159ab2b6349ca21"
+      "url_hash": "2390474f81e303ce0159ab2b6349ca21",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "293747070550d9daad94b6ae35964375",
@@ -7201,7 +8479,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:55.142488",
       "is_active": 1,
-      "url_hash": "293747070550d9daad94b6ae35964375"
+      "url_hash": "293747070550d9daad94b6ae35964375",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a7a9b2b7cbc07dae99e2b2e9860b1210",
@@ -7219,7 +8499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:52.667443",
       "is_active": 1,
-      "url_hash": "a7a9b2b7cbc07dae99e2b2e9860b1210"
+      "url_hash": "a7a9b2b7cbc07dae99e2b2e9860b1210",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1339f94333b6d3fa32253c1da00706c8",
@@ -7237,7 +8519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:50.233469",
       "is_active": 1,
-      "url_hash": "1339f94333b6d3fa32253c1da00706c8"
+      "url_hash": "1339f94333b6d3fa32253c1da00706c8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "21a257a00627a3e8078f97d2a3250e04",
@@ -7255,7 +8539,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:21:47.745710",
       "is_active": 1,
-      "url_hash": "21a257a00627a3e8078f97d2a3250e04"
+      "url_hash": "21a257a00627a3e8078f97d2a3250e04",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "437ae1ab0caeb7f1e8db032dcc0ce427",
@@ -7273,7 +8559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:45.544408",
       "is_active": 1,
-      "url_hash": "437ae1ab0caeb7f1e8db032dcc0ce427"
+      "url_hash": "437ae1ab0caeb7f1e8db032dcc0ce427",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5fa160c5c009b834cb418df6d29c803b",
@@ -7291,7 +8579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:43.127259",
       "is_active": 1,
-      "url_hash": "5fa160c5c009b834cb418df6d29c803b"
+      "url_hash": "5fa160c5c009b834cb418df6d29c803b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "82526fe810c52ec50e46d1fab6f35f25",
@@ -7309,7 +8599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:40.700884",
       "is_active": 1,
-      "url_hash": "82526fe810c52ec50e46d1fab6f35f25"
+      "url_hash": "82526fe810c52ec50e46d1fab6f35f25",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4ec7d2dfed26f1bf519986c94adfc341",
@@ -7327,7 +8619,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:21:38.232120",
       "is_active": 1,
-      "url_hash": "4ec7d2dfed26f1bf519986c94adfc341"
+      "url_hash": "4ec7d2dfed26f1bf519986c94adfc341",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "616b2eb2ab6c088e19745f4c4bffdd1b",
@@ -7345,7 +8639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:36.014184",
       "is_active": 1,
-      "url_hash": "616b2eb2ab6c088e19745f4c4bffdd1b"
+      "url_hash": "616b2eb2ab6c088e19745f4c4bffdd1b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "93699416dafcf900dfd180e5a887e260",
@@ -7363,7 +8659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:33.522408",
       "is_active": 1,
-      "url_hash": "93699416dafcf900dfd180e5a887e260"
+      "url_hash": "93699416dafcf900dfd180e5a887e260",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9248d72128487a187d605f29bbe9b4db",
@@ -7381,7 +8679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:31.018867",
       "is_active": 1,
-      "url_hash": "9248d72128487a187d605f29bbe9b4db"
+      "url_hash": "9248d72128487a187d605f29bbe9b4db",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ff8993665601d523ee1d6f139cfd7bbb",
@@ -7399,7 +8699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:28.587341",
       "is_active": 1,
-      "url_hash": "ff8993665601d523ee1d6f139cfd7bbb"
+      "url_hash": "ff8993665601d523ee1d6f139cfd7bbb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "12f1341edb49201561f33042a50441e2",
@@ -7417,7 +8719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:26.132339",
       "is_active": 1,
-      "url_hash": "12f1341edb49201561f33042a50441e2"
+      "url_hash": "12f1341edb49201561f33042a50441e2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fffcf1a76a746a5d8c1d7c63a05f36f6",
@@ -7435,7 +8739,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:21:23.712250",
       "is_active": 1,
-      "url_hash": "fffcf1a76a746a5d8c1d7c63a05f36f6"
+      "url_hash": "fffcf1a76a746a5d8c1d7c63a05f36f6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7a7c4b6fe832741ff65af54c3330d3fe",
@@ -7453,7 +8759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:21.551135",
       "is_active": 1,
-      "url_hash": "7a7c4b6fe832741ff65af54c3330d3fe"
+      "url_hash": "7a7c4b6fe832741ff65af54c3330d3fe",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b7ae2607cc3c50887cfb4b20d6904192",
@@ -7471,7 +8779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:18.272248",
       "is_active": 1,
-      "url_hash": "b7ae2607cc3c50887cfb4b20d6904192"
+      "url_hash": "b7ae2607cc3c50887cfb4b20d6904192",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "374d282dbdf22fe55694867746dd6544",
@@ -7489,7 +8799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:15.001197",
       "is_active": 1,
-      "url_hash": "374d282dbdf22fe55694867746dd6544"
+      "url_hash": "374d282dbdf22fe55694867746dd6544",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c4df338e104221a02ae56e6414897165",
@@ -7507,7 +8819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:11.684767",
       "is_active": 1,
-      "url_hash": "c4df338e104221a02ae56e6414897165"
+      "url_hash": "c4df338e104221a02ae56e6414897165",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4f55dc18251a46ddb576e977fee529c0",
@@ -7525,7 +8839,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:21:08.295278",
       "is_active": 1,
-      "url_hash": "4f55dc18251a46ddb576e977fee529c0"
+      "url_hash": "4f55dc18251a46ddb576e977fee529c0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "da7d981abd743cd8634e74fc775d96ba",
@@ -7543,7 +8859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:05.523464",
       "is_active": 1,
-      "url_hash": "da7d981abd743cd8634e74fc775d96ba"
+      "url_hash": "da7d981abd743cd8634e74fc775d96ba",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ae64b3c6019c1902b0eacf745abf16ad",
@@ -7561,7 +8879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:21:02.376979",
       "is_active": 1,
-      "url_hash": "ae64b3c6019c1902b0eacf745abf16ad"
+      "url_hash": "ae64b3c6019c1902b0eacf745abf16ad",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ae171086cde15737a7861b6cd5a7cecf",
@@ -7579,7 +8899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:56.152120",
       "is_active": 1,
-      "url_hash": "ae171086cde15737a7861b6cd5a7cecf"
+      "url_hash": "ae171086cde15737a7861b6cd5a7cecf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aa42854cd5f8f474d936adf10feacfe2",
@@ -7597,7 +8919,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:53.075934",
       "is_active": 1,
-      "url_hash": "aa42854cd5f8f474d936adf10feacfe2"
+      "url_hash": "aa42854cd5f8f474d936adf10feacfe2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ef271619ab528dd6d7ca4f87f306c3dc",
@@ -7615,7 +8939,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:50.862562",
       "is_active": 1,
-      "url_hash": "ef271619ab528dd6d7ca4f87f306c3dc"
+      "url_hash": "ef271619ab528dd6d7ca4f87f306c3dc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0ecd03fa2f80cb30183873973ddb416b",
@@ -7633,7 +8959,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:20:48.636963",
       "is_active": 1,
-      "url_hash": "0ecd03fa2f80cb30183873973ddb416b"
+      "url_hash": "0ecd03fa2f80cb30183873973ddb416b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c379103f73256fcffd10c97cce0663f8",
@@ -7651,7 +8979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:46.443257",
       "is_active": 1,
-      "url_hash": "c379103f73256fcffd10c97cce0663f8"
+      "url_hash": "c379103f73256fcffd10c97cce0663f8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "57ca0ed8f3e8654c5753b8aa5bc6f018",
@@ -7669,7 +8999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:43.985620",
       "is_active": 1,
-      "url_hash": "57ca0ed8f3e8654c5753b8aa5bc6f018"
+      "url_hash": "57ca0ed8f3e8654c5753b8aa5bc6f018",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f7e185ed9d2cb0a5182f0a5d01bd6569",
@@ -7687,7 +9019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:41.539705",
       "is_active": 1,
-      "url_hash": "f7e185ed9d2cb0a5182f0a5d01bd6569"
+      "url_hash": "f7e185ed9d2cb0a5182f0a5d01bd6569",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "af7ed9af723fb518fa2e52bada1b102b",
@@ -7705,7 +9039,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:39.097977",
       "is_active": 1,
-      "url_hash": "af7ed9af723fb518fa2e52bada1b102b"
+      "url_hash": "af7ed9af723fb518fa2e52bada1b102b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a4029086fcb3d2ee82cfb171bb1c79e5",
@@ -7723,7 +9059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:36.898501",
       "is_active": 1,
-      "url_hash": "a4029086fcb3d2ee82cfb171bb1c79e5"
+      "url_hash": "a4029086fcb3d2ee82cfb171bb1c79e5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aa991edc7935c1720818e34dddae1305",
@@ -7741,7 +9079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:34.459506",
       "is_active": 1,
-      "url_hash": "aa991edc7935c1720818e34dddae1305"
+      "url_hash": "aa991edc7935c1720818e34dddae1305",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "03b09bd4dcca3346110e6268e111bb1f",
@@ -7759,7 +9099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:32.056732",
       "is_active": 1,
-      "url_hash": "03b09bd4dcca3346110e6268e111bb1f"
+      "url_hash": "03b09bd4dcca3346110e6268e111bb1f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4b725b71e222eae30ac10f4450d31c2f",
@@ -7777,7 +9119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:29.673657",
       "is_active": 1,
-      "url_hash": "4b725b71e222eae30ac10f4450d31c2f"
+      "url_hash": "4b725b71e222eae30ac10f4450d31c2f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9e1f86b3a1f263d85a718f72c2d38ce4",
@@ -7795,7 +9139,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:27.248100",
       "is_active": 1,
-      "url_hash": "9e1f86b3a1f263d85a718f72c2d38ce4"
+      "url_hash": "9e1f86b3a1f263d85a718f72c2d38ce4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6aaa88dbbf529eb32fb40a6f9a562687",
@@ -7813,7 +9159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:25.039667",
       "is_active": 1,
-      "url_hash": "6aaa88dbbf529eb32fb40a6f9a562687"
+      "url_hash": "6aaa88dbbf529eb32fb40a6f9a562687",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "23ff163641b18b61a9c391513414e5e7",
@@ -7831,7 +9179,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:22.589203",
       "is_active": 1,
-      "url_hash": "23ff163641b18b61a9c391513414e5e7"
+      "url_hash": "23ff163641b18b61a9c391513414e5e7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1182c01a4f6d74b48c09b587661b947e",
@@ -7849,7 +9199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:20.386212",
       "is_active": 1,
-      "url_hash": "1182c01a4f6d74b48c09b587661b947e"
+      "url_hash": "1182c01a4f6d74b48c09b587661b947e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7888a4378d487c0d59b919ddabd9f0ee",
@@ -7867,7 +9219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:17.938135",
       "is_active": 1,
-      "url_hash": "7888a4378d487c0d59b919ddabd9f0ee"
+      "url_hash": "7888a4378d487c0d59b919ddabd9f0ee",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "208a3300058ec1b8efd58807f1304a2d",
@@ -7885,7 +9239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:15.391870",
       "is_active": 1,
-      "url_hash": "208a3300058ec1b8efd58807f1304a2d"
+      "url_hash": "208a3300058ec1b8efd58807f1304a2d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d5706d215ea418c3d9a87fbd42f80839",
@@ -7903,7 +9259,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:20:13.059844",
       "is_active": 1,
-      "url_hash": "d5706d215ea418c3d9a87fbd42f80839"
+      "url_hash": "d5706d215ea418c3d9a87fbd42f80839",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5617a83470358b39943849aee0d4eb4e",
@@ -7921,7 +9279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:20:02.230245",
       "is_active": 1,
-      "url_hash": "5617a83470358b39943849aee0d4eb4e"
+      "url_hash": "5617a83470358b39943849aee0d4eb4e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "923dddb38ee904a06a49ca70033fd7a4",
@@ -7939,7 +9299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:59.730898",
       "is_active": 1,
-      "url_hash": "923dddb38ee904a06a49ca70033fd7a4"
+      "url_hash": "923dddb38ee904a06a49ca70033fd7a4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aa47304bbb3b8791ea994f4e0d7f838d",
@@ -7957,7 +9319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:57.314751",
       "is_active": 1,
-      "url_hash": "aa47304bbb3b8791ea994f4e0d7f838d"
+      "url_hash": "aa47304bbb3b8791ea994f4e0d7f838d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "74e8f58274b96ba6e3550e3a0786c89f",
@@ -7975,7 +9339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:55.044257",
       "is_active": 1,
-      "url_hash": "74e8f58274b96ba6e3550e3a0786c89f"
+      "url_hash": "74e8f58274b96ba6e3550e3a0786c89f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8e492a731815a030622fc9087516f3ac",
@@ -7993,7 +9359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:52.699396",
       "is_active": 1,
-      "url_hash": "8e492a731815a030622fc9087516f3ac"
+      "url_hash": "8e492a731815a030622fc9087516f3ac",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "645b6f88fdf0183a2447fcf83926ee0b",
@@ -8011,7 +9379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:50.274436",
       "is_active": 1,
-      "url_hash": "645b6f88fdf0183a2447fcf83926ee0b"
+      "url_hash": "645b6f88fdf0183a2447fcf83926ee0b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ce87eeb2ea1bfe1fa315907edc3be94e",
@@ -8029,7 +9399,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:19:47.645216",
       "is_active": 1,
-      "url_hash": "ce87eeb2ea1bfe1fa315907edc3be94e"
+      "url_hash": "ce87eeb2ea1bfe1fa315907edc3be94e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "40d4f7d5f28253f7ce87d58157a94a1a",
@@ -8047,7 +9419,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:19:44.896383",
       "is_active": 1,
-      "url_hash": "40d4f7d5f28253f7ce87d58157a94a1a"
+      "url_hash": "40d4f7d5f28253f7ce87d58157a94a1a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dedc8bdf73d1fe5c2ab335c9933019a7",
@@ -8065,7 +9439,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:42.714769",
       "is_active": 1,
-      "url_hash": "dedc8bdf73d1fe5c2ab335c9933019a7"
+      "url_hash": "dedc8bdf73d1fe5c2ab335c9933019a7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "343ffc119aadf655c1462bfbf8da9d6f",
@@ -8083,7 +9459,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:40.493489",
       "is_active": 1,
-      "url_hash": "343ffc119aadf655c1462bfbf8da9d6f"
+      "url_hash": "343ffc119aadf655c1462bfbf8da9d6f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9a8f8d327d52130387b606d1659970ac",
@@ -8101,7 +9479,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:38.284282",
       "is_active": 1,
-      "url_hash": "9a8f8d327d52130387b606d1659970ac"
+      "url_hash": "9a8f8d327d52130387b606d1659970ac",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8ad2a06f01936eb8000af3d3476ae48e",
@@ -8119,7 +9499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:36.066732",
       "is_active": 1,
-      "url_hash": "8ad2a06f01936eb8000af3d3476ae48e"
+      "url_hash": "8ad2a06f01936eb8000af3d3476ae48e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "86188dad8cd6e389890eb9a8c53e2ed3",
@@ -8137,7 +9519,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T12:19:33.849538",
       "is_active": 1,
-      "url_hash": "86188dad8cd6e389890eb9a8c53e2ed3"
+      "url_hash": "86188dad8cd6e389890eb9a8c53e2ed3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e002ef924de716078628ff52c3f70e0a",
@@ -8155,7 +9539,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T12:19:31.656887",
       "is_active": 1,
-      "url_hash": "e002ef924de716078628ff52c3f70e0a"
+      "url_hash": "e002ef924de716078628ff52c3f70e0a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b1532caa4099f8092c9e81b141647310",
@@ -8173,7 +9559,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:19:29.450102",
       "is_active": 1,
-      "url_hash": "b1532caa4099f8092c9e81b141647310"
+      "url_hash": "b1532caa4099f8092c9e81b141647310",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ef388247c8d254b47f9b7eeb8ed08d8b",
@@ -8191,7 +9579,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:19:27.249605",
       "is_active": 1,
-      "url_hash": "ef388247c8d254b47f9b7eeb8ed08d8b"
+      "url_hash": "ef388247c8d254b47f9b7eeb8ed08d8b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a5e8acbd5a759d21f40967bab9d93c49",
@@ -8209,7 +9599,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:19:25.018398",
       "is_active": 1,
-      "url_hash": "a5e8acbd5a759d21f40967bab9d93c49"
+      "url_hash": "a5e8acbd5a759d21f40967bab9d93c49",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fce5f5ef1666fbe69bbcd965d0a8448f",
@@ -8227,7 +9619,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:19:22.831803",
       "is_active": 1,
-      "url_hash": "fce5f5ef1666fbe69bbcd965d0a8448f"
+      "url_hash": "fce5f5ef1666fbe69bbcd965d0a8448f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9b3b1d81e31c8f5a582f90a5cc6e45f8",
@@ -8245,7 +9639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:20.521445",
       "is_active": 1,
-      "url_hash": "9b3b1d81e31c8f5a582f90a5cc6e45f8"
+      "url_hash": "9b3b1d81e31c8f5a582f90a5cc6e45f8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "51cb744195b2070d72d5b272bb3bacae",
@@ -8263,7 +9659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:17.478591",
       "is_active": 1,
-      "url_hash": "51cb744195b2070d72d5b272bb3bacae"
+      "url_hash": "51cb744195b2070d72d5b272bb3bacae",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4a2838d57f1a6e687e382441d0b1c20e",
@@ -8281,7 +9679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:14.548755",
       "is_active": 1,
-      "url_hash": "4a2838d57f1a6e687e382441d0b1c20e"
+      "url_hash": "4a2838d57f1a6e687e382441d0b1c20e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8751d39940fef3e763b4cefd2a56baa0",
@@ -8299,7 +9699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:08.974853",
       "is_active": 1,
-      "url_hash": "8751d39940fef3e763b4cefd2a56baa0"
+      "url_hash": "8751d39940fef3e763b4cefd2a56baa0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4ddcd6172b5936430958c7f9859a456d",
@@ -8317,7 +9719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:05.533031",
       "is_active": 1,
-      "url_hash": "4ddcd6172b5936430958c7f9859a456d"
+      "url_hash": "4ddcd6172b5936430958c7f9859a456d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1e4b9298a8300115884f7430f76ce82f",
@@ -8335,7 +9739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:19:02.393332",
       "is_active": 1,
-      "url_hash": "1e4b9298a8300115884f7430f76ce82f"
+      "url_hash": "1e4b9298a8300115884f7430f76ce82f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7e887f597052cf509f824bf1ec100233",
@@ -8353,7 +9759,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-06T12:19:00.018639",
       "is_active": 1,
-      "url_hash": "7e887f597052cf509f824bf1ec100233"
+      "url_hash": "7e887f597052cf509f824bf1ec100233",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "30622293a1db56e86c47ef6731f5aada",
@@ -8371,7 +9779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:57.643705",
       "is_active": 1,
-      "url_hash": "30622293a1db56e86c47ef6731f5aada"
+      "url_hash": "30622293a1db56e86c47ef6731f5aada",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "681ac565a4aa41188ae1b6cc49381ff6",
@@ -8389,7 +9799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:54.166848",
       "is_active": 1,
-      "url_hash": "681ac565a4aa41188ae1b6cc49381ff6"
+      "url_hash": "681ac565a4aa41188ae1b6cc49381ff6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a378f032f7505a1e16011781856fd41f",
@@ -8407,7 +9819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:51.447773",
       "is_active": 1,
-      "url_hash": "a378f032f7505a1e16011781856fd41f"
+      "url_hash": "a378f032f7505a1e16011781856fd41f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a99d5612ba8f020a1a3aa21129f57671",
@@ -8425,7 +9839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:49.235089",
       "is_active": 1,
-      "url_hash": "a99d5612ba8f020a1a3aa21129f57671"
+      "url_hash": "a99d5612ba8f020a1a3aa21129f57671",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4b3278567c133ce212c6e3bd7a8f5699",
@@ -8443,7 +9859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:47.048703",
       "is_active": 1,
-      "url_hash": "4b3278567c133ce212c6e3bd7a8f5699"
+      "url_hash": "4b3278567c133ce212c6e3bd7a8f5699",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "95a7ef6ed1945581748b26a087796fdb",
@@ -8461,7 +9879,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T12:18:44.828530",
       "is_active": 1,
-      "url_hash": "95a7ef6ed1945581748b26a087796fdb"
+      "url_hash": "95a7ef6ed1945581748b26a087796fdb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9365753f2a2476a921446ce26e2bd819",
@@ -8479,7 +9899,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:18:38.282759",
       "is_active": 1,
-      "url_hash": "9365753f2a2476a921446ce26e2bd819"
+      "url_hash": "9365753f2a2476a921446ce26e2bd819",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e10f9aef9e3bbc0402955cca53fd46d5",
@@ -8497,7 +9919,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:18:36.064676",
       "is_active": 1,
-      "url_hash": "e10f9aef9e3bbc0402955cca53fd46d5"
+      "url_hash": "e10f9aef9e3bbc0402955cca53fd46d5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "de820944bd84c5f7f815503e0d899c7f",
@@ -8515,7 +9939,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T12:18:33.875514",
       "is_active": 1,
-      "url_hash": "de820944bd84c5f7f815503e0d899c7f"
+      "url_hash": "de820944bd84c5f7f815503e0d899c7f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a4df318c69e56b01feb1b74e1f6d0d82",
@@ -8533,7 +9959,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T12:18:31.692154",
       "is_active": 1,
-      "url_hash": "a4df318c69e56b01feb1b74e1f6d0d82"
+      "url_hash": "a4df318c69e56b01feb1b74e1f6d0d82",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ea4d1b3aaef3d8c8c22c869b142fa6a8",
@@ -8551,7 +9979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:29.507539",
       "is_active": 1,
-      "url_hash": "ea4d1b3aaef3d8c8c22c869b142fa6a8"
+      "url_hash": "ea4d1b3aaef3d8c8c22c869b142fa6a8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "259e45cc4972dc9c1269d0035b583214",
@@ -8569,7 +9999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:27.099438",
       "is_active": 1,
-      "url_hash": "259e45cc4972dc9c1269d0035b583214"
+      "url_hash": "259e45cc4972dc9c1269d0035b583214",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ac5e1b7f73bbe5a73282005e3772667b",
@@ -8587,7 +10019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:24.658392",
       "is_active": 1,
-      "url_hash": "ac5e1b7f73bbe5a73282005e3772667b"
+      "url_hash": "ac5e1b7f73bbe5a73282005e3772667b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7a51a5579c68daeffe074a697173e8ab",
@@ -8605,7 +10039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:19.781317",
       "is_active": 1,
-      "url_hash": "7a51a5579c68daeffe074a697173e8ab"
+      "url_hash": "7a51a5579c68daeffe074a697173e8ab",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6ed9c67c030684860cec22e407bf9b6a",
@@ -8623,7 +10059,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:12.263060",
       "is_active": 1,
-      "url_hash": "6ed9c67c030684860cec22e407bf9b6a"
+      "url_hash": "6ed9c67c030684860cec22e407bf9b6a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d08ad2c7f619f77f077d93dcfdf45447",
@@ -8641,7 +10079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:10.022073",
       "is_active": 1,
-      "url_hash": "d08ad2c7f619f77f077d93dcfdf45447"
+      "url_hash": "d08ad2c7f619f77f077d93dcfdf45447",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c80d82a62cdf3da82cee7cefdaa3562e",
@@ -8659,7 +10099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:07.730802",
       "is_active": 1,
-      "url_hash": "c80d82a62cdf3da82cee7cefdaa3562e"
+      "url_hash": "c80d82a62cdf3da82cee7cefdaa3562e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b58b15a217abadda01a97f991f63ceeb",
@@ -8677,7 +10119,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T12:18:05.551731",
       "is_active": 1,
-      "url_hash": "b58b15a217abadda01a97f991f63ceeb"
+      "url_hash": "b58b15a217abadda01a97f991f63ceeb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "275a273fd97370a4e5f2fa4c986a7c24",
@@ -8695,7 +10139,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T12:18:03.367689",
       "is_active": 1,
-      "url_hash": "275a273fd97370a4e5f2fa4c986a7c24"
+      "url_hash": "275a273fd97370a4e5f2fa4c986a7c24",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "66ccf6ba47c170f615ed842124f0b9b8",
@@ -8713,7 +10159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:19:14.633439",
       "is_active": 1,
-      "url_hash": "66ccf6ba47c170f615ed842124f0b9b8"
+      "url_hash": "66ccf6ba47c170f615ed842124f0b9b8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6ae8195ea09ac00ae63c597a0339d001",
@@ -8731,7 +10179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:19:12.346235",
       "is_active": 1,
-      "url_hash": "6ae8195ea09ac00ae63c597a0339d001"
+      "url_hash": "6ae8195ea09ac00ae63c597a0339d001",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5b16d53fe0c9a03842e24f850eceb3b0",
@@ -8749,7 +10199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:19:10.110659",
       "is_active": 1,
-      "url_hash": "5b16d53fe0c9a03842e24f850eceb3b0"
+      "url_hash": "5b16d53fe0c9a03842e24f850eceb3b0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "41d471c13b7dbe77d8c9a252fd35e5bc",
@@ -8767,7 +10219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:19:07.909381",
       "is_active": 1,
-      "url_hash": "41d471c13b7dbe77d8c9a252fd35e5bc"
+      "url_hash": "41d471c13b7dbe77d8c9a252fd35e5bc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7b30828e7e80d3ef85f6b2a0121983a0",
@@ -8785,7 +10239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:47.539725",
       "is_active": 1,
-      "url_hash": "7b30828e7e80d3ef85f6b2a0121983a0"
+      "url_hash": "7b30828e7e80d3ef85f6b2a0121983a0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d488096ae6af299691a089023e4c16a3",
@@ -8803,7 +10259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:41.109486",
       "is_active": 1,
-      "url_hash": "d488096ae6af299691a089023e4c16a3"
+      "url_hash": "d488096ae6af299691a089023e4c16a3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5b5ad5e96112141fbaa2391fc6c35fd1",
@@ -8821,7 +10279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:34.671367",
       "is_active": 1,
-      "url_hash": "5b5ad5e96112141fbaa2391fc6c35fd1"
+      "url_hash": "5b5ad5e96112141fbaa2391fc6c35fd1",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1a9b77beda458d99f63c391e6b906b95",
@@ -8839,7 +10299,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:28.190479",
       "is_active": 1,
-      "url_hash": "1a9b77beda458d99f63c391e6b906b95"
+      "url_hash": "1a9b77beda458d99f63c391e6b906b95",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5fb097a763e6eeaf8e940c2f83f79d43",
@@ -8857,7 +10319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:21.714927",
       "is_active": 1,
-      "url_hash": "5fb097a763e6eeaf8e940c2f83f79d43"
+      "url_hash": "5fb097a763e6eeaf8e940c2f83f79d43",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e9dc370ac92a9575b607047f2048f257",
@@ -8875,7 +10339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T11:17:15.274078",
       "is_active": 1,
-      "url_hash": "e9dc370ac92a9575b607047f2048f257"
+      "url_hash": "e9dc370ac92a9575b607047f2048f257",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e3e53930d5e237163c91965ec92a73e7",
@@ -8893,7 +10359,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:12:28.497678",
       "is_active": 1,
-      "url_hash": "e3e53930d5e237163c91965ec92a73e7"
+      "url_hash": "e3e53930d5e237163c91965ec92a73e7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "64039325cd06d8f21faee5f6663a5120",
@@ -8911,7 +10379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:12:28.497626",
       "is_active": 1,
-      "url_hash": "64039325cd06d8f21faee5f6663a5120"
+      "url_hash": "64039325cd06d8f21faee5f6663a5120",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "064a08194572cea9ab3bd748e08d178f",
@@ -8929,7 +10399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:12:28.497574",
       "is_active": 1,
-      "url_hash": "064a08194572cea9ab3bd748e08d178f"
+      "url_hash": "064a08194572cea9ab3bd748e08d178f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aeab55381effbf0ed46e2c4122ec6793",
@@ -8947,7 +10419,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:12:28.497466",
       "is_active": 1,
-      "url_hash": "aeab55381effbf0ed46e2c4122ec6793"
+      "url_hash": "aeab55381effbf0ed46e2c4122ec6793",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b96d08d02fba44ffa5118a72f9344a99",
@@ -8965,7 +10439,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.102604",
       "is_active": 1,
-      "url_hash": "b96d08d02fba44ffa5118a72f9344a99"
+      "url_hash": "b96d08d02fba44ffa5118a72f9344a99",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bcb3c17c534f728efad427b6192f520e",
@@ -8983,7 +10459,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.102551",
       "is_active": 1,
-      "url_hash": "bcb3c17c534f728efad427b6192f520e"
+      "url_hash": "bcb3c17c534f728efad427b6192f520e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "20b1c8323ed8bd8d83044ce655510536",
@@ -9001,7 +10479,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.102499",
       "is_active": 1,
-      "url_hash": "20b1c8323ed8bd8d83044ce655510536"
+      "url_hash": "20b1c8323ed8bd8d83044ce655510536",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "7c8707d6e9a08c1512aaa62f010f015d",
@@ -9019,7 +10499,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.102446",
       "is_active": 1,
-      "url_hash": "7c8707d6e9a08c1512aaa62f010f015d"
+      "url_hash": "7c8707d6e9a08c1512aaa62f010f015d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "33bb83fda0f1fd29770fdf48933ad235",
@@ -9037,7 +10519,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.102385",
       "is_active": 1,
-      "url_hash": "33bb83fda0f1fd29770fdf48933ad235"
+      "url_hash": "33bb83fda0f1fd29770fdf48933ad235",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ededbf912e2a15b5c7f39eb145e59751",
@@ -9055,7 +10539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.102333",
       "is_active": 1,
-      "url_hash": "ededbf912e2a15b5c7f39eb145e59751"
+      "url_hash": "ededbf912e2a15b5c7f39eb145e59751",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "677410efe6ab6fe45fb414e7084d1aeb",
@@ -9073,7 +10559,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T10:09:53.102279",
       "is_active": 1,
-      "url_hash": "677410efe6ab6fe45fb414e7084d1aeb"
+      "url_hash": "677410efe6ab6fe45fb414e7084d1aeb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f645d0596741244881f96b8590e4b0bb",
@@ -9091,7 +10579,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.102206",
       "is_active": 1,
-      "url_hash": "f645d0596741244881f96b8590e4b0bb"
+      "url_hash": "f645d0596741244881f96b8590e4b0bb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d9e9036545ac81a9c97fd4a1d8fb06fa",
@@ -9109,7 +10599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.102109",
       "is_active": 1,
-      "url_hash": "d9e9036545ac81a9c97fd4a1d8fb06fa"
+      "url_hash": "d9e9036545ac81a9c97fd4a1d8fb06fa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3bee7309f8eb8995ec5ea8767f26338c",
@@ -9127,7 +10619,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.102042",
       "is_active": 1,
-      "url_hash": "3bee7309f8eb8995ec5ea8767f26338c"
+      "url_hash": "3bee7309f8eb8995ec5ea8767f26338c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fe36b46cf6e5a14a7c6a5df34880e596",
@@ -9145,7 +10639,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101982",
       "is_active": 1,
-      "url_hash": "fe36b46cf6e5a14a7c6a5df34880e596"
+      "url_hash": "fe36b46cf6e5a14a7c6a5df34880e596",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b5691734cb9720e70faed6713cbae6d7",
@@ -9163,7 +10659,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101924",
       "is_active": 1,
-      "url_hash": "b5691734cb9720e70faed6713cbae6d7"
+      "url_hash": "b5691734cb9720e70faed6713cbae6d7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9f924f66baf793020a6dda5ccb5ee0b3",
@@ -9181,7 +10679,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101861",
       "is_active": 1,
-      "url_hash": "9f924f66baf793020a6dda5ccb5ee0b3"
+      "url_hash": "9f924f66baf793020a6dda5ccb5ee0b3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "41ecab284d24d6ae4cf5c70e8406fd0d",
@@ -9199,7 +10699,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.101759",
       "is_active": 1,
-      "url_hash": "41ecab284d24d6ae4cf5c70e8406fd0d"
+      "url_hash": "41ecab284d24d6ae4cf5c70e8406fd0d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8e691bbff7810aa2ae92105bc2e99118",
@@ -9217,7 +10719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101709",
       "is_active": 1,
-      "url_hash": "8e691bbff7810aa2ae92105bc2e99118"
+      "url_hash": "8e691bbff7810aa2ae92105bc2e99118",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b96cf35bf6845ddda8986919a3c2e7a6",
@@ -9235,7 +10739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101660",
       "is_active": 1,
-      "url_hash": "b96cf35bf6845ddda8986919a3c2e7a6"
+      "url_hash": "b96cf35bf6845ddda8986919a3c2e7a6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e0d2fff8dc96a6193470bc85332c3fea",
@@ -9253,7 +10759,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101611",
       "is_active": 1,
-      "url_hash": "e0d2fff8dc96a6193470bc85332c3fea"
+      "url_hash": "e0d2fff8dc96a6193470bc85332c3fea",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9b480919811234bf7df326423788291c",
@@ -9271,7 +10779,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101562",
       "is_active": 1,
-      "url_hash": "9b480919811234bf7df326423788291c"
+      "url_hash": "9b480919811234bf7df326423788291c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b2866b55662b641f8742d831fd371e30",
@@ -9289,7 +10799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101512",
       "is_active": 1,
-      "url_hash": "b2866b55662b641f8742d831fd371e30"
+      "url_hash": "b2866b55662b641f8742d831fd371e30",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a965cb189fb44034d5093659d402de51",
@@ -9307,7 +10819,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101462",
       "is_active": 1,
-      "url_hash": "a965cb189fb44034d5093659d402de51"
+      "url_hash": "a965cb189fb44034d5093659d402de51",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b84eedc7beac9f8e5e2cdf70a57d945c",
@@ -9325,7 +10839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101411",
       "is_active": 1,
-      "url_hash": "b84eedc7beac9f8e5e2cdf70a57d945c"
+      "url_hash": "b84eedc7beac9f8e5e2cdf70a57d945c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bba00feeba0f2d2e16ec956af4aa2e59",
@@ -9343,7 +10859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101357",
       "is_active": 1,
-      "url_hash": "bba00feeba0f2d2e16ec956af4aa2e59"
+      "url_hash": "bba00feeba0f2d2e16ec956af4aa2e59",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a10237de3b3f2268108c8d1fb4cbee72",
@@ -9361,7 +10879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.101307",
       "is_active": 1,
-      "url_hash": "a10237de3b3f2268108c8d1fb4cbee72"
+      "url_hash": "a10237de3b3f2268108c8d1fb4cbee72",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3d531cffbdc8f544cec90fc9bffd2df0",
@@ -9379,7 +10899,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.101257",
       "is_active": 1,
-      "url_hash": "3d531cffbdc8f544cec90fc9bffd2df0"
+      "url_hash": "3d531cffbdc8f544cec90fc9bffd2df0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6382e718d2e2f964e0b414cb5eaba76e",
@@ -9397,7 +10919,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101206",
       "is_active": 1,
-      "url_hash": "6382e718d2e2f964e0b414cb5eaba76e"
+      "url_hash": "6382e718d2e2f964e0b414cb5eaba76e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1e83a5c63a64ca457836a93d57de608f",
@@ -9415,7 +10939,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101155",
       "is_active": 1,
-      "url_hash": "1e83a5c63a64ca457836a93d57de608f"
+      "url_hash": "1e83a5c63a64ca457836a93d57de608f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "709ddb28b8d95c986a46b9ab0333e7b9",
@@ -9433,7 +10959,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101105",
       "is_active": 1,
-      "url_hash": "709ddb28b8d95c986a46b9ab0333e7b9"
+      "url_hash": "709ddb28b8d95c986a46b9ab0333e7b9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "30207aa24104e815506a2bd779c2181b",
@@ -9451,7 +10979,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.101055",
       "is_active": 1,
-      "url_hash": "30207aa24104e815506a2bd779c2181b"
+      "url_hash": "30207aa24104e815506a2bd779c2181b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "358c9fe9a07303168493fdc9d94a76fd",
@@ -9469,7 +10999,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.101003",
       "is_active": 1,
-      "url_hash": "358c9fe9a07303168493fdc9d94a76fd"
+      "url_hash": "358c9fe9a07303168493fdc9d94a76fd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3ee3bbf66a3d54f845bca5fb19413009",
@@ -9487,7 +11019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100951",
       "is_active": 1,
-      "url_hash": "3ee3bbf66a3d54f845bca5fb19413009"
+      "url_hash": "3ee3bbf66a3d54f845bca5fb19413009",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dbe3808f501fc0fc0f51ff6b896ddf5f",
@@ -9505,7 +11039,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-06T10:09:53.100900",
       "is_active": 1,
-      "url_hash": "dbe3808f501fc0fc0f51ff6b896ddf5f"
+      "url_hash": "dbe3808f501fc0fc0f51ff6b896ddf5f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6c35bf0bc4d3244d86b60731eeaf8382",
@@ -9523,7 +11059,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T10:09:53.100849",
       "is_active": 1,
-      "url_hash": "6c35bf0bc4d3244d86b60731eeaf8382"
+      "url_hash": "6c35bf0bc4d3244d86b60731eeaf8382",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a9a04e660aa40657e76214b2f96e3d20",
@@ -9541,7 +11079,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100796",
       "is_active": 1,
-      "url_hash": "a9a04e660aa40657e76214b2f96e3d20"
+      "url_hash": "a9a04e660aa40657e76214b2f96e3d20",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0aaae301fd591513152384ae0f01c3a3",
@@ -9559,7 +11099,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100746",
       "is_active": 1,
-      "url_hash": "0aaae301fd591513152384ae0f01c3a3"
+      "url_hash": "0aaae301fd591513152384ae0f01c3a3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2dd28f8a6d8b4db89f4ad11ab8aac198",
@@ -9577,7 +11119,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T10:09:53.100695",
       "is_active": 1,
-      "url_hash": "2dd28f8a6d8b4db89f4ad11ab8aac198"
+      "url_hash": "2dd28f8a6d8b4db89f4ad11ab8aac198",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8f2c2856564f395f30df92a44c76b150",
@@ -9595,7 +11139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100644",
       "is_active": 1,
-      "url_hash": "8f2c2856564f395f30df92a44c76b150"
+      "url_hash": "8f2c2856564f395f30df92a44c76b150",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "be9b6d15fed9650ea7e76541d9bd9732",
@@ -9613,7 +11159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100595",
       "is_active": 1,
-      "url_hash": "be9b6d15fed9650ea7e76541d9bd9732"
+      "url_hash": "be9b6d15fed9650ea7e76541d9bd9732",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9fff1dc83134c5ead924965faef809eb",
@@ -9631,7 +11179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100542",
       "is_active": 1,
-      "url_hash": "9fff1dc83134c5ead924965faef809eb"
+      "url_hash": "9fff1dc83134c5ead924965faef809eb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "15701de568df1dd4753988740a942f0a",
@@ -9649,7 +11199,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100492",
       "is_active": 1,
-      "url_hash": "15701de568df1dd4753988740a942f0a"
+      "url_hash": "15701de568df1dd4753988740a942f0a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "604e01d980604a72ffb0d24e4285f310",
@@ -9667,7 +11219,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T10:09:53.100438",
       "is_active": 1,
-      "url_hash": "604e01d980604a72ffb0d24e4285f310"
+      "url_hash": "604e01d980604a72ffb0d24e4285f310",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1d67ac1c308297baea6fc4d5462f3d6f",
@@ -9685,7 +11239,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100386",
       "is_active": 1,
-      "url_hash": "1d67ac1c308297baea6fc4d5462f3d6f"
+      "url_hash": "1d67ac1c308297baea6fc4d5462f3d6f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0e447808dc9dcb268e53b27187f27fd2",
@@ -9703,7 +11259,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100334",
       "is_active": 1,
-      "url_hash": "0e447808dc9dcb268e53b27187f27fd2"
+      "url_hash": "0e447808dc9dcb268e53b27187f27fd2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f4faae76659c808b6763614adf6953e6",
@@ -9721,7 +11279,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100280",
       "is_active": 1,
-      "url_hash": "f4faae76659c808b6763614adf6953e6"
+      "url_hash": "f4faae76659c808b6763614adf6953e6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "5ad088642b6aaac0101a1c6672d47bf7",
@@ -9739,7 +11299,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100227",
       "is_active": 1,
-      "url_hash": "5ad088642b6aaac0101a1c6672d47bf7"
+      "url_hash": "5ad088642b6aaac0101a1c6672d47bf7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3f2105786c5bb0f17548071813e62ead",
@@ -9757,7 +11319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100175",
       "is_active": 1,
-      "url_hash": "3f2105786c5bb0f17548071813e62ead"
+      "url_hash": "3f2105786c5bb0f17548071813e62ead",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "097e278751232c1a254b3f5a11d026d6",
@@ -9775,7 +11339,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.100119",
       "is_active": 1,
-      "url_hash": "097e278751232c1a254b3f5a11d026d6"
+      "url_hash": "097e278751232c1a254b3f5a11d026d6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e7b18087ed03eb5cf9092bee5484931d",
@@ -9793,7 +11359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100062",
       "is_active": 1,
-      "url_hash": "e7b18087ed03eb5cf9092bee5484931d"
+      "url_hash": "e7b18087ed03eb5cf9092bee5484931d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "131ed415d19074223599428537d02f02",
@@ -9811,7 +11379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.100004",
       "is_active": 1,
-      "url_hash": "131ed415d19074223599428537d02f02"
+      "url_hash": "131ed415d19074223599428537d02f02",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ce3f3aee889c1e2188e42eec5bfd0672",
@@ -9829,7 +11399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T10:09:53.099941",
       "is_active": 1,
-      "url_hash": "ce3f3aee889c1e2188e42eec5bfd0672"
+      "url_hash": "ce3f3aee889c1e2188e42eec5bfd0672",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d883c91724f79fec6fde3a28beb7ef0c",
@@ -9847,7 +11419,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T10:09:53.099840",
       "is_active": 1,
-      "url_hash": "d883c91724f79fec6fde3a28beb7ef0c"
+      "url_hash": "d883c91724f79fec6fde3a28beb7ef0c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "854d4014bdd6336cec3f90a18da8a90e",
@@ -9865,7 +11439,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:44.120270",
       "is_active": 1,
-      "url_hash": "854d4014bdd6336cec3f90a18da8a90e"
+      "url_hash": "854d4014bdd6336cec3f90a18da8a90e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a3f312f6598f982297e22b04eb44bd33",
@@ -9883,7 +11459,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:44.119215",
       "is_active": 1,
-      "url_hash": "a3f312f6598f982297e22b04eb44bd33"
+      "url_hash": "a3f312f6598f982297e22b04eb44bd33",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "30dee2b52ad5bce1e538921412b0e35c",
@@ -9901,7 +11479,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:44.119163",
       "is_active": 1,
-      "url_hash": "30dee2b52ad5bce1e538921412b0e35c"
+      "url_hash": "30dee2b52ad5bce1e538921412b0e35c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "51321a27b450811cf04529eef9bf1b9d",
@@ -9919,7 +11499,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:44.119109",
       "is_active": 1,
-      "url_hash": "51321a27b450811cf04529eef9bf1b9d"
+      "url_hash": "51321a27b450811cf04529eef9bf1b9d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b2fc14eaf32e6d9c76d15a9d574b8d3d",
@@ -9937,7 +11519,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:44.119050",
       "is_active": 1,
-      "url_hash": "b2fc14eaf32e6d9c76d15a9d574b8d3d"
+      "url_hash": "b2fc14eaf32e6d9c76d15a9d574b8d3d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8b911d93af226a27bd5a3d7d33f4a1eb",
@@ -9955,7 +11539,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:44.118959",
       "is_active": 1,
-      "url_hash": "8b911d93af226a27bd5a3d7d33f4a1eb"
+      "url_hash": "8b911d93af226a27bd5a3d7d33f4a1eb",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "605b098192abec4eed0c75c000339ae2",
@@ -9973,7 +11559,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:38.775986",
       "is_active": 1,
-      "url_hash": "605b098192abec4eed0c75c000339ae2"
+      "url_hash": "605b098192abec4eed0c75c000339ae2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8b6d9c03b99cfe8d7ba326e85e70595b",
@@ -9991,7 +11579,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:38.775918",
       "is_active": 1,
-      "url_hash": "8b6d9c03b99cfe8d7ba326e85e70595b"
+      "url_hash": "8b6d9c03b99cfe8d7ba326e85e70595b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ee2d9627f91c5c557b5d38e6fccda920",
@@ -10009,7 +11599,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.254268",
       "is_active": 1,
-      "url_hash": "ee2d9627f91c5c557b5d38e6fccda920"
+      "url_hash": "ee2d9627f91c5c557b5d38e6fccda920",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d7c040b8db82c2a6c28513385fa70785",
@@ -10027,7 +11619,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.254216",
       "is_active": 1,
-      "url_hash": "d7c040b8db82c2a6c28513385fa70785"
+      "url_hash": "d7c040b8db82c2a6c28513385fa70785",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0c885a181f469d3a42f7a39194680b9e",
@@ -10045,7 +11639,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.254163",
       "is_active": 1,
-      "url_hash": "0c885a181f469d3a42f7a39194680b9e"
+      "url_hash": "0c885a181f469d3a42f7a39194680b9e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f87dbf4ba08111c510071256f6f460d7",
@@ -10063,7 +11659,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.254092",
       "is_active": 1,
-      "url_hash": "f87dbf4ba08111c510071256f6f460d7"
+      "url_hash": "f87dbf4ba08111c510071256f6f460d7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "65c8d4874598aaf890643be965ed3cfe",
@@ -10081,7 +11679,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.254018",
       "is_active": 1,
-      "url_hash": "65c8d4874598aaf890643be965ed3cfe"
+      "url_hash": "65c8d4874598aaf890643be965ed3cfe",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b7096812d3f0e75ae3a430d8ee8cff67",
@@ -10099,7 +11699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253965",
       "is_active": 1,
-      "url_hash": "b7096812d3f0e75ae3a430d8ee8cff67"
+      "url_hash": "b7096812d3f0e75ae3a430d8ee8cff67",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f3a50098969f8144c058ceb4aec51bbc",
@@ -10117,7 +11719,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253861",
       "is_active": 1,
-      "url_hash": "f3a50098969f8144c058ceb4aec51bbc"
+      "url_hash": "f3a50098969f8144c058ceb4aec51bbc",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3d6e3432dc99900fcee8cefcb3608ea7",
@@ -10135,7 +11739,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253811",
       "is_active": 1,
-      "url_hash": "3d6e3432dc99900fcee8cefcb3608ea7"
+      "url_hash": "3d6e3432dc99900fcee8cefcb3608ea7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "04fa5658c74847ebb096cf059bea3a52",
@@ -10153,7 +11759,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.253760",
       "is_active": 1,
-      "url_hash": "04fa5658c74847ebb096cf059bea3a52"
+      "url_hash": "04fa5658c74847ebb096cf059bea3a52",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "811fa47b0a68ecb6e455efc33e9877a9",
@@ -10171,7 +11779,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.253711",
       "is_active": 1,
-      "url_hash": "811fa47b0a68ecb6e455efc33e9877a9"
+      "url_hash": "811fa47b0a68ecb6e455efc33e9877a9",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fe539d076af238c5a9917367a2949f29",
@@ -10189,7 +11799,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.253659",
       "is_active": 1,
-      "url_hash": "fe539d076af238c5a9917367a2949f29"
+      "url_hash": "fe539d076af238c5a9917367a2949f29",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "18bcf2f4c5ee9a52a54b7c03c3312d27",
@@ -10207,7 +11819,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253607",
       "is_active": 1,
-      "url_hash": "18bcf2f4c5ee9a52a54b7c03c3312d27"
+      "url_hash": "18bcf2f4c5ee9a52a54b7c03c3312d27",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "75cad04ba5ba1fdc3cc2604cc8e10ad8",
@@ -10225,7 +11839,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253557",
       "is_active": 1,
-      "url_hash": "75cad04ba5ba1fdc3cc2604cc8e10ad8"
+      "url_hash": "75cad04ba5ba1fdc3cc2604cc8e10ad8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "10f83db0ebd682a6b10c1535fe3d02e5",
@@ -10243,7 +11859,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253507",
       "is_active": 1,
-      "url_hash": "10f83db0ebd682a6b10c1535fe3d02e5"
+      "url_hash": "10f83db0ebd682a6b10c1535fe3d02e5",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d4e9ff1be9c7dacd6c7833465306e0db",
@@ -10261,7 +11879,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253457",
       "is_active": 1,
-      "url_hash": "d4e9ff1be9c7dacd6c7833465306e0db"
+      "url_hash": "d4e9ff1be9c7dacd6c7833465306e0db",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4d5b299b8f9fc335fd5b627d9124b322",
@@ -10279,7 +11899,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253408",
       "is_active": 1,
-      "url_hash": "4d5b299b8f9fc335fd5b627d9124b322"
+      "url_hash": "4d5b299b8f9fc335fd5b627d9124b322",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8806ec9665bcf88016240a67d0f3407e",
@@ -10297,7 +11919,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253357",
       "is_active": 1,
-      "url_hash": "8806ec9665bcf88016240a67d0f3407e"
+      "url_hash": "8806ec9665bcf88016240a67d0f3407e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dab4394f56f0a2f49db210a1b18ec1ef",
@@ -10315,7 +11939,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.253308",
       "is_active": 1,
-      "url_hash": "dab4394f56f0a2f49db210a1b18ec1ef"
+      "url_hash": "dab4394f56f0a2f49db210a1b18ec1ef",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "40f0aa2c418472797aac0ba9cd9da3ad",
@@ -10333,7 +11959,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.253256",
       "is_active": 1,
-      "url_hash": "40f0aa2c418472797aac0ba9cd9da3ad"
+      "url_hash": "40f0aa2c418472797aac0ba9cd9da3ad",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "fde014b3a1c70657b47bf9dc7e740246",
@@ -10351,7 +11979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253204",
       "is_active": 1,
-      "url_hash": "fde014b3a1c70657b47bf9dc7e740246"
+      "url_hash": "fde014b3a1c70657b47bf9dc7e740246",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b9a5554f4cae8a143388ccc5c4084f84",
@@ -10369,7 +11999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253154",
       "is_active": 1,
-      "url_hash": "b9a5554f4cae8a143388ccc5c4084f84"
+      "url_hash": "b9a5554f4cae8a143388ccc5c4084f84",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9b086a6a60f7337f2cc99195e667b22b",
@@ -10387,7 +12019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253103",
       "is_active": 1,
-      "url_hash": "9b086a6a60f7337f2cc99195e667b22b"
+      "url_hash": "9b086a6a60f7337f2cc99195e667b22b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "395fd66d38e4a624cc9b43902dac95cd",
@@ -10405,7 +12039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.253052",
       "is_active": 1,
-      "url_hash": "395fd66d38e4a624cc9b43902dac95cd"
+      "url_hash": "395fd66d38e4a624cc9b43902dac95cd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2dd85d13a4fb3a44886e9c99081e8546",
@@ -10423,7 +12059,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T00:23:32.252999",
       "is_active": 1,
-      "url_hash": "2dd85d13a4fb3a44886e9c99081e8546"
+      "url_hash": "2dd85d13a4fb3a44886e9c99081e8546",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "acb6e2f8d3d97fe8d383381805e9f86c",
@@ -10441,7 +12079,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T00:23:32.252947",
       "is_active": 1,
-      "url_hash": "acb6e2f8d3d97fe8d383381805e9f86c"
+      "url_hash": "acb6e2f8d3d97fe8d383381805e9f86c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6f0b41ad9420eb093ce234c86d014c25",
@@ -10459,7 +12099,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T00:23:32.252894",
       "is_active": 1,
-      "url_hash": "6f0b41ad9420eb093ce234c86d014c25"
+      "url_hash": "6f0b41ad9420eb093ce234c86d014c25",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0071e661793032bac1ee413f1f88f64a",
@@ -10477,7 +12119,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T00:23:32.252842",
       "is_active": 1,
-      "url_hash": "0071e661793032bac1ee413f1f88f64a"
+      "url_hash": "0071e661793032bac1ee413f1f88f64a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "28aa70ca99493f66c7869d30542d54de",
@@ -10495,7 +12139,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.252790",
       "is_active": 1,
-      "url_hash": "28aa70ca99493f66c7869d30542d54de"
+      "url_hash": "28aa70ca99493f66c7869d30542d54de",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "29f86a8430741aad6c47b03a786ae3b7",
@@ -10513,7 +12159,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.252738",
       "is_active": 1,
-      "url_hash": "29f86a8430741aad6c47b03a786ae3b7"
+      "url_hash": "29f86a8430741aad6c47b03a786ae3b7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c785e1d5944bba00bfd6f8bd75c6e1c7",
@@ -10531,7 +12179,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.252685",
       "is_active": 1,
-      "url_hash": "c785e1d5944bba00bfd6f8bd75c6e1c7"
+      "url_hash": "c785e1d5944bba00bfd6f8bd75c6e1c7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3d437367a61c0970361f83dd76ac88e4",
@@ -10549,7 +12199,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.252633",
       "is_active": 1,
-      "url_hash": "3d437367a61c0970361f83dd76ac88e4"
+      "url_hash": "3d437367a61c0970361f83dd76ac88e4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c2e6c7adb3aa84ca95e665e230381191",
@@ -10567,7 +12219,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252581",
       "is_active": 1,
-      "url_hash": "c2e6c7adb3aa84ca95e665e230381191"
+      "url_hash": "c2e6c7adb3aa84ca95e665e230381191",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a4bf9896f8db674dc61535413490a441",
@@ -10585,7 +12239,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.252478",
       "is_active": 1,
-      "url_hash": "a4bf9896f8db674dc61535413490a441"
+      "url_hash": "a4bf9896f8db674dc61535413490a441",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3ae196d14252f1d496f145683d715e44",
@@ -10603,7 +12259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252426",
       "is_active": 1,
-      "url_hash": "3ae196d14252f1d496f145683d715e44"
+      "url_hash": "3ae196d14252f1d496f145683d715e44",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0539eaf36471810d750a914614fde2c7",
@@ -10621,7 +12279,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252375",
       "is_active": 1,
-      "url_hash": "0539eaf36471810d750a914614fde2c7"
+      "url_hash": "0539eaf36471810d750a914614fde2c7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d32a44e4b263a03b7f8d8a3ef6cc3fcd",
@@ -10639,7 +12299,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-06T00:23:32.252323",
       "is_active": 1,
-      "url_hash": "d32a44e4b263a03b7f8d8a3ef6cc3fcd"
+      "url_hash": "d32a44e4b263a03b7f8d8a3ef6cc3fcd",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "cb882a3e0eafc487b9e5db2a6a05cfd8",
@@ -10657,7 +12319,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252271",
       "is_active": 1,
-      "url_hash": "cb882a3e0eafc487b9e5db2a6a05cfd8"
+      "url_hash": "cb882a3e0eafc487b9e5db2a6a05cfd8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b92b28bf345ac0e3b17e59be5053bf16",
@@ -10675,7 +12339,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252219",
       "is_active": 1,
-      "url_hash": "b92b28bf345ac0e3b17e59be5053bf16"
+      "url_hash": "b92b28bf345ac0e3b17e59be5053bf16",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "920176e77d437c6ac27524f7d6534c86",
@@ -10693,7 +12359,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252167",
       "is_active": 1,
-      "url_hash": "920176e77d437c6ac27524f7d6534c86"
+      "url_hash": "920176e77d437c6ac27524f7d6534c86",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9baab42704b7b3322ed9f87bc08242ab",
@@ -10711,7 +12379,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252115",
       "is_active": 1,
-      "url_hash": "9baab42704b7b3322ed9f87bc08242ab"
+      "url_hash": "9baab42704b7b3322ed9f87bc08242ab",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ce10ce0e0686e071b57022831a5ab17a",
@@ -10729,7 +12399,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:32.252064",
       "is_active": 1,
-      "url_hash": "ce10ce0e0686e071b57022831a5ab17a"
+      "url_hash": "ce10ce0e0686e071b57022831a5ab17a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "3f63355af5f9f1ec29481f99149d2d7f",
@@ -10747,7 +12419,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T00:23:32.252013",
       "is_active": 1,
-      "url_hash": "3f63355af5f9f1ec29481f99149d2d7f"
+      "url_hash": "3f63355af5f9f1ec29481f99149d2d7f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9fb6825c0aefee610f5546320757f24b",
@@ -10765,7 +12439,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-06T00:23:32.251843",
       "is_active": 1,
-      "url_hash": "9fb6825c0aefee610f5546320757f24b"
+      "url_hash": "9fb6825c0aefee610f5546320757f24b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "04ba516905a39bbbfcf93e788c38b0ac",
@@ -10783,7 +12459,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.251780",
       "is_active": 1,
-      "url_hash": "04ba516905a39bbbfcf93e788c38b0ac"
+      "url_hash": "04ba516905a39bbbfcf93e788c38b0ac",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b6f163a1c2718ac8c09d0bf6a48f6357",
@@ -10801,7 +12479,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-06T00:23:32.251715",
       "is_active": 1,
-      "url_hash": "b6f163a1c2718ac8c09d0bf6a48f6357"
+      "url_hash": "b6f163a1c2718ac8c09d0bf6a48f6357",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "179d912d4e15e0f76ee1c08caad42a54",
@@ -10819,7 +12499,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-06T00:23:32.251626",
       "is_active": 1,
-      "url_hash": "179d912d4e15e0f76ee1c08caad42a54"
+      "url_hash": "179d912d4e15e0f76ee1c08caad42a54",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "83f71fa0072c63fe4ed1c959e28735ef",
@@ -10837,7 +12519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-06T00:23:25.872714",
       "is_active": 1,
-      "url_hash": "83f71fa0072c63fe4ed1c959e28735ef"
+      "url_hash": "83f71fa0072c63fe4ed1c959e28735ef",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "aa37930f0206c1cf982f2f4cf4c0dafa",
@@ -10855,7 +12539,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T23:53:40.347265",
       "is_active": 1,
-      "url_hash": "aa37930f0206c1cf982f2f4cf4c0dafa"
+      "url_hash": "aa37930f0206c1cf982f2f4cf4c0dafa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f43968dc270b6ed57edac7c77957a990",
@@ -10873,7 +12559,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T21:20:45.907356",
       "is_active": 1,
-      "url_hash": "f43968dc270b6ed57edac7c77957a990"
+      "url_hash": "f43968dc270b6ed57edac7c77957a990",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "1670f617bc2d5576f14fea910c4fd019",
@@ -10891,7 +12579,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T21:20:43.499908",
       "is_active": 1,
-      "url_hash": "1670f617bc2d5576f14fea910c4fd019"
+      "url_hash": "1670f617bc2d5576f14fea910c4fd019",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e05462bf0efb9feb6f37ff7d50fa6f80",
@@ -10909,7 +12599,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T21:20:42.391856",
       "is_active": 1,
-      "url_hash": "e05462bf0efb9feb6f37ff7d50fa6f80"
+      "url_hash": "e05462bf0efb9feb6f37ff7d50fa6f80",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "77f2d8d112c23e549891a7a5ec776635",
@@ -10927,7 +12619,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T21:20:41.301318",
       "is_active": 1,
-      "url_hash": "77f2d8d112c23e549891a7a5ec776635"
+      "url_hash": "77f2d8d112c23e549891a7a5ec776635",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "950c9cfd896ab5056927f8f029c34099",
@@ -10945,7 +12639,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T21:20:40.199745",
       "is_active": 1,
-      "url_hash": "950c9cfd896ab5056927f8f029c34099"
+      "url_hash": "950c9cfd896ab5056927f8f029c34099",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "787ef8db786af3d11a034f6e33b5ab22",
@@ -10963,7 +12659,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-05T21:20:39.098505",
       "is_active": 1,
-      "url_hash": "787ef8db786af3d11a034f6e33b5ab22"
+      "url_hash": "787ef8db786af3d11a034f6e33b5ab22",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4b949a9c2c122b26f1d6abe8e5a9a34c",
@@ -10981,7 +12679,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T21:20:37.976615",
       "is_active": 1,
-      "url_hash": "4b949a9c2c122b26f1d6abe8e5a9a34c"
+      "url_hash": "4b949a9c2c122b26f1d6abe8e5a9a34c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ab3d23540ff39bd33700fd244e594668",
@@ -10999,7 +12699,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T21:20:36.857439",
       "is_active": 1,
-      "url_hash": "ab3d23540ff39bd33700fd244e594668"
+      "url_hash": "ab3d23540ff39bd33700fd244e594668",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c8f3f8b2b75231d3bc0ff75022c074df",
@@ -11017,7 +12719,9 @@ window.allPostingsData = {
       "type": "유치조사",
       "scraped_at": "2026-04-05T21:20:35.764746",
       "is_active": 1,
-      "url_hash": "c8f3f8b2b75231d3bc0ff75022c074df"
+      "url_hash": "c8f3f8b2b75231d3bc0ff75022c074df",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "da79bcefcec91b787f78592c18bbe698",
@@ -11035,7 +12739,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-05T21:20:34.650710",
       "is_active": 1,
-      "url_hash": "da79bcefcec91b787f78592c18bbe698"
+      "url_hash": "da79bcefcec91b787f78592c18bbe698",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9df7a2d89726716a64932137e84ba424",
@@ -11053,7 +12759,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-05T21:20:32.081363",
       "is_active": 1,
-      "url_hash": "9df7a2d89726716a64932137e84ba424"
+      "url_hash": "9df7a2d89726716a64932137e84ba424",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6929d894e593b6b38aa61ae5af5caba4",
@@ -11071,7 +12779,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T21:20:30.972667",
       "is_active": 1,
-      "url_hash": "6929d894e593b6b38aa61ae5af5caba4"
+      "url_hash": "6929d894e593b6b38aa61ae5af5caba4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "6b12b2262ab230865b5bb38901198608",
@@ -11089,7 +12799,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T21:20:29.820978",
       "is_active": 1,
-      "url_hash": "6b12b2262ab230865b5bb38901198608"
+      "url_hash": "6b12b2262ab230865b5bb38901198608",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "25ebe72156afdda9a275572a847b1bb2",
@@ -11107,7 +12819,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T21:20:28.709247",
       "is_active": 1,
-      "url_hash": "25ebe72156afdda9a275572a847b1bb2"
+      "url_hash": "25ebe72156afdda9a275572a847b1bb2",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "84e2783a35b555ebfdf68946edd7f4e3",
@@ -11125,7 +12839,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-05T21:20:27.613786",
       "is_active": 1,
-      "url_hash": "84e2783a35b555ebfdf68946edd7f4e3"
+      "url_hash": "84e2783a35b555ebfdf68946edd7f4e3",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9f2a04bd1d0980df151a67fb977d4207",
@@ -11143,7 +12859,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-05T21:20:26.511232",
       "is_active": 1,
-      "url_hash": "9f2a04bd1d0980df151a67fb977d4207"
+      "url_hash": "9f2a04bd1d0980df151a67fb977d4207",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "071eeaa50c8f7f295bf2c0450cfde039",
@@ -11161,7 +12879,9 @@ window.allPostingsData = {
       "type": "유치조사",
       "scraped_at": "2026-04-05T21:20:25.405690",
       "is_active": 1,
-      "url_hash": "071eeaa50c8f7f295bf2c0450cfde039"
+      "url_hash": "071eeaa50c8f7f295bf2c0450cfde039",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c4306c3a579fcad61cf0e5cda4e8d82f",
@@ -11179,7 +12899,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-05T21:20:24.305424",
       "is_active": 1,
-      "url_hash": "c4306c3a579fcad61cf0e5cda4e8d82f"
+      "url_hash": "c4306c3a579fcad61cf0e5cda4e8d82f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8ac87aafcefbdcbb760b5ddb4786637e",
@@ -11197,7 +12919,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-05T21:20:23.117977",
       "is_active": 1,
-      "url_hash": "8ac87aafcefbdcbb760b5ddb4786637e"
+      "url_hash": "8ac87aafcefbdcbb760b5ddb4786637e",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2cb359deed3b591414328b3ee3c7ecb6",
@@ -11215,7 +12939,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159137",
       "is_active": 1,
-      "url_hash": "2cb359deed3b591414328b3ee3c7ecb6"
+      "url_hash": "2cb359deed3b591414328b3ee3c7ecb6",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d366ff9d7fd32edfa70dca7e85a56efa",
@@ -11233,7 +12959,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-05T20:36:01.159122",
       "is_active": 1,
-      "url_hash": "d366ff9d7fd32edfa70dca7e85a56efa"
+      "url_hash": "d366ff9d7fd32edfa70dca7e85a56efa",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c386ebce42e9ec8f6a1168a8a7d4a972",
@@ -11251,7 +12979,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159107",
       "is_active": 1,
-      "url_hash": "c386ebce42e9ec8f6a1168a8a7d4a972"
+      "url_hash": "c386ebce42e9ec8f6a1168a8a7d4a972",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d6fdcfefc72167e506e2fc6550030149",
@@ -11269,7 +12999,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159092",
       "is_active": 1,
-      "url_hash": "d6fdcfefc72167e506e2fc6550030149"
+      "url_hash": "d6fdcfefc72167e506e2fc6550030149",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0d2cd811bcdcd03da15d8e3d02e4d1ce",
@@ -11287,7 +13019,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159076",
       "is_active": 1,
-      "url_hash": "0d2cd811bcdcd03da15d8e3d02e4d1ce"
+      "url_hash": "0d2cd811bcdcd03da15d8e3d02e4d1ce",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2814781eba156038323e12cedee1ed95",
@@ -11305,7 +13039,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159061",
       "is_active": 1,
-      "url_hash": "2814781eba156038323e12cedee1ed95"
+      "url_hash": "2814781eba156038323e12cedee1ed95",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e6712552d193b8ff4a1e653c49fc55f4",
@@ -11323,7 +13059,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-05T20:36:01.159045",
       "is_active": 1,
-      "url_hash": "e6712552d193b8ff4a1e653c49fc55f4"
+      "url_hash": "e6712552d193b8ff4a1e653c49fc55f4",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c20903df20bd92b6c632653e16c7eb85",
@@ -11341,7 +13079,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159029",
       "is_active": 1,
-      "url_hash": "c20903df20bd92b6c632653e16c7eb85"
+      "url_hash": "c20903df20bd92b6c632653e16c7eb85",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8d683490c76e6d531a8cfe23e527b956",
@@ -11359,7 +13099,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.159014",
       "is_active": 1,
-      "url_hash": "8d683490c76e6d531a8cfe23e527b956"
+      "url_hash": "8d683490c76e6d531a8cfe23e527b956",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8b766be1cd7076154a23c0c7e97ae2db",
@@ -11377,7 +13119,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158999",
       "is_active": 1,
-      "url_hash": "8b766be1cd7076154a23c0c7e97ae2db"
+      "url_hash": "8b766be1cd7076154a23c0c7e97ae2db",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "454fa05ae0c3e7110505af391789f746",
@@ -11395,7 +13139,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158983",
       "is_active": 1,
-      "url_hash": "454fa05ae0c3e7110505af391789f746"
+      "url_hash": "454fa05ae0c3e7110505af391789f746",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "bb0852bc527b88ee9b2c3929a724ef85",
@@ -11413,7 +13159,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158968",
       "is_active": 1,
-      "url_hash": "bb0852bc527b88ee9b2c3929a724ef85"
+      "url_hash": "bb0852bc527b88ee9b2c3929a724ef85",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "de611aa8d8000d9f07ae750302c7c6b8",
@@ -11431,7 +13179,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158952",
       "is_active": 1,
-      "url_hash": "de611aa8d8000d9f07ae750302c7c6b8"
+      "url_hash": "de611aa8d8000d9f07ae750302c7c6b8",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "55b4214e6c4717e1e727ed0d93bfef02",
@@ -11449,7 +13199,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158935",
       "is_active": 1,
-      "url_hash": "55b4214e6c4717e1e727ed0d93bfef02"
+      "url_hash": "55b4214e6c4717e1e727ed0d93bfef02",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "364e84f1bc9ece83006df2aacb9d855d",
@@ -11467,7 +13219,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158916",
       "is_active": 1,
-      "url_hash": "364e84f1bc9ece83006df2aacb9d855d"
+      "url_hash": "364e84f1bc9ece83006df2aacb9d855d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "4fc0d379f9a7492ade5b219820cf241c",
@@ -11485,7 +13239,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158900",
       "is_active": 1,
-      "url_hash": "4fc0d379f9a7492ade5b219820cf241c"
+      "url_hash": "4fc0d379f9a7492ade5b219820cf241c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "e6906c64e9d691b9136d81f1d85d7c44",
@@ -11503,7 +13259,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158885",
       "is_active": 1,
-      "url_hash": "e6906c64e9d691b9136d81f1d85d7c44"
+      "url_hash": "e6906c64e9d691b9136d81f1d85d7c44",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "2ee291929043ccb4047620607208699f",
@@ -11521,7 +13279,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158869",
       "is_active": 1,
-      "url_hash": "2ee291929043ccb4047620607208699f"
+      "url_hash": "2ee291929043ccb4047620607208699f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "ee0498039b4fb0bdca7f263875106094",
@@ -11539,7 +13299,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158853",
       "is_active": 1,
-      "url_hash": "ee0498039b4fb0bdca7f263875106094"
+      "url_hash": "ee0498039b4fb0bdca7f263875106094",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9db3014bd4000da5244f1b1b08a2416c",
@@ -11557,7 +13319,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158838",
       "is_active": 1,
-      "url_hash": "9db3014bd4000da5244f1b1b08a2416c"
+      "url_hash": "9db3014bd4000da5244f1b1b08a2416c",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f8b62f0430bc62e7b0d74a1f8d458ff0",
@@ -11575,7 +13339,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158822",
       "is_active": 1,
-      "url_hash": "f8b62f0430bc62e7b0d74a1f8d458ff0"
+      "url_hash": "f8b62f0430bc62e7b0d74a1f8d458ff0",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8732ac8a407e88149a2f537b0213038f",
@@ -11593,7 +13359,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158806",
       "is_active": 1,
-      "url_hash": "8732ac8a407e88149a2f537b0213038f"
+      "url_hash": "8732ac8a407e88149a2f537b0213038f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "f13cb6aa59c460d441e5e990f97050bf",
@@ -11611,7 +13379,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158790",
       "is_active": 1,
-      "url_hash": "f13cb6aa59c460d441e5e990f97050bf"
+      "url_hash": "f13cb6aa59c460d441e5e990f97050bf",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "dd853d5ddbf4178d344de37fefc5eae7",
@@ -11629,7 +13399,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158774",
       "is_active": 1,
-      "url_hash": "dd853d5ddbf4178d344de37fefc5eae7"
+      "url_hash": "dd853d5ddbf4178d344de37fefc5eae7",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "d1bd037eb93722b57c3fc4fcf9e9274f",
@@ -11647,7 +13419,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158757",
       "is_active": 1,
-      "url_hash": "d1bd037eb93722b57c3fc4fcf9e9274f"
+      "url_hash": "d1bd037eb93722b57c3fc4fcf9e9274f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "b7e8f5a8112b8cfb36e7e7ba78b66834",
@@ -11665,7 +13439,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158740",
       "is_active": 1,
-      "url_hash": "b7e8f5a8112b8cfb36e7e7ba78b66834"
+      "url_hash": "b7e8f5a8112b8cfb36e7e7ba78b66834",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "97e5682fd8da25152b2a4565a805ca2a",
@@ -11683,7 +13459,9 @@ window.allPostingsData = {
       "type": "인터뷰",
       "scraped_at": "2026-04-05T20:36:01.158723",
       "is_active": 1,
-      "url_hash": "97e5682fd8da25152b2a4565a805ca2a"
+      "url_hash": "97e5682fd8da25152b2a4565a805ca2a",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "a205a84887e94213fc2fa627de58f59f",
@@ -11701,7 +13479,9 @@ window.allPostingsData = {
       "type": "맛테스트",
       "scraped_at": "2026-04-05T20:36:01.158705",
       "is_active": 1,
-      "url_hash": "a205a84887e94213fc2fa627de58f59f"
+      "url_hash": "a205a84887e94213fc2fa627de58f59f",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "c17f4d7df7a58294c6ad49be4554ca2b",
@@ -11719,7 +13499,9 @@ window.allPostingsData = {
       "type": "기타",
       "scraped_at": "2026-04-05T20:36:01.158685",
       "is_active": 1,
-      "url_hash": "c17f4d7df7a58294c6ad49be4554ca2b"
+      "url_hash": "c17f4d7df7a58294c6ad49be4554ca2b",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "9dd3bce7b1c5af1fcf2f663a81f1744d",
@@ -11737,7 +13519,9 @@ window.allPostingsData = {
       "type": "좌담회",
       "scraped_at": "2026-04-05T20:36:01.158653",
       "is_active": 1,
-      "url_hash": "9dd3bce7b1c5af1fcf2f663a81f1744d"
+      "url_hash": "9dd3bce7b1c5af1fcf2f663a81f1744d",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "8b04288ce25857b88953b5b2c1fca842",
@@ -11755,7 +13539,9 @@ window.allPostingsData = {
       "type": "유치조사",
       "scraped_at": "2026-04-05T20:35:34.624734",
       "is_active": 1,
-      "url_hash": "8b04288ce25857b88953b5b2c1fca842"
+      "url_hash": "8b04288ce25857b88953b5b2c1fca842",
+      "is_featured": 0,
+      "survey_content": null
     },
     {
       "id": "0bc4730520a9f538673e1dc69a49ca7f",
@@ -11773,7 +13559,9 @@ window.allPostingsData = {
       "type": "온라인",
       "scraped_at": "2026-04-05T20:35:23.901264",
       "is_active": 1,
-      "url_hash": "0bc4730520a9f538673e1dc69a49ca7f"
+      "url_hash": "0bc4730520a9f538673e1dc69a49ca7f",
+      "is_featured": 0,
+      "survey_content": null
     }
   ]
 };
