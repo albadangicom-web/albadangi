@@ -92,10 +92,11 @@ function renderPostingCard(p, index) {
   
   const hasDetails = !!p.survey_content;
   const hrefAttr = hasDetails ? `href="detail.html?id=${p.id}"` : `href="${p.source_url}"`;
+  const onclickAttr = hasDetails ? `onclick="savePostingDetail('${p.id}')"` : '';
   const targetAttr = `target="_blank" rel="noopener noreferrer"`;
 
   return `
-    <a ${hrefAttr} ${targetAttr}
+    <a ${hrefAttr} ${targetAttr} ${onclickAttr}
        class="posting-card" data-type="${effectiveType}" 
        style="animation-delay: ${index * 0.05}s" id="posting-${p.id || index}">
       <div class="posting-card__header">
@@ -590,6 +591,14 @@ function initLogoTooltip() {
 
   setInterval(updateTooltips, 1000);
   updateTooltips();
+}
+
+// ── Instant Detail Loading ──
+function savePostingDetail(id) {
+  const p = allPostings.find(item => item.id === id);
+  if (p) {
+    sessionStorage.setItem('cached_posting_' + id, JSON.stringify(p));
+  }
 }
 
 // ── Init ──
