@@ -91,11 +91,11 @@ function renderPostingCard(p, index) {
   // Note: survey_content is now removed from card to open in Modal instead.
   
   const hasDetails = !!p.survey_content;
-  const clickAttr = hasDetails ? `onclick="event.preventDefault(); openModal(${index})"` : '';
-  const hrefAttr = hasDetails ? `href="#"` : `href="${p.source_url}" target="_blank" rel="noopener noreferrer"`;
+  const hrefAttr = hasDetails ? `href="detail.html?id=${p.id}"` : `href="${p.source_url}"`;
+  const targetAttr = `target="_blank" rel="noopener noreferrer"`;
 
   return `
-    <a ${hrefAttr} ${clickAttr}
+    <a ${hrefAttr} ${targetAttr}
        class="posting-card" data-type="${effectiveType}" 
        style="animation-delay: ${index * 0.05}s" id="posting-${p.id || index}">
       <div class="posting-card__header">
