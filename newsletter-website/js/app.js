@@ -308,7 +308,7 @@ function processSubscription(form, action) {
     
     const originalText = submitBtn.textContent;
     const originalBg = submitBtn.style.backgroundColor;
-    const originalBgCol = window.getComputedStyle(submitBtn).backgroundColor;
+    const originalColor = submitBtn.style.color;
 
     // Loading state
     submitBtn.textContent = '처리중...';
@@ -327,6 +327,7 @@ function processSubscription(form, action) {
       setTimeout(() => {
         submitBtn.textContent = originalText;
         submitBtn.style.backgroundColor = originalBg || '';
+        submitBtn.style.color = originalColor || '';
         submitBtn.disabled = false;
       }, 2000);
       
