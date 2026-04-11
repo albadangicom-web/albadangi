@@ -88,17 +88,14 @@ function renderPostingCard(p, index) {
     keyInfoItems.push(`<div class="posting-card__info-row"><span class="posting-card__info-label">&#128205; 장소</span><span class="posting-card__info-value">${escapeHtml(p.location)}</span></div>`);
   }
   
-  if (p.survey_content) {
-    keyInfoItems.push(`<div class="posting-card__survey-content" style="margin-top: 12px; background: #f8fafc; padding: 14px; border-radius: 8px; font-size: 14px; color: #475569; line-height: 1.6; border-left: 4px solid #3b82f6;">
-      ${escapeHtml(p.survey_content).replace(/\n/g, '<br>')}
-    </div>`);
-  }
+  // Note: survey_content is now removed from card to open in Modal instead.
   
-  // Secondary meta (empty now since we moved them up)
-  const metaItems = [];
-  
+  const hasDetails = !!p.survey_content;
+  const clickAttr = hasDetails ? `onclick="event.preventDefault(); openModal(${index})"` : '';
+  const hrefAttr = hasDetails ? `href="#"` : `href="${p.source_url}" target="_blank" rel="noopener noreferrer"`;
+
   return `
-    <a href="${p.source_url}" target="_blank" rel="noopener noreferrer" 
+    <a ${hrefAttr} ${clickAttr}
        class="posting-card" data-type="${effectiveType}" 
        style="animation-delay: ${index * 0.05}s" id="posting-${p.id || index}">
       <div class="posting-card__header">
@@ -106,7 +103,7 @@ function renderPostingCard(p, index) {
         <span class="posting-card__type ${typeClass}">${typeIcon} ${effectiveType}</span>
       </div>
       ${keyInfoItems.length > 0 ? `<div class="posting-card__key-info">${keyInfoItems.join('')}</div>` : ''}
-      ${metaItems.length > 0 ? `<div class="posting-card__meta">${metaItems.join('')}</div>` : ''}
+      <div class="posting-card__link-hint">상세보기 &rarr;</div>
     </a>
   `;
 }
@@ -119,9 +116,13 @@ function escapeHtml(text) {
 }
 
 // ── Render all postings ──
+let currentRenderedPostings = [];
+
 function renderPostings(postings) {
   const list = document.getElementById('postings-list');
   if (!list) return;
+
+  currentRenderedPostings = postings;
 
   if (!postings || postings.length === 0) {
     list.innerHTML = `
@@ -392,6 +393,66 @@ async function loadPostings() {
   }
 }
 
+// ── Detail Modal ──
+function initModal() {
+  const modal = document.getElementById('detail-modal');
+  const closeBtn = document.getElementById('modal-close');
+  if (!modal || !closeBtn) return;
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+}
+
+function openModal(index) {
+  const modal = document.getElementById('detail-modal');
+  const contentArea = document.getElementById('modal-content-area');
+  if (!modal || !contentArea) return;
+
+  const p = currentRenderedPostings[index];
+  if (!p) return;
+
+  const effectiveType = getEffectiveType(p);
+  const typeClass = TYPE_CLASS_MAP[effectiveType] || 'posting-card__type--other';
+  const typeIcon = TYPE_ICON_MAP[effectiveType] || '&#128196;';
+
+  contentArea.innerHTML = `
+    <div class="modal-content__header">
+      <div class="modal-content__title">${escapeHtml(p.title)}</div>
+      <span class="posting-card__type ${typeClass}" style="font-size: 0.8rem;">
+        ${typeIcon} ${effectiveType}
+      </span>
+    </div>
+    <div class="modal-content__info">
+      ${p.date ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#128197; 일정</span><span class="posting-card__info-value">${escapeHtml(p.date)}</span></div>` : ''}
+      ${p.duration ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#9202; 소요시간</span><span class="posting-card__info-value">${escapeHtml(p.duration)}</span></div>` : ''}
+      ${p.reward ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#128176; 사례비</span><span class="posting-card__info-value posting-card__info-value--reward">${escapeHtml(p.reward)}</span></div>` : ''}
+      ${p.location ? `<div class="posting-card__info-row"><span class="posting-card__info-label">&#128205; 장소</span><span class="posting-card__info-value">${escapeHtml(p.location)}</span></div>` : ''}
+    </div>
+    <div class="modal-content__body">${escapeHtml(p.survey_content)}</div>
+    <div class="modal-content__cta">
+      <a href="${p.source_url}" target="_blank" rel="noopener noreferrer" class="header__cta modal-content__btn">지금 바로 지원하기</a>
+    </div>
+  `;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent background scroll
+}
+
+function closeModal() {
+  const modal = document.getElementById('detail-modal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
 // ── Theme Toggle ──
 function initThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
@@ -513,5 +574,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSubscribeForm();
   initThemeToggle();
   initLogoTooltip();
+  initModal();
   loadPostings();
 });
