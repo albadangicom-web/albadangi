@@ -88,6 +88,12 @@ function renderPostingCard(p, index) {
     keyInfoItems.push(`<div class="posting-card__info-row"><span class="posting-card__info-label">&#128205; 장소</span><span class="posting-card__info-value">${escapeHtml(p.location)}</span></div>`);
   }
   
+  if (p.survey_content) {
+    keyInfoItems.push(`<div class="posting-card__survey-content" style="margin-top: 12px; background: #f8fafc; padding: 14px; border-radius: 8px; font-size: 14px; color: #475569; line-height: 1.6; border-left: 4px solid #3b82f6;">
+      ${escapeHtml(p.survey_content).replace(/\n/g, '<br>')}
+    </div>`);
+  }
+  
   // Secondary meta (empty now since we moved them up)
   const metaItems = [];
   
@@ -189,17 +195,25 @@ function initFilters() {
       const filterType = btn.dataset.filter;
       
       if (filterType === 'all') {
-        renderPostings(allPostings);
+        renderPostings(allPostings); // allPostings is already sorted by builder
       } else if (filterType === 'urgent') {
         const withDates = allPostings.filter(p => p.date && parseDateScore(p.date) !== Number.MAX_SAFE_INTEGER);
-        withDates.sort((a, b) => parseDateScore(a.date) - parseDateScore(b.date));
+        withDates.sort((a, b) => {
+          if (a.is_featured && !b.is_featured) return -1;
+          if (!a.is_featured && b.is_featured) return 1;
+          return parseDateScore(a.date) - parseDateScore(b.date);
+        });
         renderPostings(withDates);
       } else if (filterType === '상시모집') {
         const filtered = allPostings.filter(p => getEffectiveType(p) === '상시모집');
         renderPostings(filtered);
       } else {
         const filtered = allPostings.filter(p => p.type === filterType && getEffectiveType(p) !== '상시모집');
-        filtered.sort((a, b) => parseDateScore(a.date) - parseDateScore(b.date));
+        filtered.sort((a, b) => {
+          if (a.is_featured && !b.is_featured) return -1;
+          if (!a.is_featured && b.is_featured) return 1;
+          return parseDateScore(a.date) - parseDateScore(b.date);
+        });
         renderPostings(filtered);
       }
     });
