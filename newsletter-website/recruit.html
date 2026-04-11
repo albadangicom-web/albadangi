@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>알바단지 자사 공고 등록</title>
+  <style>
+    body { font-family: 'Malgun Gothic', sans-serif; background: #f8fafc; color: #334155; margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+    .container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); width: 100%; max-width: 800px; display: none; }
+    h1 { margin-top: 0; font-size: 28px; color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 14px; color: #475569; }
+    input[type="text"], textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-family: inherit; }
+    textarea { height: 150px; resize: vertical; }
+    button { padding: 14px 24px; background: #3b82f6; color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.2s; }
+    button:hover { background: #2563eb; }
+    button:disabled { background: #94a3b8; cursor: not-allowed; }
+    .auth-bg { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 100%; }
+    .auth-bg input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; margin: 20px 0; box-sizing: border-box; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Auth Screen -->
+  <div class="auth-bg" id="auth-screen">
+    <h2>관리자 인증</h2>
+    <p style="font-size: 14px; color: #64748b;">이 페이지는 관리자 전용 등록 폼입니다.</p>
+    <input type="password" id="auth-pwd" placeholder="비밀번호 입력">
+    <button id="auth-btn">접속하기</button>
+  </div>
+
+  <!-- Recruit Form -->
+  <div class="container" id="recruit-form-container">
+    <h1>자사 공고 신규 등록 (고정 공고)</h1>
+    <p style="color: #64748b; font-size: 14px; margin-bottom: 30px;">
+      여기서 입력된 정보는 구글 시트로 안전하게 전송되며, 매일 아침 알바단지 시스템이 자동으로 수거하여 뉴스레터 최상단에 배치합니다.
+    </p>
+
+    <form id="recruit-form">
+      <div class="form-group">
+        <label>제목 (Title) *</label>
+        <input type="text" id="p_title" placeholder="예: [알바단지] 향수 블라인드 테스트" required>
+      </div>
+      
+      <div style="display: flex; gap: 20px;">
+        <div class="form-group" style="flex: 1;">
+          <label>유형 (Type)</label>
+          <input type="text" id="p_type" placeholder="예: 좌담회, 온라인, 맛테스트" value="좌담회" required>
+        </div>
+        <div class="form-group" style="flex: 1;">
+          <label>일정 (Date)</label>
+          <input type="text" id="p_date" placeholder="예: 4월 15일 (목) ~ 4월 16일 (금)">
+        </div>
+      </div>
+      
+      <div style="display: flex; gap: 20px;">
+        <div class="form-group" style="flex: 1;">
+          <label>소요시간 (Duration)</label>
+          <input type="text" id="p_duration" placeholder="예: 1시간 30분">
+        </div>
+        <div class="form-group" style="flex: 1;">
+          <label>사례비 (Reward)</label>
+          <input type="text" id="p_reward" placeholder="예: 50,000원">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>대상 (Target)</label>
+        <input type="text" id="p_target" placeholder="예: 20대~30대 여성">
+      </div>
+      
+      <div class="form-group">
+        <label>장소 (Location)</label>
+        <input type="text" id="p_location" placeholder="예: 서울 강남구">
+      </div>
+      
+      <div class="form-group">
+        <label>설문 폼 또는 상세 링크 (URL) *</label>
+        <input type="text" id="p_url" placeholder="예: https://forms.gle/..." required>
+      </div>
+      
+      <div class="form-group">
+        <label>조사 내용 설명 (Survey Content)</label>
+        <textarea id="p_content" placeholder="공고 아래에 표시될 상세 모집 내용을 적어주세요."></textarea>
+      </div>
+      
+      <button type="submit" id="submit-btn">고정 공고 등록 전송하기</button>
+    </form>
+  </div>
+
+  <script>
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzhOytISR2qHGa7c4q1awBTt6aeDDUCWxwEO5FNVIM-JUy4GCgEmwgyoQlzYVhEs5Uvmg/exec";
+
+    // 간단 비번 로직 (보안상 강력하진 않으나 숨김 용도)
+    const SECRET = "1234";
+
+    const authScreen = document.getElementById('auth-screen');
+    const formContainer = document.getElementById('recruit-form-container');
+    const authPwd = document.getElementById('auth-pwd');
+    const authBtn = document.getElementById('auth-btn');
+
+    authBtn.addEventListener('click', () => {
+      if (authPwd.value === SECRET) {
+        authScreen.style.display = 'none';
+        formContainer.style.display = 'block';
+      } else {
+        alert("비밀번호가 일치하지 않습니다.");
+      }
+    });
+
+    authPwd.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') authBtn.click();
+    });
+
+    const form = document.getElementById('recruit-form');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      submitBtn.textContent = "전송중...";
+      submitBtn.disabled = true;
+
+      const payload = {
+        action: 'add_featured',
+        title: document.getElementById('p_title').value,
+        type: document.getElementById('p_type').value,
+        date: document.getElementById('p_date').value,
+        duration: document.getElementById('p_duration').value,
+        reward: document.getElementById('p_reward').value,
+        target: document.getElementById('p_target').value,
+        location: document.getElementById('p_location').value,
+        url: document.getElementById('p_url').value,
+        survey_content: document.getElementById('p_content').value
+      };
+
+      fetch(WEB_APP_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      })
+      .then(() => {
+        alert("성공적으로 서버에 기록되었습니다! 내일 아침 뉴스레터 발행 시 등록됩니다.");
+        form.reset();
+        submitBtn.textContent = "고정 공고 등록 전송하기";
+        submitBtn.disabled = false;
+      })
+      .catch((err) => {
+        alert("통신 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+        submitBtn.textContent = "고정 공고 등록 전송하기";
+        submitBtn.disabled = false;
+      });
+    });
+  </script>
+</body>
+</html>

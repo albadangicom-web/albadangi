@@ -81,7 +81,7 @@ def get_today_postings(date_str: str = None) -> list[dict]:
     cursor.execute("""
         SELECT * FROM postings 
         WHERE date(scraped_at) = ? AND is_active = 1
-        ORDER BY scraped_at DESC
+        ORDER BY is_featured DESC, scraped_at DESC
     """, (date_str,))
     rows = cursor.fetchall()
     conn.close()
@@ -202,6 +202,14 @@ def build_email_posting_html(posting: dict) -> str:
             </tr>
           </table>
         '''
+        
+    if posting.get("survey_content"):
+        content_html = posting['survey_content'].replace('\n', '<br>')
+        meta_html += f'''
+          <div style="margin-top: 12px; padding: 12px; background-color: #F1F5F9; border-left: 3px solid #3B82F6; border-radius: 0 4px 4px 0; color: #334155; font-size: 13px; line-height: 1.6;">
+            {content_html}
+          </div>
+        '''
 
     return f"""
           <tr>
@@ -309,11 +317,12 @@ def build_all_data_js(start_date: str = "2026-04-05"):
         SELECT id, title, source, source_url,
                target_age, target_gender, target_condition,
                date, time, duration, reward, location,
-               type, scraped_at, is_active, url_hash
+               type, scraped_at, is_active, url_hash,
+               is_featured, survey_content
         FROM postings
         WHERE date(scraped_at) >= ?
           AND is_active = 1
-        ORDER BY scraped_at DESC
+        ORDER BY is_featured DESC, scraped_at DESC
     """, (start_date,))
     rows = c.fetchall()
     conn.close()

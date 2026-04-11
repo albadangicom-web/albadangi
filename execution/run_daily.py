@@ -27,7 +27,13 @@ def run_daily():
     print(f"  Date: {date_str}")
     print(f"  Time: {datetime.now().strftime('%H:%M:%S')}")
     print("=" * 60)
-    
+    # Step 0: 구글 시트 웹 앱 고정 공고 동기화
+    try:
+        from sync_featured import sync_featured_postings
+        sync_featured_postings()
+    except Exception as e:
+        print(f"  [Error] 고정 공고 동기화 실패: {e}")
+
     # Step 1: 크롤링
     print("\n[Step 1/3] Scraping...")
     postings = run_all_scrapers()
