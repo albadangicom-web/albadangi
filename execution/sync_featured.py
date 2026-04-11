@@ -63,11 +63,12 @@ def sync_featured_postings():
                 for p in featured_data:
                     c.execute("""
                         INSERT INTO postings (
-                            title, source, source_url, target_age, duration,
+                            id, title, source, source_url, target_age, duration,
                             reward, location, type, scraped_at, is_active,
                             is_featured, survey_content
-                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """, (
+                        p.get('id', ''),
                         p.get('title', ''), 
                         '알바단지 자체', 
                         p.get('url', ''), 
